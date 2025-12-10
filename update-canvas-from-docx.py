@@ -235,8 +235,26 @@ def update_html_with_changes(html_file_path, changes):
         # Create a new paragraph for the insertion
         new_p = soup.new_tag('p')
         new_p.string = new_text
-        # Append to the end of user_content
-        user_content.append(new_p)
+
+        # Find the last element inside user_content to append after
+        # This ensures the new paragraph is INSIDE user_content, not outside
+        last_child = None
+        for child in user_content.descendants:
+            if hasattr(child, 'name') and child.name:
+                last_child = child
+
+        # If we found a last child, insert after it; otherwise append to user_content
+        if last_child and last_child.parent == user_content:
+            # Insert after the last direct child
+            last_child.insert_after(new_p)
+        else:
+            # Find the last direct child of user_content
+            direct_children = [child for child in user_content.children if hasattr(child, 'name')]
+            if direct_children:
+                direct_children[-1].insert_after(new_p)
+            else:
+                # Fallback: append directly to user_content
+                user_content.append(new_p)
 
     # Write updated HTML
     with open(html_file_path, 'w', encoding='utf-8') as f:
