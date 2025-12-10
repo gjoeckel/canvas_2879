@@ -1,0 +1,395 @@
+.pages.show .page-title {
+    color: #1c205b;
+	font-weight: 400;
+}
+
+div.ic-app-crumbs {
+	display: none;
+}
+
+div.ic-app-nav-toggle-and-crumbs{
+	display: none;
+}
+
+div.guide {
+	border: solid 1px #CCCCCC;
+	padding: 1em;
+}
+
+div.guide h1, h1.page-title, h1.quiz-header {
+	text-align: center;
+	font-size: 2em;
+	color: #1c205b;
+}
+
+div.guide h2, div.guide h4 {
+	border-bottom: none;
+}
+
+#kl_modal h2,
+.user_content h2,
+.user_content .h2,
+.mceContentBody h2,
+.mceContentBody .h2 {
+	font-size: 1.75em;
+	line-height: 1.5;
+	color: #bf1722;
+	margin: .5em 0em .5em 0em;
+	border-bottom: none;
+}
+
+#kl_modal h3,
+.user_content h3,
+.user_content .h3,
+.mceContentBody h3,
+.mceContentBody .h3 {
+   	font-size: 1.5em;
+	color: #1c205b;
+	margin: .5em 0em .5em .5em;
+}
+
+#kl_modal h4,
+.user_content h4,
+.user_content .h4,
+.mceContentBody h4,
+.mceContentBody .h4 {
+   	font-size: 1.25em;
+	color: #111111;
+	margin: .5em 0em .5em 1.25em;
+	border-bottom: 1px dashed #ccc;
+}
+
+#kl_modal h5,
+.user_content h5,
+.user_content .h5,
+.mceContentBody h5,
+.mceContentBody .h5 {
+   	font-size: 1em;
+   	font-weight: bold;
+	color: #bf1722;
+	margin: .5em 0em .5em 2em;
+}
+
+p {
+	margin-left: 0em;
+	margin-right: 2em;
+}
+
+h3~p {
+	margin-left: 1em;
+}
+
+h4~p {
+	margin-left: 1.75em;
+}
+
+h5~p{
+	margin-left: 2em;
+}
+
+h2~ul, h2~ol {
+	margin-left: 2em;
+}
+
+h3~ul, h3~ol {
+	margin-left: 3em;
+}
+
+h4~ul, h4~ol {
+	margin-left: 4em;
+}
+
+h5~ul, h5~ol {
+	margin-left: 5em;
+}
+
+.message img {
+	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+img {
+	margin: auto;
+	display: block;
+}
+
+img.screen {
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	padding: .5em;
+	margin: auto;
+	display: block;
+}
+
+a img {
+	margin: 0;
+	display: inherit;
+}
+
+img.Word {
+	border: 1px solid #2b569a;
+	border-radius: 4px;
+	padding: .5em;
+}
+
+img.PPT {
+	border: 1px solid #d24624;
+	border-radius: 4px;
+	padding: .5em;
+}
+
+iframe.lti-embed {
+	margin: auto;
+	display: block;
+}
+
+div.callout {
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	color: #111111;
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: 1em auto 1em auto;
+	display: block;
+}
+
+span.calloutEmphasis {
+	font-weight: normal;
+	font-size: 1.05em;
+}
+
+div.question2 {
+	background-color: #FFECD5;
+	padding: 0.5em 1em 0.5em 0em;
+	min-width: 80%;
+	max-width: 80%;
+}
+
+div.question2-h2 {
+	background-color: #FFECD5;
+	margin: 0 1em 0 1em;
+}
+
+div.questionBullet {
+	background-color: #FFECD5;
+	padding: 0.5em 1em 0.5em 0em;
+	min-width: 80%;
+	max-width: 80%;
+}
+
+div.note {
+	background-color: #F1F5F7;
+	padding: 0.5em 1em 0.5em 0em;
+	min-width: 80%;
+	max-width: 80%;
+}
+
+div.note-h2 {
+	background-color: #F1F5F7;
+	margin: 0 1em 0 1em;
+}
+
+div.important {
+	background-color: #fafaae;
+	padding: 0.5em 1em 0.5em 0em;
+	min-width: 80%;
+	max-width: 80%;
+}
+
+div.important-h2 {
+	background-color: #fafaae;
+	margin: 0 1em 0 1em;
+}
+
+div.instructions {
+	background-color: #FAFFF0;
+	font-weight: normal;
+	padding: 1.5em 1.5em 1em 1.5em;
+	min-width: 60%;
+	max-width: 60%;
+}
+
+div.instructions-h2 {
+	background-color: #FAFFF0;
+	font-weight: normal;
+	padding: 1.5em 1em 1.5em 1em;
+	margin: 0 0 0 1em;
+}
+
+img.floatLeft {
+	float: left;
+	padding: 0em 1em 2em 1em;
+}
+
+div.callout.instructions h3~ol, div.callout.instructions h3~ul, div.callout.instructions h4~ol, div.callout.instructions h4~ul, div.callout.instructions h5~ol, div.callout.instructions h5~ul {
+	margin-left: 2em;
+}
+
+div.callout.instructions h3, div.callout.instructions h4, div.callout.instructions h5 {
+	margin: 0;
+	font-weight: bold;
+}
+
+div.callout p {
+	padding-left: 3em;
+}
+
+div.callout li p {
+	padding-left: 0em;
+}
+
+div.callout.instructions img {
+	padding: .5em 0 .5em .5em;
+}
+
+div.callout.instructions h3, div.callout.instructions h4, div.callout.instructions h5 {
+	border-bottom: none;
+	padding-bottom: .5em;
+}
+
+div.calloutNB {
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	color: #111111;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: .5em 0 .5em 1em;
+	margin: 1.5em 0 1.5em 0;
+	min-width: 80%;
+	max-width: 95%;
+	display: inline-block;
+}
+
+div.calloutNB h3, div.callout h4, div.callout h5 {
+	color: #222222;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+div.calloutNB p, div.calloutNB span {
+	padding-right: 3em;
+}
+
+div.calloutNB li p, div.calloutNB span {
+	padding-left: 0em;
+}
+
+div.floatLeft~ul, div.floatLeft~ol {
+	padding-right: 2em;
+	margin: 0 0 0 5em;
+}
+
+img.floatLeftBullet {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+img.floatRight {
+	float: right;
+}
+
+div.dashed {
+    border-bottom: grey dashed 1px;
+    margin: 2em 0 2em 0;
+}
+
+table.doc th {
+	padding: 30px;
+}
+
+.user_content table:not([cellpadding]) td, .mceContentBody table:not([cellpadding]) td {
+	padding: 20px;
+	vertical-align: top;
+}
+
+div.topSpace {
+	margin-top: 2em;
+	border-top: 2px dashed #777777;
+	padding-top: 1.5em;
+}
+
+div.bottomSpace {
+	margin-bottom: 2em;
+}
+
+div.ic-app-header__logomark-container {
+	display: none;
+}
+
+a#global_nav_profile_link {
+	display: none;
+}
+
+a#global_nav_profile_link.ic-app-header__menu-list-link {
+	display: none;
+}
+
+a#global_nav_accounts_link {
+	display: none;
+}
+
+a#global_nav_accounts_link.ic-app-header__menu-list-link {
+	display: none;
+}
+
+a#global_nav_dashboard_link {
+	display: none;
+}
+
+a#global_nav_dashboard_link.ic-app-header__menu-list-link {
+	display: none;
+}
+
+a#global_nav_courses_link {
+	display: none;
+}
+
+a#global_nav_courses_link.ic-app-header__menu-list-link {
+	display: none;
+}
+
+a#global_nav_calendar_link {
+	display: none;
+}
+
+a#global_nav_calendar_link.ic-app-header__menu-list-link {
+	display: none;
+}
+
+a#global_nav_conversations_link {
+	margin-top: 1em;
+}
+
+li#context_external_tool_16_menu_item {
+	display: none;
+}
+
+div#right-side-wrapper.ic-app-main-content__secondary {
+	display: none;
+}
+
+div.ic-app-header__secondary-navigation {
+	display: none;
+}
+
+div.ic-app-header__main-navigation {
+	display: none;
+}
+
+header#header.ic-app-header.no-print {
+	display: none;
+}
+
+div#wrapper.ic-Layout-wrapper {
+	margin-left: 0;
+}
+
+button#courseMenuToggle {
+	display: none;
+}
+
+button.mobile-header-hamburger {
+	display: none;
+}
+

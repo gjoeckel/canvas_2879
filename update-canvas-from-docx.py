@@ -284,7 +284,7 @@ def main():
         box_token, token_type = get_box_access_token()
         if not box_token:
             raise ValueError("Box access token not found. Set BOX_DEVELOPER_TOKEN environment variable or configure OAuth 2.0 in .box-api-config.json.")
-        
+
         if token_type == 'oauth2':
             print(f"✅ Using OAuth 2.0 access token (better permissions)")
         else:

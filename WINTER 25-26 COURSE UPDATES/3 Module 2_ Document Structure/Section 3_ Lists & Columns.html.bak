@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <link rel="stylesheet" href="../../canvas_global_app.css">
+    <link rel="stylesheet" href="../../canvas-custom-overrides.css">
+</head>
+<body>
+    <div class="content">
+        
+        
+        <link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016014/canvas_global_app.css"><div>
+    <p><a class="Button" title="Section 3: Lists &amp; Columns" href="https://usucourses.instructure.com/courses/2879/pages/section-3-lists-and-columns" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/section-3-lists-and-columns" data-api-returntype="Page">Return to Section 3</a></p>
+</div>
+        <div>
+            <h2>Video</h2>
+            <p><iframe class="lti-embed" style="width: 304px; height: 231px;" title="Columns (03:47)" src="https://usucourses.instructure.com/courses/2879/external_tools/retrieve?display=borderless&amp;url=https%3A%2F%2F2246721.kaf.kaltura.com%2Fbrowseandembed%2Findex%2Fmedia%2Fentryid%2F1_du47jtcu%2FshowDescription%2Ffalse%2FshowTitle%2Ffalse%2FshowTags%2Ffalse%2FshowDuration%2Ffalse%2FshowOwner%2Ffalse%2FshowUploadDate%2Ffalse%2FplayerSize%2F304x231%2FplayerSkin%2F43060302%2F" width="304" height="231" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *; clipboard-write *; display-capture *" loading="lazy"></iframe></p>
+        </div>
+        <div>
+            <h2>Example Files</h2>
+            <ul>
+                <li><a id="813313" class="instructure_file_link instructure_scribd_file inline_disabled" href="https://usucourses.instructure.com/courses/2879/files/1235532?verifier=gCt6kRzbLx2mNdpMWjPyX3lEp1t9XfysMYjjqeuU&amp;wrap=1" target="_blank" data-canvas-previewable="true" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235532" data-api-returntype="File">Columns Example (.docx)</a></li>
+                <li><a id="813314" class="instructure_file_link instructure_scribd_file inline_disabled" href="https://usucourses.instructure.com/courses/2879/files/1235535?verifier=I0KX3R2QQuV4v3PbsAkZMIkespGZjJ2vuT0HT4Ep&amp;wrap=1" target="_blank" data-canvas-previewable="true" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235535" data-api-returntype="File">Columns Example (.pptx)</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Guide</h2>
+            <div class="guide">
+                <div>
+                    <h1>Columns</h1>
+                    <p><span>Columns are most commonly used to present a large block of text on a single page. In this video you will learn how to create columns correctly to optimize their accessibility.</span></p>
+                    <h2 class="s2">Objectives</h2>
+                    <ul>
+                        <li><span><strong>Describe</strong> the impact on a screen reading software user that encounters columns that have been created incorrectly.</span></li>
+                        <li><span><strong>Identify</strong> the process for creating <em>Columns</em>.</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>The Impact of Inaccessible "Columns"</h2>
+                    <p><span>The first time you saw something that had columns of text, you had to figure out how to read them: start at the top, read down to the bottom, and move on to the top of the next column.</span></p>
+                    <div class="callout question2">
+                        <div><img class="floatLeft instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235601/preview?verifier=rfhnDnrMIEvD5pv1SC8tL3zQvJZeSMs2JKXRuvvi" alt="question" width="50" height="50" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235601" data-api-returntype="File" loading="lazy"></div>
+                        <p>Can you imagine how confused you would have been if you had tried to read the text by following the visual lines across the columns?</p>
+                    </div>
+                    <p><span>Unfortunately, this is exactly what happens when a screen reading software user encounters "columns" of text that have been incorrectly created using the Tab key or Spacebar to create white space between lines of text. I'll open the Word example file on Windows, and use NVDA to read the content under the heading "Incorrect Formatting".</span></p>
+                    <p><span>[NVDA reads]</span></p>
+                    <p><span>"Don't use the Tab key and/or Spacebar to content's reading order is all wrong. Plus, create 'columns' in Word or PowerPoint. While column layouts created with the built-in tool this manual formatting may look OK, they are easier to make—and edit."</span></p>
+                    <p><span>[narrator resumes]</span></p>
+                </div>
+                <div>
+                    <h2>Creating&nbsp;<em>Columns</em></h2>
+                    <p><span><span>The process for creating columns is the same for Word and PowerPoint, on both the Windows and Mac operating systems. The location of the <em>Columns</em> tool is slightly different between Word—</span></span></p>
+                    <p><img id="809720" src="https://usucourses.instructure.com/courses/2879/files/1235606/preview?verifier=FWaphBbXPhzUI0Vfsx4LXHgHhI1Iww1MXJ3uucpx" alt="Screenshot of the &quot;Columns&quot; tool selected and highlighted on the Layout tab." width="670" height="160" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235606" data-api-returntype="File" loading="lazy"></p>
+                </div>
+                <div>
+                    <p><span>and PowerPoint:</span></p>
+                    <p><img id="809719" src="https://usucourses.instructure.com/courses/2879/files/1235565/preview?verifier=fFkrEIrYlNNI3dDjSjsKAgw5ICF1Ia7gn7elaMVJ" alt="Screenshot of the &quot;Columns&quot; tool  highlighted on the Home tab." width="740" height="160" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235565" data-api-returntype="File" loading="lazy"></p>
+                </div>
+                <div>
+                    <p><span>I will demonstrate the process in both applications.</span></p>
+                    <h3>Word</h3>
+                    <p><span>I'll go to the next page of the example file to work with the text under the "Correct Formatting" heading.</span></p>
+                    <div class="callout instructions">
+                        <div><strong><img class="floatRight" src="https://usucourses.instructure.com/courses/2879/files/1235429/preview?verifier=RPWQLfvsjpFmLlLMQB9UyQH2DVmcGfXTq9bsXFgf" alt="“windows" width="100" height="85" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235429" data-api-returntype="File" loading="lazy"></strong></div>
+                        <div>
+                            <h4><strong>To apply the <em>Columns</em> structure in Word on Windows (or Mac):</strong></h4>
+                            <ol class="">
+                                <li>
+                                    <p><span>Select any existing text;</span></p>
+                                </li>
+                                <li>
+                                    <p><span>Open the LAYOUT tab on the Ribbon.<br><img class="instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235417/preview?verifier=gygFER9rChx35kDS03b6mPxzGhXRS367Lz99GTRB" alt="Screenshot of the Layout tab selected and highlighted on the Ribbon." width="600" height="150" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235417" data-api-returntype="File" loading="lazy"></span></p>
+                                </li>
+                                <li>
+                                    <p><span>Click <em>Columns</em> and select the number of columns you would like.<br><img class="instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235560/preview?verifier=EfDJyyalsGuWQPvtrB5TlYQlRyK7ueULfMv0rNDd" alt="Screenshot of the &quot;Two&quot; option selected and highlighted on the Columns menu." width="600" height="300" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235560" data-api-returntype="File" loading="lazy"></span></p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p>If desired, you can customize your columns by clicking the "More Columns" option.</p>
+                    <p><img class="instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235614/preview?verifier=klF24Vi7puTHYOxRgFE0t8v8bgqLwyTnpvPDWzvz" alt="Screenshot with two images: &quot;More Columns&quot; highlighted and selected on the Columns menu; and the Columns dialog window." width="575" height="375" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235614" data-api-returntype="File" loading="lazy"></p>
+                    <p><span>Now I'll read these proper columns with NVDA:</span></p>
+                    <p><span>[NVDA reads]</span></p>
+                    <p><span>"[Column 1 of 2] Don't use the Tab key and/or Spacebar to create "columns" in Word or PowerPoint. While this manual formatting may look OK, the content's reading order is all wrong. [Column 2 of 2] Plus, column layouts created with the built-in tool are easier to make—and edit."</span></p>
+                    <p><span>[narrator resumes]</span></p>
+                    <h3>PowerPoint</h3>
+                    <p><span>To show where this tool is located in PowerPoint, I'll open the example file on Mac, and navigate to slide #3.</span></p>
+                    <div class="callout instructions">
+                        <div><img class="floatRight" src="https://usucourses.instructure.com/courses/2879/files/1235591/preview?verifier=Ai8X6jqElAFLn7hob8rDKQBLLQXDRr4KqmwCEaH6" alt="mac and windows instructions" width="100" height="85" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235591" data-api-returntype="File" loading="lazy"></div>
+                        <div>
+                            <h4><span>To apply the Columns structure in PowerPoint on Mac (or Windows):</span></h4>
+                            <ol class="">
+                                <li>
+                                    <p><span>Select any existing text.</span></p>
+                                </li>
+                                <li>
+                                    <p><span>Open the HOME tab on the Ribbon and go to Columns.<br><img class="instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235620/preview?verifier=hmcgmkmBFo3JS23uv9WMdwWZBsKUasn0D07QJbVP" alt="Screenshot of the Columns tool  selected and highlighted on the Home tab." width="500" height="155" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235620" data-api-returntype="File" loading="lazy"><br></span></p>
+                                </li>
+                                <li>
+                                    <p><span>Click Columns and select the number of columns you would like.<br><img class="instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235666/preview?verifier=P2UVyfnvIvqI5PZvwJzXBoeIGogc3EmV5jP4HQNl" alt="Screenshot of the &quot;Two Columns&quot; option highlighted and selected on the Columns menu." width="550" height="300" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235666" data-api-returntype="File" loading="lazy"></span><span><br></span></p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p><span>PowerPoint also offers the ability to customize your columns by clicking the "More Columns" option:</span></p>
+                    <p><img class="instructure_file_link inline_disabled" src="https://usucourses.instructure.com/courses/2879/files/1235562/preview?verifier=BTV7OPKBaUVsuFmDSCyFHr8s9MlidBkawYHBwxWN" alt="Screenshot with two images: &quot;More Columns&quot; highlighted and selected on the Columns menu; and the Columns dialog window." width="350" height="200" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235562" data-api-returntype="File" loading="lazy"></p>
+                    <h2>Text Flow</h2>
+                    <p><span>Switching back to the Word example, I'll move to the "Text Flow" section on the next page and put my cursor at the top of the first column. I’ll type in new content, and as I do, the text flows from one column to the next. The document structure applied to this text will also allow it to revert to a single column when using the “Read” mode in Word, and “Reflow” in Acrobat Reader.</span></p>
+                    <div class="topSpace">
+                        <p><span>Lists and columns are important tools for optimizing the visual presentation of information in your documents. These tools also provide the document structure needed to support assistive technologies. Implementing the principles and processes you have learned in this section are an important part of making your documents accessible to the largest number of users.</span></p>
+                    </div>
+                </div>
+            </div>
+<div>
+    <p><a class="Button" title="Section 3: Lists &amp; Columns" href="https://usucourses.instructure.com/courses/2879/pages/section-3-lists-and-columns" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/section-3-lists-and-columns" data-api-returntype="Page">Return to Section 3</a></p>
+</div>
+            </div><script src="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016015/canvas_global_app.js"></script>
+        
+        
+        <div class="original-link">
+            <p><a href="https://usucourses.instructure.com/courses/2879/modules/items/121458" target="_blank">View original page on Canvas</a></p>
+        </div>
+    </div>
+</body>
+</html>

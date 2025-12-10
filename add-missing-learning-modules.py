@@ -23,7 +23,7 @@ def load_box_file_ids():
     if BOX_FILE_IDS_JSON.exists():
         with open(BOX_FILE_IDS_JSON, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        return {item['relative_path']: item['file_id'] for item in data['files'] 
+        return {item['relative_path']: item['file_id'] for item in data['files']
                 if 'example' not in item['relative_path'].lower()}
     return {}
 
@@ -42,14 +42,14 @@ def find_matching_docx_files(box_file_ids, section_path_pattern):
 
 def main():
     print("📝 Adding Learning Modules to sections missing them...")
-    
+
     box_file_ids = load_box_file_ids()
     print(f"📖 Loaded {len(box_file_ids)} Box file mappings (excluding examples)")
-    
+
     # Read the mapping file
     with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
         lines = f.readlines()
-    
+
     # Define sections that need Learning Modules and their matching patterns
     section_updates = {
         # Module 1, Section 4: Contrast & Color Reliance
@@ -105,36 +105,36 @@ def main():
             ]
         },
     }
-    
+
     output_lines = []
     i = 0
-    
+
     while i < len(lines):
         line = lines[i]
         stripped = line.strip()
-        
+
         # Check if this is a section that needs Learning Modules
         section_found = None
         for section_header, update_info in section_updates.items():
             if stripped.startswith(section_header):
                 section_found = (section_header, update_info)
                 break
-        
+
         if section_found:
             section_header, update_info = section_found
             output_lines.append(line)  # Add the section header
             i += 1
-            
+
             # Skip the "Edit Section Document" line if present
             if i < len(lines) and 'Edit Section Document' in lines[i]:
                 output_lines.append(lines[i])
                 i += 1
-            
+
             # Skip blank line
             if i < len(lines) and lines[i].strip() == '':
                 output_lines.append(lines[i])
                 i += 1
-            
+
             # Check if "*No Learning Activities found in HTML*" is present
             if i < len(lines) and '*No Learning Activities found in HTML*' in lines[i]:
                 # Replace with Learning Modules
@@ -153,11 +153,11 @@ def main():
         else:
             output_lines.append(line)
             i += 1
-    
+
     # Write the updated file
     with open(MAPPING_FILE, 'w', encoding='utf-8') as f:
         f.writelines(output_lines)
-    
+
     print(f"✅ Updated {MAPPING_FILE}")
     print(f"   Added Learning Modules to {len(section_updates)} sections")
 

@@ -1,0 +1,779 @@
+{
+  "matches": [
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Annotation Options/course.docx",
+        "relative_path": "Annotation Options/course.docx",
+        "name": "course"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/1 Introduction/Course Details.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/1 Introduction/Course Details.html",
+        "name": "Course Details"
+      },
+      "match_type": "partial"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Course Support/course-details.docx",
+        "relative_path": "Course Content - Word/Course Support/course-details.docx",
+        "name": "course-details"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/1 Introduction/Course Details.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/1 Introduction/Course Details.html",
+        "name": "Course Details"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Course Support/course-orientation.docx",
+        "relative_path": "Course Content - Word/Course Support/course-orientation.docx",
+        "name": "course-orientation"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/1 Introduction/Course Orientation.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/1 Introduction/Course Orientation.html",
+        "name": "Course Orientation"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Course Support/terms-of-use.docx",
+        "relative_path": "Course Content - Word/Course Support/terms-of-use.docx",
+        "name": "terms-of-use"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/1 Introduction/Terms of Use.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/1 Introduction/Terms of Use.html",
+        "name": "Terms of Use"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/section-1-overview-of-document-accessibility.docx",
+        "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/section-1-overview-of-document-accessibility.docx",
+        "name": "section-1-overview-of-document-accessibility"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 1_ Overview of Document Accessibility.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 1_ Overview of Document Accessibility.html",
+        "name": "Section 1_ Overview of Document Accessibility"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/section-2-images.docx",
+        "relative_path": "Course Content - Word/Module 1/Section 2 Images/section-2-images.docx",
+        "name": "section-2-images"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 2_ Images.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 2_ Images.html",
+        "name": "Section 2_ Images"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 3 Hyperlinks/section-3-hyperlinks.docx",
+        "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/section-3-hyperlinks.docx",
+        "name": "section-3-hyperlinks"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 3_ Hyperlinks.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 3_ Hyperlinks.html",
+        "name": "Section 3_ Hyperlinks"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/section-4-contrast-and-color-reliance.docx",
+        "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/section-4-contrast-and-color-reliance.docx",
+        "name": "section-4-contrast-and-color-reliance"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 4_ Contrast & Color Reliance.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 4_ Contrast & Color Reliance.html",
+        "name": "Section 4_ Contrast & Color Reliance"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/section-5-optimizing-writing.docx",
+        "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/section-5-optimizing-writing.docx",
+        "name": "section-5-optimizing-writing"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 5_ Optimizing Writing.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Section 5_ Optimizing Writing.html",
+        "name": "Section 5_ Optimizing Writing"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/module-1-document-content.docx",
+        "relative_path": "Course Content - Word/Module 1/module-1-document-content.docx",
+        "name": "module-1-document-content"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Module 1_ Document Content.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/2 Module 1_ Document Content/Module 1_ Document Content.html",
+        "name": "Module 1_ Document Content"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/section-1-headings-in-word.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/section-1-headings-in-word.docx",
+        "name": "section-1-headings-in-word"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 1_ Headings in Word.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 1_ Headings in Word.html",
+        "name": "Section 1_ Headings in Word"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/section-2-optimizing-powerpoint-presentations.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/section-2-optimizing-powerpoint-presentations.docx",
+        "name": "section-2-optimizing-powerpoint-presentations"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 2_ Optimizing PowerPoint Presentations.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 2_ Optimizing PowerPoint Presentations.html",
+        "name": "Section 2_ Optimizing PowerPoint Presentations"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 3 Lists & Columns/columns.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/columns.docx",
+        "name": "columns"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 3_ Lists & Columns.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 3_ Lists & Columns.html",
+        "name": "Section 3_ Lists & Columns"
+      },
+      "match_type": "partial"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 3 Lists & Columns/lists.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/lists.docx",
+        "name": "lists"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 3_ Lists & Columns.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 3_ Lists & Columns.html",
+        "name": "Section 3_ Lists & Columns"
+      },
+      "match_type": "partial"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 3 Lists & Columns/section-3-lists-and-columns.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/section-3-lists-and-columns.docx",
+        "name": "section-3-lists-and-columns"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 3_ Lists & Columns.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 3_ Lists & Columns.html",
+        "name": "Section 3_ Lists & Columns"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 4 Tables/section-4-tables.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 4 Tables/section-4-tables.docx",
+        "name": "section-4-tables"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 4_ Tables.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 4_ Tables.html",
+        "name": "Section 4_ Tables"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 4 Tables/tables.docx",
+        "relative_path": "Course Content - Word/Module 2/Section 4 Tables/tables.docx",
+        "name": "tables"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 4_ Tables.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Section 4_ Tables.html",
+        "name": "Section 4_ Tables"
+      },
+      "match_type": "partial"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/module-2-document-structure.docx",
+        "relative_path": "Course Content - Word/Module 2/module-2-document-structure.docx",
+        "name": "module-2-document-structure"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Module 2_ Document Structure.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/3 Module 2_ Document Structure/Module 2_ Document Structure.html",
+        "name": "Module 2_ Document Structure"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 1 Evaluating Accessibility/section-1-evaluating-accessibility.docx",
+        "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/section-1-evaluating-accessibility.docx",
+        "name": "section-1-evaluating-accessibility"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 1_ Evaluating Accessibility.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 1_ Evaluating Accessibility.html",
+        "name": "Section 1_ Evaluating Accessibility"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/section-2-practicing-evaluation-and-repair.docx",
+        "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/section-2-practicing-evaluation-and-repair.docx",
+        "name": "section-2-practicing-evaluation-and-repair"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 2_ Practicing Evaluation & Repair.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 2_ Practicing Evaluation & Repair.html",
+        "name": "Section 2_ Practicing Evaluation & Repair"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 3 Creating PDFs/section-3-creating-pdfs.docx",
+        "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/section-3-creating-pdfs.docx",
+        "name": "section-3-creating-pdfs"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 3_ Creating PDFs.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 3_ Creating PDFs.html",
+        "name": "Section 3_ Creating PDFs"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/module-3-evaluating-accessibility-and-creating-pdfs.docx",
+        "relative_path": "Course Content - Word/Module 3/module-3-evaluating-accessibility-and-creating-pdfs.docx",
+        "name": "module-3-evaluating-accessibility-and-creating-pdfs"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Module 3_ Evaluating Accessibility & Creating PDFs.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/4 Module 3_ Evaluating Accessibility & Creating PDFs/Module 3_ Evaluating Accessibility & Creating PDFs.html",
+        "name": "Module 3_ Evaluating Accessibility & Creating PDFs"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/section-1-introduction-to-optimizing-pdfs.docx",
+        "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/section-1-introduction-to-optimizing-pdfs.docx",
+        "name": "section-1-introduction-to-optimizing-pdfs"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 1_ Introduction To Optimizing PDFs.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 1_ Introduction To Optimizing PDFs.html",
+        "name": "Section 1_ Introduction To Optimizing PDFs"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 2 Checking Accessibility/section-2-checking-accessibility.docx",
+        "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/section-2-checking-accessibility.docx",
+        "name": "section-2-checking-accessibility"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 2_ Checking Accessibility.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 2_ Checking Accessibility.html",
+        "name": "Section 2_ Checking Accessibility"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 3 Reading Order Tool/section-3-reading-order-tool.docx",
+        "relative_path": "Course Content - Word/Module 4/Section 3 Reading Order Tool/section-3-reading-order-tool.docx",
+        "name": "section-3-reading-order-tool"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 3_ Reading Order Tool.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 3_ Reading Order Tool.html",
+        "name": "Section 3_ Reading Order Tool"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 4 Content Order and Tags Order/section-4-content-order-and-tags-order.docx",
+        "relative_path": "Course Content - Word/Module 4/Section 4 Content Order and Tags Order/section-4-content-order-and-tags-order.docx",
+        "name": "section-4-content-order-and-tags-order"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 4_ Content Order and Tags Order.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Section 4_ Content Order and Tags Order.html",
+        "name": "Section 4_ Content Order and Tags Order"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/module-4-optimizing-pdfs-in-acrobat.docx",
+        "relative_path": "Course Content - Word/Module 4/module-4-optimizing-pdfs-in-acrobat.docx",
+        "name": "module-4-optimizing-pdfs-in-acrobat"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Module 4_ Optimizing PDFs in Acrobat.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/5 Module 4_ Optimizing PDFs in Acrobat/Module 4_ Optimizing PDFs in Acrobat.html",
+        "name": "Module 4_ Optimizing PDFs in Acrobat"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 1 Navigating in Excel/section-1-navigating-in-excel.docx",
+        "relative_path": "Course Content - Word/Module 5/Section 1 Navigating in Excel/section-1-navigating-in-excel.docx",
+        "name": "section-1-navigating-in-excel"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 1_ Navigating in Excel.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 1_ Navigating in Excel.html",
+        "name": "Section 1_ Navigating in Excel"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 2 Sheets & Tables/section-2-sheets-and-tables.docx",
+        "relative_path": "Course Content - Word/Module 5/Section 2 Sheets & Tables/section-2-sheets-and-tables.docx",
+        "name": "section-2-sheets-and-tables"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 2_ Sheets & Tables.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 2_ Sheets & Tables.html",
+        "name": "Section 2_ Sheets & Tables"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 3 Images & Links/section-3-images-and-links.docx",
+        "relative_path": "Course Content - Word/Module 5/Section 3 Images & Links/section-3-images-and-links.docx",
+        "name": "section-3-images-and-links"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 3_ Images & Links.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 3_ Images & Links.html",
+        "name": "Section 3_ Images & Links"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 4 Charts/section-4-charts.docx",
+        "relative_path": "Course Content - Word/Module 5/Section 4 Charts/section-4-charts.docx",
+        "name": "section-4-charts"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 4_ Charts.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 4_ Charts.html",
+        "name": "Section 4_ Charts"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 5 Optimizing Workbooks/section-5-optimizing-workbooks.docx",
+        "relative_path": "Course Content - Word/Module 5/Section 5 Optimizing Workbooks/section-5-optimizing-workbooks.docx",
+        "name": "section-5-optimizing-workbooks"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 5_ Optimizing Workbooks.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 5_ Optimizing Workbooks.html",
+        "name": "Section 5_ Optimizing Workbooks"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/section-6-evaluating-accessibility-in-excel.docx",
+        "relative_path": "Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/section-6-evaluating-accessibility-in-excel.docx",
+        "name": "section-6-evaluating-accessibility-in-excel"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 6_ Evaluating Accessibility in Excel.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Section 6_ Evaluating Accessibility in Excel.html",
+        "name": "Section 6_ Evaluating Accessibility in Excel"
+      },
+      "match_type": "exact_normalized"
+    },
+    {
+      "docx": {
+        "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/module-5-accessible-excel.docx",
+        "relative_path": "Course Content - Word/Module 5/module-5-accessible-excel.docx",
+        "name": "module-5-accessible-excel"
+      },
+      "html": {
+        "path": "/Users/a00288946/Projects/canvas_2879/WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Module 5_ Accessible Excel.html",
+        "relative_path": "WINTER 25-26 COURSE UPDATES/7 Module 5_ Accessible Excel/Module 5_ Accessible Excel.html",
+        "name": "Module 5_ Accessible Excel"
+      },
+      "match_type": "exact_normalized"
+    }
+  ],
+  "unmatched_docx": [
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Annotation Options/WebAIM Annotations Options.docx",
+      "relative_path": "Annotation Options/WebAIM Annotations Options.docx",
+      "name": "WebAIM Annotations Options"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Annotation Options/adding-and-editing-hyperlinks.docx",
+      "relative_path": "Annotation Options/adding-and-editing-hyperlinks.docx",
+      "name": "adding-and-editing-hyperlinks"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Course Support/adobe-resources.docx",
+      "relative_path": "Course Content - Word/Course Support/adobe-resources.docx",
+      "name": "adobe-resources"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Course Support/layout-templates.docx",
+      "relative_path": "Course Content - Word/Course Support/layout-templates.docx",
+      "name": "layout-templates"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Course Support/microsoft-resources.docx",
+      "relative_path": "Course Content - Word/Course Support/microsoft-resources.docx",
+      "name": "microsoft-resources"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-1.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-1.docx",
+      "name": "overview-of-document-accessibility-part-1"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-2.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-2.docx",
+      "name": "overview-of-document-accessibility-part-2"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/images-part-1-examples.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-1-examples.docx",
+      "name": "images-part-1-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/images-part-1.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-1.docx",
+      "name": "images-part-1"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/images-part-2-examples.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-2-examples.docx",
+      "name": "images-part-2-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/images-part-2.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-2.docx",
+      "name": "images-part-2"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/images-part-3-example.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-3-example.docx",
+      "name": "images-part-3-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 2 Images/images-part-3.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-3.docx",
+      "name": "images-part-3"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 3 Hyperlinks/adding-and-editing-hyperlinks.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/adding-and-editing-hyperlinks.docx",
+      "name": "adding-and-editing-hyperlinks"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 3 Hyperlinks/optimizing-hyperlinks.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/optimizing-hyperlinks.docx",
+      "name": "optimizing-hyperlinks"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance-examples.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance-examples.docx",
+      "name": "color-reliance-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance.docx",
+      "name": "color-reliance"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1-examples.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1-examples.docx",
+      "name": "contrast-part-1-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1.docx",
+      "name": "contrast-part-1"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-2.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-2.docx",
+      "name": "contrast-part-2"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-english.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-english.docx",
+      "name": "branches-of-the-us-government-english"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-spanish.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-spanish.docx",
+      "name": "branches-of-the-us-government-spanish"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/legible-documents.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/legible-documents.docx",
+      "name": "legible-documents"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/plain-language-spelling-and-grammar.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/plain-language-spelling-and-grammar.docx",
+      "name": "plain-language-spelling-and-grammar"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/readability-example.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/readability-example.docx",
+      "name": "readability-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 1/Section 5 Optimizing Writing/readability.docx",
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/readability.docx",
+      "name": "readability"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings-examples.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings-examples.docx",
+      "name": "creating-headings-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings.docx",
+      "name": "creating-headings"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/importance-of-headings-examples.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/importance-of-headings-examples.docx",
+      "name": "importance-of-headings-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-example.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-example.docx",
+      "name": "modifying-headings-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-no-headings-example.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-no-headings-example.docx",
+      "name": "modifying-headings-no-headings-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings.docx",
+      "name": "modifying-headings"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents-examples.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents-examples.docx",
+      "name": "tables-of-contents-examples"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents.docx",
+      "name": "tables-of-contents"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 1 Headings in Word/the-importance-of-headings.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/the-importance-of-headings.docx",
+      "name": "the-importance-of-headings"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/reading-order-and-principles-of-accessibility.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/reading-order-and-principles-of-accessibility.docx",
+      "name": "reading-order-and-principles-of-accessibility"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/slide-master.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/slide-master.docx",
+      "name": "slide-master"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/themes-and-layouts.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/themes-and-layouts.docx",
+      "name": "themes-and-layouts"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 3 Lists & Columns/columns-example.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/columns-example.docx",
+      "name": "columns-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 3 Lists & Columns/lists-example.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/lists-example.docx",
+      "name": "lists-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 2/Section 4 Tables/tables-example.docx",
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/tables-example.docx",
+      "name": "tables-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility-example.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility-example.docx",
+      "name": "evaluating-accessibility-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility.docx",
+      "name": "evaluating-accessibility"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/filename-and-document-title.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/filename-and-document-title.docx",
+      "name": "filename-and-document-title"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/practicing-evaluation-and-repair.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/practicing-evaluation-and-repair.docx",
+      "name": "practicing-evaluation-and-repair"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-1.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-1.docx",
+      "name": "creating-pdfs-part-1"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-2.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-2.docx",
+      "name": "creating-pdfs-part-2"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 3 Creating PDFs/mac-users-adobes-cloud-service.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/mac-users-adobes-cloud-service.docx",
+      "name": "mac-users-adobes-cloud-service"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/Section 3 Creating PDFs/source-document.docx",
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/source-document.docx",
+      "name": "source-document"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/module-3-practice-repaired.docx",
+      "relative_path": "Course Content - Word/Module 3/module-3-practice-repaired.docx",
+      "name": "module-3-practice-repaired"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 3/module-3-practice.docx",
+      "relative_path": "Course Content - Word/Module 3/module-3-practice.docx",
+      "name": "module-3-practice"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-1.docx",
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-1.docx",
+      "name": "introduction-to-optimizing-pdfs-part-1"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-2.docx",
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-2.docx",
+      "name": "introduction-to-optimizing-pdfs-part-2"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 2 Checking Accessibility/checking-accessibility.docx",
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/checking-accessibility.docx",
+      "name": "checking-accessibility"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 2 Checking Accessibility/tagged-pdf-failed-example.docx",
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/tagged-pdf-failed-example.docx",
+      "name": "tagged-pdf-failed-example"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 3 Reading Order Tool/reading-order-tool.docx",
+      "relative_path": "Course Content - Word/Module 4/Section 3 Reading Order Tool/reading-order-tool.docx",
+      "name": "reading-order-tool"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 4/Section 4 Content Order and Tags Order/content-order-and-tags-order.docx",
+      "relative_path": "Course Content - Word/Module 4/Section 4 Content Order and Tags Order/content-order-and-tags-order.docx",
+      "name": "content-order-and-tags-order"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 1 Navigating in Excel/navigating-in-excel.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 1 Navigating in Excel/navigating-in-excel.docx",
+      "name": "navigating-in-excel"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 2 Sheets & Tables/sheets-and-tables.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 2 Sheets & Tables/sheets-and-tables.docx",
+      "name": "sheets-and-tables"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 3 Images & Links/images-and-links.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 3 Images & Links/images-and-links.docx",
+      "name": "images-and-links"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 4 Charts/Creating-Accessible-Charts-Part-3.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/Creating-Accessible-Charts-Part-3.docx",
+      "name": "Creating-Accessible-Charts-Part-3"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-1.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-1.docx",
+      "name": "creating-accessible-charts-part-1"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-2.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-2.docx",
+      "name": "creating-accessible-charts-part-2"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 5 Optimizing Workbooks/optimizing-workbooks.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 5 Optimizing Workbooks/optimizing-workbooks.docx",
+      "name": "optimizing-workbooks"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/evaluating-accessibility-in-excel.docx",
+      "relative_path": "Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/evaluating-accessibility-in-excel.docx",
+      "name": "evaluating-accessibility-in-excel"
+    },
+    {
+      "path": "/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update/Course Content - Word/home.docx",
+      "relative_path": "Course Content - Word/home.docx",
+      "name": "home"
+    }
+  ],
+  "unmatched_html": []
+}

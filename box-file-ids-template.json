@@ -1,0 +1,611 @@
+{
+  "instructions": [
+    "1. For each .docx file, open it in Box web interface",
+    "2. Copy the file ID from the URL (e.g., https://usu.app.box.com/file/2071047961795)",
+    "3. Enter the file ID in the \"file_id\" field",
+    "4. Optionally add the full Box URL in \"box_url\" field",
+    "5. Save this file as \"box-file-ids.json\""
+  ],
+  "files": [
+    {
+      "relative_path": "Annotation Options/WebAIM Annotations Options.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Annotation Options/adding-and-editing-hyperlinks.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Annotation Options/course.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/adobe-resources.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/course-details.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/course-orientation.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/layout-templates.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/microsoft-resources.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/terms-of-use.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-1.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-2.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/section-1-overview-of-document-accessibility.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-1-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-1.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-2-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-2.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-3-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-3.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/section-2-images.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/adding-and-editing-hyperlinks.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/optimizing-hyperlinks.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/section-3-hyperlinks.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-2.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/section-4-contrast-and-color-reliance.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-english.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-spanish.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/legible-documents.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/plain-language-spelling-and-grammar.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/readability-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/readability.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/section-5-optimizing-writing.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/module-1-document-content.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/importance-of-headings-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-no-headings-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/section-1-headings-in-word.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents-examples.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/the-importance-of-headings.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/reading-order-and-principles-of-accessibility.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/section-2-optimizing-powerpoint-presentations.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/slide-master.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/themes-and-layouts.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/columns-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/columns.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/lists-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/lists.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/section-3-lists-and-columns.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/section-4-tables.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/tables-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/tables.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/module-2-document-structure.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/section-1-evaluating-accessibility.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/filename-and-document-title.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/practicing-evaluation-and-repair.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/section-2-practicing-evaluation-and-repair.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-1.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-2.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/mac-users-adobes-cloud-service.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/section-3-creating-pdfs.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/source-document.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/module-3-evaluating-accessibility-and-creating-pdfs.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/module-3-practice-repaired.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/module-3-practice.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-1.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-2.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/section-1-introduction-to-optimizing-pdfs.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/checking-accessibility.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/section-2-checking-accessibility.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/tagged-pdf-failed-example.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 3 Reading Order Tool/reading-order-tool.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 3 Reading Order Tool/section-3-reading-order-tool.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 4 Content Order and Tags Order/content-order-and-tags-order.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 4 Content Order and Tags Order/section-4-content-order-and-tags-order.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/module-4-optimizing-pdfs-in-acrobat.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 1 Navigating in Excel/navigating-in-excel.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 1 Navigating in Excel/section-1-navigating-in-excel.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 2 Sheets & Tables/section-2-sheets-and-tables.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 2 Sheets & Tables/sheets-and-tables.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 3 Images & Links/images-and-links.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 3 Images & Links/section-3-images-and-links.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/Creating-Accessible-Charts-Part-3.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-1.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-2.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/section-4-charts.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 5 Optimizing Workbooks/optimizing-workbooks.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 5 Optimizing Workbooks/section-5-optimizing-workbooks.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/evaluating-accessibility-in-excel.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/section-6-evaluating-accessibility-in-excel.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/module-5-accessible-excel.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/home.docx",
+      "file_id": null,
+      "box_url": null,
+      "notes": ""
+    }
+  ]
+}

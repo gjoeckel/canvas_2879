@@ -10,38 +10,38 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background-color: #f5f5f5;
         }
-        
+
         .header {
             background-color: #fff;
             border-bottom: 1px solid #e1e4e8;
             padding: 15px 20px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        
+
         .header h1 {
             font-size: 1.5em;
             color: #24292e;
             margin-bottom: 10px;
         }
-        
+
         .header p {
             color: #586069;
             font-size: 0.9em;
             margin-bottom: 10px;
         }
-        
+
         .controls {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             align-items: center;
         }
-        
+
         .btn {
             padding: 8px 16px;
             background-color: #0366d6;
@@ -53,19 +53,19 @@
             text-decoration: none;
             display: inline-block;
         }
-        
+
         .btn:hover {
             background-color: #0256cc;
         }
-        
+
         .btn-secondary {
             background-color: #6a737d;
         }
-        
+
         .btn-secondary:hover {
             background-color: #5a6268;
         }
-        
+
         .info-box {
             background-color: #fff3cd;
             border: 1px solid #ffc107;
@@ -74,23 +74,23 @@
             margin: 10px 0;
             font-size: 0.9em;
         }
-        
+
         .info-box strong {
             color: #856404;
         }
-        
+
         iframe {
             width: 100%;
             height: calc(100vh - 200px);
             border: none;
             background-color: white;
         }
-        
+
         .iframe-container {
             position: relative;
             width: 100%;
         }
-        
+
         .loading {
             position: absolute;
             top: 50%;
@@ -105,9 +105,9 @@
     <div class="header">
         <h1>Module 1: Document Content</h1>
         <p>Canvas page embedded below. Use the button to hide Canvas UI elements and show only content.</p>
-        
+
         <div class="info-box">
-            <strong>Note:</strong> Due to browser security (cross-origin restrictions), CSS cannot be automatically injected into the Canvas iframe. 
+            <strong>Note:</strong> Due to browser security (cross-origin restrictions), CSS cannot be automatically injected into the Canvas iframe.
             Please use one of these methods:
             <ol style="margin: 8px 0 0 20px; padding-left: 0;">
                 <li><strong>Browser Extension:</strong> Install <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne" target="_blank">Stylus</a> and apply the CSS from <code>hide-canvas-ui.css</code></li>
@@ -115,25 +115,25 @@
                 <li><strong>Developer Console:</strong> Open the iframe, press F12, go to Console, and paste the code from the instructions.</li>
             </ol>
         </div>
-        
+
         <div class="controls">
             <a href="https://usucourses.instructure.com/courses/2879/modules/items/121441" target="_blank" class="btn">Open Canvas Page in New Tab</a>
             <button class="btn btn-secondary" onclick="copyBookmarklet()">Copy Bookmarklet Code</button>
             <button class="btn btn-secondary" onclick="showInstructions()">Show Instructions</button>
         </div>
     </div>
-    
+
     <div class="iframe-container">
         <div class="loading">Loading Canvas page...</div>
-        <iframe 
-            id="canvas-iframe" 
+        <iframe
+            id="canvas-iframe"
             src="https://usucourses.instructure.com/courses/2879/modules/items/121441"
             title="Module 1: Document Content - Canvas Page"
             allow="fullscreen"
             onload="hideLoading()">
         </iframe>
     </div>
-    
+
     <script>
         function hideLoading() {
             const loading = document.querySelector('.loading');
@@ -141,10 +141,10 @@
                 loading.style.display = 'none';
             }
         }
-        
+
         function copyBookmarklet() {
             const bookmarklet = `javascript:(function(){if(document.getElementById('hide-canvas-ui-styles')){alert('Canvas UI hide CSS is already active!');return;}const style=document.createElement('style');style.id='hide-canvas-ui-styles';style.textContent='header#header,header#mobile-header,#mobileContextNavContainer{display:none!important}.ic-app-nav-toggle-and-crumbs,#breadcrumbs,.ic-app-crumbs,#courseMenuToggle,button#courseMenuToggle{display:none!important}#left-side,.ic-app-course-menu,#sticky-container{display:none!important}#right-side-wrapper,#right-side{display:none!important}#easy_student_view,.mobile-header-student-view,#mobile-student-view,.mobile-header-hamburger,.mobile-header-title,.mobile-header-space,.mobile-header-arrow{display:none!important}#nutrition_facts_container,#nutrition_facts_mobile_container{display:none!important}.ic-app-header__main-navigation,.ic-app-header__secondary-navigation,.ic-app-header__logomark-container,#global_nav_tray_container,#global_nav_tour{display:none!important}#flash_message_holder,#flash_screenreader_holder,#skip_navigation_link,#aria_alerts{display:none!important}footer,#footer,iframe#post_message_forwarding,#StudentTray__Container,#react-router-portals,#instructure_ajax_error_box,.ic-Layout-watermark{display:none!important}#wrapper.ic-Layout-wrapper{margin-left:0!important;padding-left:0!important}#main.ic-Layout-columns{margin-left:0!important;padding-left:0!important}#content-wrapper{margin-left:0!important;padding-left:0!important}#content.ic-Layout-contentMain{margin-left:0!important;padding-left:20px!important;padding-right:20px!important;max-width:100%!important;width:100%!important}#wiki_page_show,#content{display:block!important;width:100%!important;max-width:1200px!important;margin:0 auto!important;padding:20px!important}.user_content{padding:20px!important}.right-of-crumbs{display:none!important}';document.head.appendChild(style);alert('Canvas UI hidden! Only page content is now visible.');})();`;
-            
+
             navigator.clipboard.writeText(bookmarklet).then(() => {
                 alert('Bookmarklet code copied! Create a bookmark and paste this as the URL, or use it in the browser console on a Canvas page.');
             }).catch(() => {
@@ -160,7 +160,7 @@
                 alert('Bookmarklet code copied! Create a bookmark and paste this as the URL.');
             });
         }
-        
+
         function showInstructions() {
             alert('Instructions:\n\n1. Install Stylus browser extension\n2. Create a new style for usucourses.instructure.com\n3. Copy CSS from hide-canvas-ui.css file\n4. Or use the bookmarklet code (click "Copy Bookmarklet Code" button)\n\nSee CANVAS-UI-HIDE-INSTRUCTIONS.md for full details.');
         }

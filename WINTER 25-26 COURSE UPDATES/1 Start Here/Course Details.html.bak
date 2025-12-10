@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="../../canvas_global_app.css">
+    <link rel="stylesheet" href="../../canvas-custom-overrides.css">
+</head>
+<body>
+    <div class="content">
+        
+        
+        <link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016014/canvas_global_app.css"><div>
+<h2>Course Dates</h2>
+</div>
+<div>
+<ul>
+<li><strong>Module 1</strong>
+<ul>
+<li><span style="color: #336600;"><strong><em> <span style="font-size: 1.5em;">Opens: Month X</span></em></strong></span></li>
+</ul>
+</li>
+<li><strong>Module 2</strong>
+<ul>
+<li><em>Opens:</em> Month X</li>
+</ul>
+</li>
+<li><strong>Module 3</strong>
+<ul>
+<li><em>Opens:</em> Month X</li>
+</ul>
+</li>
+<li><strong>Module 4</strong>
+<ul>
+<li><em>Opens:</em> Month X</li>
+</ul>
+</li>
+<li><strong>Module 5 (bonus module)</strong>
+<ul>
+<li><em>Opens:</em> Month X</li>
+</ul>
+</li>
+<li><strong>Closing Date</strong>
+<ul>
+<li id="closingDate"><span style="color: #cc0000;"><em><strong> <span style="font-size: 1.5em;">Closes: Month X @ 11:59 p.m.</span></strong></em></span></li>
+</ul>
+</li>
+</ul>
+</div>
+<div>
+<h2>Course Design</h2>
+</div>
+<div>
+<h3>Time-Released Modules</h3>
+<p>This course consists of four Modules (and one bonus Module), <strong>delivered one Module at a time</strong>, for five consecutive weeks. There are between <strong>two (2)</strong> and&nbsp;<strong>four (4)</strong>&nbsp;<strong>hours</strong> of course activities each week. Some participants will be able to finish each week's course activities in less time than this, while others will require more time. Participants are encouraged to complete each Module's Quizzes and Exam by the end of the week to stay on track. Once a Module is opened, you will continue to have access to it until the Closing Date, <strong>sixty (60) days </strong>after the first Module opens, excluding weekends and U.S. public holidays.</p>
+</div>
+<div>
+<h3>Independent Study</h3>
+<p>This independent-study course is designed for an adult learner. Each participant must have the ability to:</p>
+<ul>
+<li>Read and follow written and verbal instructions.</li>
+<li>Manage her or his time in order to complete the course within the allotted time.</li>
+<li>Proactively communicate with the facilitator any issues that will impact his or her ability to complete the course.</li>
+</ul>
+</div>
+<div>
+<h2>Software Requirements</h2>
+<p>All software should be updated to the most current version available.</p>
+<h3>Operating Systems</h3>
+<p><span>Canvas LMS requires an operating system that can run the latest compatible web browsers. Your computer operating system should be kept up to date with the latest recommended security updates and upgrades.</span></p>
+<h3>Browser</h3>
+<p>Canvas Catalog supports the following browsers/versions:</p>
+<ul>
+<li><a class="jive-link-external-small external" href="https://www.google.com/intl/en/chrome/browser/" target="_blank"><span>Chrome</span><span class="external_link_icon" role="presentation"><span class="screenreader-only">Links to an external site.</span></span></a><span>&nbsp;</span>141 and 142</li>
+<li><a class="jive-link-external-small external" href="https://www.mozilla.org/en-US/firefox/products/" target="_blank"><span>Firefox</span><span class="external_link_icon" role="presentation"><span class="screenreader-only">Links to an external site.</span></span></a>&nbsp;144 and 145 (<a class="jive-link-external-small external" href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-esr" target="_blank"><span>Extended Releases</span><span class="external_link_icon" role="presentation"><span class="screenreader-only">Links to an external site.</span></span></a><span>&nbsp;</span>are not supported)</li>
+<li><a class="inline_disabled external" href="https://www.microsoft.com/en-us/edge/" target="_blank"><span>Edge</span><span class="external_link_icon" role="presentation"><span class="screenreader-only">Links to an external site.</span></span></a><span>&nbsp;</span>141 and 142</li>
+<li><a class="inline_disabled external" href="https://web.respondus.com/he/lockdownbrowser/" target="_blank"><span>Respondus&nbsp;LockDown Browser</span><span class="external_link_icon" role="presentation"><span class="screenreader-only">Links to an external site.</span></span></a></li>
+<li><a class="jive-link-external-small external" href="https://support.apple.com/en-us/HT204416" target="_blank"><span>Safari</span><span class="external_link_icon" role="presentation"><span class="screenreader-only">Links to an external site.</span></span></a><strong>&nbsp;</strong>18 and 26<span>&nbsp;</span><em>(Macintosh only</em>)</li>
+</ul>
+<p><strong>Please note:</strong><span>&nbsp;</span>Canvas Catalog<span>&nbsp;</span><strong>does not</strong><span>&nbsp;</span>support Microsoft Explorer.</p>
+<h3>Applications</h3>
+<p>This course <strong>requires</strong> the following applications/versions:</p>
+<ul>
+<li><a class="inline_disabled" href="https://www.microsoft.com/en-us/microsoft-365" target="_blank">Microsoft Office 365</a>
+<ul>
+<li>Word and PowerPoint</li>
+<li>Excel*</li>
+</ul>
+</li>
+<li><a class="inline_disabled" href="https://www.adobe.com/acrobat/acrobat-pro.html" target="_blank">Adobe Acrobat Pro</a></li>
+</ul>
+<p>* Required to complete the optional Module 5.</p>
+</div>
+<div>
+<h2 id="courseResources">Course Resources</h2>
+<p>There are four types of Course Resources:</p>
+<ul>
+<li><a href="#canvasSupport">Canvas Support</a></li>
+<li><a href="#terms">Terms</a></li>
+<li><a href="#softwareDocumentation">Software Developer Resources</a></li>
+<li><a href="#wcag2">Web Content Accessibility Guidelines (WCAG 2)</a></li>
+</ul>
+<h3 id="canvasSupport">Canvas Support</h3>
+<p>Technical support for this course is provided by the Instructure, the developer of Canvas Catalog through:</p>
+<ul>
+<li><a href="https://community.canvaslms.com/community/answers/guides/" target="_blank">Canvas Guides</a>: Find answers to common questions.</li>
+<li><a href="https://cases.canvaslms.com/liveagentchat?chattype=admin" target="_blank">Chat with Canvas Support</a>: Live chat with Canvas Support!</li>
+<li>Canvas Support Hotline: +1-833-713-1203</li>
+</ul>
+<h3 id="terms">Terms</h3>
+<p>Here are some high-level terms that will be used throughout the course. <em>These terms are narrowed <strong>to the scope of this course</strong>, and&nbsp;may not apply to other contexts.</em></p>
+<ul>
+<li><strong>assistive technology:</strong>&nbsp;hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents.</li>
+<li><strong>document: </strong>a&nbsp;Word&nbsp;or&nbsp;PowerPoint file,&nbsp;or a&nbsp;PDF&nbsp;created from a&nbsp;Word&nbsp;or&nbsp;PowerPoint file.</li>
+<li><strong>image:</strong> a generic term for all types of non-text content (pictures, graphics, charts, etc.).</li>
+<li><strong>operating system</strong>:&nbsp;software that manages computer hardware and software resources and provides common services for computer programs (Windows or Mac for this course).</li>
+<li><a href="https://en.wikipedia.org/wiki/PDF" target="_blank"><strong>PDF (Portable Document Format)</strong></a>:&nbsp;a file format used to present and exchange documents reliably, independent of software, hardware, or operating system.</li>
+<li><a href="https://helpx.adobe.com/acrobat/using/creating-pdfs-pdfmaker-windows.html" target="_blank"><strong>PDFMaker</strong></a>: a plug-in for creating PDFs that is automatically installed into Word and PowerPoint by Adobe Acrobat Professional.</li>
+<li><strong>screen reading software (screen reader):</strong> a software application that converts digital information into synthesized speech.</li>
+<li><strong>screenshot</strong>: a digital image captured from a computer monitor.</li>
+<li><strong>source (native) document</strong>: a&nbsp;Microsoft file in one of two&nbsp; proprietary formats: .docx for Word, and .pptx for PowerPoint.</li>
+<li><strong>structure</strong>: information in a document that is used by assistive technologies to present&nbsp;content correctly and/or give users the ability to customize the presentation.</li>
+<li><strong>user interface</strong>:&nbsp;the&nbsp;visual and&nbsp;programming elements that allow a&nbsp;user to interact with&nbsp;software running on a computer system.</li>
+</ul>
+<h3 id="softwareDocumentation">Software Developer Resources</h3>
+<p>You&nbsp;may find it helpful to review some of the resources&nbsp;for creating accessible documents that&nbsp;Microsoft and Adobe&nbsp;have developed. The following pages provide links to&nbsp;webpages and videos related to topics that are covered in this course, organized by operating system:</p>
+<ul>
+<li><a title="Microsoft Resources" href="https://usucourses.instructure.com/courses/2879/pages/microsoft-resources" target="_blank" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/microsoft-resources" data-api-returntype="Page">Microsoft Resources</a></li>
+<li><a title="Adobe Resources" href="https://usucourses.instructure.com/courses/2879/pages/adobe-resources" target="_blank" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/adobe-resources" data-api-returntype="Page">Adobe Resources</a></li>
+</ul>
+<h3 id="wcag2">WCAG 2</h3>
+<p>WCAG 2 is the de facto "standard" for procurement requirements, discrimination complaints, and accessibility lawsuits. These guidelines are an important tool for measuring and understanding the accessibility of electronic documents.</p>
+<p>The W3C <a class="inline_disabled" href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">Web Content Accessibility Guidelines</a> (WCAG 2) are organized into four Principles:</p>
+<ul>
+<li><strong>Perceivable</strong>&nbsp;- Information and user interface components must be presentable to users in ways they can perceive.</li>
+<li><strong>Operable</strong>&nbsp;- User interface components and navigation must be operable.</li>
+<li><strong>Understandable</strong> - Information and the operation of user interface must be understood by all users.</li>
+<li><strong>Robust:</strong>&nbsp;- Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</li>
+</ul>
+<p>There are 13 Guidelines that are organized under these four Principles. In Section 1 of Module 1, in the Overview of Document Accessibility: Part 2 video you will learn about tests called Success Criteria.</p>
+</div>
+<div class=" bottomSpace">
+<h2 id="certificate">Certificate of Completion</h2>
+<p>Participants that meet the following criteria will earn a <strong>Certificate of Completion</strong>:</p>
+<ul>
+<li>All Section Quiz scores are 100%.</li>
+<li>All Module Exam scores are 80% or higher.</li>
+</ul>
+<h3>Earned Certificates</h3>
+<p>After the first four weeks of the course, participants that have earned a certificate will see the Grades item <a title="Certificate of Completion Status" href="https://usucourses.instructure.com/courses/2879/assignments/56920" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/assignments/56920" data-api-returntype="Assignment">Certificate of Completion Status</a> assignment marked as "Earned." This status will be updated weekly.</p>
+<h3 id="issue-dates">Issue Dates for Requested Certificates</h3>
+<p>Earned certificates will be issued on two dates:</p>
+<ul>
+<li>Month X</li>
+<li>Month Y</li>
+</ul>
+<p>Certificates will&nbsp;<strong>NOT</strong> be issued between Month X + 1 and Month Y - 1, or after Month Y + 1.</p>
+</div><script src="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016015/canvas_global_app.js"></script>
+        
+        
+        <div class="original-link">
+            <p><a href="https://usucourses.instructure.com/courses/2879/modules/items/121438" target="_blank">View original page on Canvas</a></p>
+        </div>
+    </div>
+</body>
+</html>

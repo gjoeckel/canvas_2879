@@ -15,11 +15,11 @@ Extract tracked changes directly from the DOCX file's internal XML structure by 
    ```python
    import requests
    from boxsdk import Client, OAuth2
-   
+
    # Authenticate with Box
    oauth = OAuth2(client_id, client_secret, access_token)
    client = Client(oauth)
-   
+
    # Download file
    file_content = client.file(file_id).content()
    ```
@@ -28,16 +28,16 @@ Extract tracked changes directly from the DOCX file's internal XML structure by 
    ```python
    import zipfile
    from xml.etree import ElementTree as ET
-   
+
    # DOCX is a ZIP file
    with zipfile.ZipFile(io.BytesIO(file_content)) as docx:
        # Extract main document XML
        document_xml = docx.read('word/document.xml')
        root = ET.fromstring(document_xml)
-       
+
        # Find all tracked changes
        namespaces = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
-       
+
        # Find insertions (w:ins)
        insertions = root.findall('.//w:ins', namespaces)
        # Find deletions (w:del)
@@ -50,7 +50,7 @@ Extract tracked changes directly from the DOCX file's internal XML structure by 
        """Extract text from a revision element (insertion or deletion)."""
        text_elements = revision_element.findall('.//w:t', namespaces)
        return ' '.join([elem.text for elem in text_elements if elem.text])
-   
+
    # Process each revision
    for ins in insertions:
        author = ins.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author')
@@ -87,7 +87,7 @@ Use the `python-docx` library with custom extensions or additional libraries to 
    ```python
    import requests
    from boxsdk import Client, OAuth2
-   
+
    oauth = OAuth2(client_id, client_secret, access_token)
    client = Client(oauth)
    file_content = client.file(file_id).content()
@@ -99,19 +99,19 @@ Use the `python-docx` library with custom extensions or additional libraries to 
    from docx.oxml import parse_xml
    from docx.oxml.ns import qn
    import io
-   
+
    # Load document
    doc = Document(io.BytesIO(file_content))
-   
+
    # Access underlying XML
    document_part = doc.part
    document_xml = document_part.blob
-   
+
    # Parse XML for revisions
    from xml.etree import ElementTree as ET
    root = ET.fromstring(document_xml)
    namespaces = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
-   
+
    # Find tracked changes
    revisions = []
    for paragraph in doc.paragraphs:
@@ -119,7 +119,7 @@ Use the `python-docx` library with custom extensions or additional libraries to 
        p_xml = paragraph._element
        ins_elements = p_xml.findall('.//w:ins', namespaces)
        del_elements = p_xml.findall('.//w:del', namespaces)
-       
+
        for ins in ins_elements:
            text = ''.join([t.text for t in ins.findall('.//w:t', namespaces) if t.text])
            revisions.append({
@@ -134,10 +134,10 @@ Use the `python-docx` library with custom extensions or additional libraries to 
    ```python
    # If available, use specialized library
    from docx_revisions import Document
-   
+
    doc = Document(io.BytesIO(file_content))
    revisions = doc.get_revisions()
-   
+
    for revision in revisions:
        print(f"{revision.type}: {revision.text} by {revision.author}")
    ```
@@ -169,15 +169,15 @@ Compare different versions of the DOCX file stored in Box to identify changes, t
 1. **Get File Version History from Box API**
    ```python
    import requests
-   
+
    BOX_API_BASE = 'https://api.box.com/2.0'
    headers = {'Authorization': f'Bearer {access_token}'}
-   
+
    # Get file versions
    versions_url = f'{BOX_API_BASE}/files/{file_id}/versions'
    response = requests.get(versions_url, headers=headers)
    versions = response.json()['entries']
-   
+
    # Get current and previous version
    current_version = versions[0]
    previous_version = versions[1] if len(versions) > 1 else None
@@ -191,7 +191,7 @@ Compare different versions of the DOCX file stored in Box to identify changes, t
        headers=headers
    )
    current_content = current_download.content
-   
+
    # Download previous version
    if previous_version:
        prev_download = requests.get(
@@ -206,7 +206,7 @@ Compare different versions of the DOCX file stored in Box to identify changes, t
    from docx import Document
    import difflib
    import io
-   
+
    def extract_text(docx_content):
        """Extract all text from DOCX."""
        doc = Document(io.BytesIO(docx_content))
@@ -214,18 +214,18 @@ Compare different versions of the DOCX file stored in Box to identify changes, t
        for paragraph in doc.paragraphs:
            text.append(paragraph.text)
        return '\n'.join(text)
-   
+
    # Extract text from both versions
    current_text = extract_text(current_content)
    previous_text = extract_text(previous_content) if previous_content else ''
-   
+
    # Use difflib to find differences
    diff = difflib.unified_diff(
        previous_text.splitlines(keepends=True),
        current_text.splitlines(keepends=True),
        lineterm=''
    )
-   
+
    # Process differences
    changes = []
    for line in diff:
@@ -273,13 +273,13 @@ Compare different versions of the DOCX file stored in Box to identify changes, t
 ```python
 def identify_changes(file_id, access_token):
     """Identify tracked changes in a DOCX file on Box."""
-    
+
     # Try Method 1: Extract tracked changes directly
     tracked_changes = extract_tracked_changes_from_docx(file_id, access_token)
-    
+
     if tracked_changes:
         return tracked_changes
-    
+
     # Fallback to Method 3: Version comparison
     return compare_file_versions(file_id, access_token)
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Canvas UI Hide - Module 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .test-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-info">
+        <h1>Canvas UI Hide Test - Module 1</h1>
+        <p>This page loads the Canvas Module 1 page with CSS that hides all UI elements.</p>
+        <p><strong>Canvas URL:</strong> <a href="https://usucourses.instructure.com/courses/2879/modules/items/121441" target="_blank">https://usucourses.instructure.com/courses/2879/modules/items/121441</a></p>
+    </div>
+
+    <iframe
+        id="canvas-frame"
+        src="https://usucourses.instructure.com/courses/2879/modules/items/121441"
+        title="Canvas Module 1 Page">
+    </iframe>
+
+    <script>
+        // Inject CSS into the iframe after it loads
+        document.getElementById('canvas-frame').addEventListener('load', function() {
+            try {
+                const iframe = this;
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+                // Create a link element to load the CSS
+                const link = iframeDoc.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = '/hide-canvas-ui.css'; // Relative path - adjust as needed
+                link.type = 'text/css';
+
+                iframeDoc.head.appendChild(link);
+
+                console.log('CSS injected into iframe');
+            } catch (e) {
+                console.error('Could not inject CSS (cross-origin restriction):', e);
+                alert('Note: Due to cross-origin restrictions, CSS cannot be injected directly. You will need to use a browser extension or inject the CSS manually.');
+            }
+        });
+    </script>
+</body>
+</html>
+

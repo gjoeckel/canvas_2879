@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 4: Charts</title>
+    <link rel="stylesheet" href="../../canvas_global_app.css">
+    <link rel="stylesheet" href="../../canvas-custom-overrides.css">
+</head>
+<body>
+    <div class="content">
+        
+        
+        <link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016014/canvas_global_app.css"><div>
+    <p><a class="Button" title="Module 5: Accessible Excel" href="https://usucourses.instructure.com/courses/2879/pages/module-5-accessible-excel" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/module-5-accessible-excel" data-api-returntype="Page">Return to Module 5</a></p>
+</div>
+<div>
+    <h2>Objectives</h2>
+    <ul>
+        <li><strong>State</strong> four keys for accessible charts.</li>
+        <li><strong>Identify</strong> two methods for providing access to a chart's data in text format.</li>
+        <li><strong>Describe</strong> one method for increasing a chart's whitespace.</li>
+        <li><strong>State</strong> two recommendations for labeling a chart's data elements.</li>
+        <li><strong>Describe</strong> the process for adding an <em>Alt Text</em> value to a <em>Chart Area</em>.</li>
+        <li><strong>Identify</strong> the process for pasting an Excel chart into Word and PowerPoint.</li>
+        <li><strong>Identify</strong> the processes for pasting an Excel data table into Word or PowerPoint.</li>
+    </ul>
+</div>
+<div>
+    <h2>Learning Activities</h2>
+    <ul>
+        <li><a title="Creating Accessible Charts: Part 1" href="https://usucourses.instructure.com/courses/2879/pages/creating-accessible-charts-part-1" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/creating-accessible-charts-part-1" data-api-returntype="Page"><strong>Creating Accessible Charts: Part 1</strong> | Video (10:12) | Example | Guide</a></li>
+        <li><a title="Creating Accessible Charts: Part 2" href="https://usucourses.instructure.com/courses/2879/pages/creating-accessible-charts-part-2" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/creating-accessible-charts-part-2" data-api-returntype="Page"><strong>Creating Accessible Charts: Part 2</strong> | Video (7:52) | Example | Guide</a></li>
+        <li><a title="Creating Accessible Charts: Part 3" href="https://usucourses.instructure.com/courses/2879/pages/creating-accessible-charts-part-3" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/creating-accessible-charts-part-3" data-api-returntype="Page"><strong>Creating Accessible Charts: Part 3</strong> | Video (10:00) | Examples | Guide</a></li>
+    </ul>
+</div>
+<div>
+    <h2>Resource Links</h2>
+    <ul>
+        <li><a href="https://usucourses.instructure.com/courses/2879/pages/microsoft-resources#charts" target="_blank" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/microsoft-resources%23charts" data-api-returntype="Page">Microsoft Resources</a>
+            <ul>
+                <li>Available chart types in Office
+                    <ul>
+                        <li><a href="https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90#OfficeVersion=Windows" target="_blank">Windows</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90#OfficeVersion=macOS" target="_blank">Mac</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Create a chart from start to finish
+            <ul>
+                <li style="list-style-type: none;">
+                    <ul>
+                        <li><a href="https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2#OfficeVersion=Windows" target="_blank">Windows</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2#OfficeVersion=macOS" target="_blank">Mac</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html#pie-charts" target="_blank">Understanding Success Criterion 1.4.11: Non-text Contrast | Pie Charts</a></li>
+    </ul>
+    <h2>Quiz</h2>
+    <ul>
+        <li>Please review all&nbsp;<strong>Section 4 Objectives</strong>&nbsp;before starting the Quiz.</li>
+        <li>You are free to use any resources that you have developed in the&nbsp;<strong>"open notes"</strong>&nbsp;Quiz.</li>
+        <li>You have <strong>forty-two&nbsp;(42) minutes</strong> to complete <strong>seven</strong> <strong>(7)</strong> multiple-choice questions in the&nbsp;<strong>timed</strong>&nbsp;Quiz.</li>
+        <li>You have&nbsp;<strong>unlimited opportunities</strong>&nbsp;to&nbsp;retake this&nbsp;Quiz.</li>
+    </ul>
+</div><script src="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016015/canvas_global_app.js"></script>
+        
+        
+        <div class="original-link">
+            <p><a href="https://usucourses.instructure.com/courses/2879/modules/items/121489" target="_blank">View original page on Canvas</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,604 @@
+{
+  "files": [
+    {
+      "relative_path": "Annotation Options/WebAIM Annotations Options.docx",
+      "file_id": "2066375355713",
+      "box_url": "https://usu.app.box.com/file/2066375355713",
+      "notes": ""
+    },
+    {
+      "relative_path": "Annotation Options/adding-and-editing-hyperlinks.docx",
+      "file_id": "2071059956736",
+      "box_url": "https://usu.app.box.com/file/2071059956736",
+      "notes": ""
+    },
+    {
+      "relative_path": "Annotation Options/course.docx",
+      "file_id": "2066348459620",
+      "box_url": "https://usu.app.box.com/file/2066348459620",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/adobe-resources.docx",
+      "file_id": "2071058389893",
+      "box_url": "https://usu.app.box.com/file/2071058389893",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/course-details.docx",
+      "file_id": "2071048844794",
+      "box_url": "https://usu.app.box.com/file/2071048844794",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/course-orientation.docx",
+      "file_id": "2071049022878",
+      "box_url": "https://usu.app.box.com/file/2071049022878",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/layout-templates.docx",
+      "file_id": "2071052703904",
+      "box_url": "https://usu.app.box.com/file/2071052703904",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/microsoft-resources.docx",
+      "file_id": "2071059789515",
+      "box_url": "https://usu.app.box.com/file/2071059789515",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Course Support/terms-of-use.docx",
+      "file_id": "2071046889406",
+      "box_url": "https://usu.app.box.com/file/2071046889406",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-1.docx",
+      "file_id": "2071047997212",
+      "box_url": "https://usu.app.box.com/file/2071047997212",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/overview-of-document-accessibility-part-2.docx",
+      "file_id": "2071060528255",
+      "box_url": "https://usu.app.box.com/file/2071060528255",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 1 Overview of Document Accessibility/section-1-overview-of-document-accessibility.docx",
+      "file_id": "2071047961795",
+      "box_url": "https://usu.app.box.com/file/2071047961795",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-1-examples.docx",
+      "file_id": "2071047651774",
+      "box_url": "https://usu.app.box.com/file/2071047651774",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-1.docx",
+      "file_id": "2071049722936",
+      "box_url": "https://usu.app.box.com/file/2071049722936",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-2-examples.docx",
+      "file_id": "2071058247752",
+      "box_url": "https://usu.app.box.com/file/2071058247752",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-2.docx",
+      "file_id": "2071055406741",
+      "box_url": "https://usu.app.box.com/file/2071055406741",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-3-example.docx",
+      "file_id": "2071058238893",
+      "box_url": "https://usu.app.box.com/file/2071058238893",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/images-part-3.docx",
+      "file_id": "2071058293739",
+      "box_url": "https://usu.app.box.com/file/2071058293739",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 2 Images/section-2-images.docx",
+      "file_id": "2071051707711",
+      "box_url": "https://usu.app.box.com/file/2071051707711",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/adding-and-editing-hyperlinks.docx",
+      "file_id": "2071059956736",
+      "box_url": "https://usu.app.box.com/file/2071059956736",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/optimizing-hyperlinks.docx",
+      "file_id": "2071057940942",
+      "box_url": "https://usu.app.box.com/file/2071057940942",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 3 Hyperlinks/section-3-hyperlinks.docx",
+      "file_id": "2071056078296",
+      "box_url": "https://usu.app.box.com/file/2071056078296",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance-examples.docx",
+      "file_id": "2071047337984",
+      "box_url": "https://usu.app.box.com/file/2071047337984",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/color-reliance.docx",
+      "file_id": "2071059095632",
+      "box_url": "https://usu.app.box.com/file/2071059095632",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1-examples.docx",
+      "file_id": "2071052946786",
+      "box_url": "https://usu.app.box.com/file/2071052946786",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-1.docx",
+      "file_id": "2071058307624",
+      "box_url": "https://usu.app.box.com/file/2071058307624",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/contrast-part-2.docx",
+      "file_id": "2071050450474",
+      "box_url": "https://usu.app.box.com/file/2071050450474",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 4 Contrast & Color Reliance/section-4-contrast-and-color-reliance.docx",
+      "file_id": "2071053356901",
+      "box_url": "https://usu.app.box.com/file/2071053356901",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-english.docx",
+      "file_id": "2071056894198",
+      "box_url": "https://usu.app.box.com/file/2071056894198",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/branches-of-the-us-government-spanish.docx",
+      "file_id": "2071058521889",
+      "box_url": "https://usu.app.box.com/file/2071058521889",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/legible-documents.docx",
+      "file_id": "2071057852137",
+      "box_url": "https://usu.app.box.com/file/2071057852137",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/plain-language-spelling-and-grammar.docx",
+      "file_id": "2071055870233",
+      "box_url": "https://usu.app.box.com/file/2071055870233",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/readability-example.docx",
+      "file_id": "2071059244433",
+      "box_url": "https://usu.app.box.com/file/2071059244433",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/readability.docx",
+      "file_id": "2071060583287",
+      "box_url": "https://usu.app.box.com/file/2071060583287",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/Section 5 Optimizing Writing/section-5-optimizing-writing.docx",
+      "file_id": "2071060463328",
+      "box_url": "https://usu.app.box.com/file/2071060463328",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 1/module-1-document-content.docx",
+      "file_id": "2071059544418",
+      "box_url": "https://usu.app.box.com/file/2071059544418",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings-examples.docx",
+      "file_id": "2071053592226",
+      "box_url": "https://usu.app.box.com/file/2071053592226",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/creating-headings.docx",
+      "file_id": "2071049301083",
+      "box_url": "https://usu.app.box.com/file/2071049301083",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/importance-of-headings-examples.docx",
+      "file_id": "2071049344283",
+      "box_url": "https://usu.app.box.com/file/2071049344283",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-example.docx",
+      "file_id": "2071054773431",
+      "box_url": "https://usu.app.box.com/file/2071054773431",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings-no-headings-example.docx",
+      "file_id": "2071058690023",
+      "box_url": "https://usu.app.box.com/file/2071058690023",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/modifying-headings.docx",
+      "file_id": "2071057350242",
+      "box_url": "https://usu.app.box.com/file/2071057350242",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/section-1-headings-in-word.docx",
+      "file_id": "2071053143414",
+      "box_url": "https://usu.app.box.com/file/2071053143414",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents-examples.docx",
+      "file_id": "2071054459018",
+      "box_url": "https://usu.app.box.com/file/2071054459018",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/tables-of-contents.docx",
+      "file_id": "2071051542922",
+      "box_url": "https://usu.app.box.com/file/2071051542922",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 1 Headings in Word/the-importance-of-headings.docx",
+      "file_id": "2071053930144",
+      "box_url": "https://usu.app.box.com/file/2071053930144",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/reading-order-and-principles-of-accessibility.docx",
+      "file_id": "2071059806018",
+      "box_url": "https://usu.app.box.com/file/2071059806018",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/section-2-optimizing-powerpoint-presentations.docx",
+      "file_id": "2071049300940",
+      "box_url": "https://usu.app.box.com/file/2071049300940",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/slide-master.docx",
+      "file_id": "2071053872558",
+      "box_url": "https://usu.app.box.com/file/2071053872558",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 2 Optimizing PowerPoint Presentations/themes-and-layouts.docx",
+      "file_id": "2071049116198",
+      "box_url": "https://usu.app.box.com/file/2071049116198",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/columns-example.docx",
+      "file_id": "2071047918151",
+      "box_url": "https://usu.app.box.com/file/2071047918151",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/columns.docx",
+      "file_id": "2071060732439",
+      "box_url": "https://usu.app.box.com/file/2071060732439",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/lists-example.docx",
+      "file_id": "2071057602523",
+      "box_url": "https://usu.app.box.com/file/2071057602523",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/lists.docx",
+      "file_id": "2071060682150",
+      "box_url": "https://usu.app.box.com/file/2071060682150",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 3 Lists & Columns/section-3-lists-and-columns.docx",
+      "file_id": "2071058502459",
+      "box_url": "https://usu.app.box.com/file/2071058502459",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/section-4-tables.docx",
+      "file_id": "2071060727363",
+      "box_url": "https://usu.app.box.com/file/2071060727363",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/tables-example.docx",
+      "file_id": "2071054858984",
+      "box_url": "https://usu.app.box.com/file/2071054858984",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/Section 4 Tables/tables.docx",
+      "file_id": "2071058178466",
+      "box_url": "https://usu.app.box.com/file/2071058178466",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 2/module-2-document-structure.docx",
+      "file_id": "2071046620417",
+      "box_url": "https://usu.app.box.com/file/2071046620417",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility-example.docx",
+      "file_id": "2071053230221",
+      "box_url": "https://usu.app.box.com/file/2071053230221",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/evaluating-accessibility.docx",
+      "file_id": "2071060624163",
+      "box_url": "https://usu.app.box.com/file/2071060624163",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 1 Evaluating Accessibility/section-1-evaluating-accessibility.docx",
+      "file_id": "2071052958469",
+      "box_url": "https://usu.app.box.com/file/2071052958469",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/filename-and-document-title.docx",
+      "file_id": "2071059378035",
+      "box_url": "https://usu.app.box.com/file/2071059378035",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/practicing-evaluation-and-repair.docx",
+      "file_id": "2071051590404",
+      "box_url": "https://usu.app.box.com/file/2071051590404",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 2 Practicing Evaluation & Repair/section-2-practicing-evaluation-and-repair.docx",
+      "file_id": "2071056724708",
+      "box_url": "https://usu.app.box.com/file/2071056724708",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-1.docx",
+      "file_id": "2071059967175",
+      "box_url": "https://usu.app.box.com/file/2071059967175",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/creating-pdfs-part-2.docx",
+      "file_id": "2071056727108",
+      "box_url": "https://usu.app.box.com/file/2071056727108",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/mac-users-adobes-cloud-service.docx",
+      "file_id": "2071057295165",
+      "box_url": "https://usu.app.box.com/file/2071057295165",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/section-3-creating-pdfs.docx",
+      "file_id": "2071050058834",
+      "box_url": "https://usu.app.box.com/file/2071050058834",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/Section 3 Creating PDFs/source-document.docx",
+      "file_id": "2071060530220",
+      "box_url": "https://usu.app.box.com/file/2071060530220",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/module-3-evaluating-accessibility-and-creating-pdfs.docx",
+      "file_id": "2071046725660",
+      "box_url": "https://usu.app.box.com/file/2071046725660",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/module-3-practice-repaired.docx",
+      "file_id": "2071053071504",
+      "box_url": "https://usu.app.box.com/file/2071053071504",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 3/module-3-practice.docx",
+      "file_id": "2071057369723",
+      "box_url": "https://usu.app.box.com/file/2071057369723",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-1.docx",
+      "file_id": "2071052846272",
+      "box_url": "https://usu.app.box.com/file/2071052846272",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/introduction-to-optimizing-pdfs-part-2.docx",
+      "file_id": "2071048832979",
+      "box_url": "https://usu.app.box.com/file/2071048832979",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 1 Introduction to Optimizing PDFs/section-1-introduction-to-optimizing-pdfs.docx",
+      "file_id": "2071052241332",
+      "box_url": "https://usu.app.box.com/file/2071052241332",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/checking-accessibility.docx",
+      "file_id": "2071050445313",
+      "box_url": "https://usu.app.box.com/file/2071050445313",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/section-2-checking-accessibility.docx",
+      "file_id": "2071058504972",
+      "box_url": "https://usu.app.box.com/file/2071058504972",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 2 Checking Accessibility/tagged-pdf-failed-example.docx",
+      "file_id": "2071059018603",
+      "box_url": "https://usu.app.box.com/file/2071059018603",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 3 Reading Order Tool/reading-order-tool.docx",
+      "file_id": "2071056942814",
+      "box_url": "https://usu.app.box.com/file/2071056942814",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 3 Reading Order Tool/section-3-reading-order-tool.docx",
+      "file_id": "2071050229317",
+      "box_url": "https://usu.app.box.com/file/2071050229317",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 4 Content Order and Tags Order/content-order-and-tags-order.docx",
+      "file_id": "2071060703561",
+      "box_url": "https://usu.app.box.com/file/2071060703561",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/Section 4 Content Order and Tags Order/section-4-content-order-and-tags-order.docx",
+      "file_id": "2071056970986",
+      "box_url": "https://usu.app.box.com/file/2071056970986",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 4/module-4-optimizing-pdfs-in-acrobat.docx",
+      "file_id": "2071047020564",
+      "box_url": "https://usu.app.box.com/file/2071047020564",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 1 Navigating in Excel/navigating-in-excel.docx",
+      "file_id": "2071058456462",
+      "box_url": "https://usu.app.box.com/file/2071058456462",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 1 Navigating in Excel/section-1-navigating-in-excel.docx",
+      "file_id": "2071060054883",
+      "box_url": "https://usu.app.box.com/file/2071060054883",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 2 Sheets & Tables/section-2-sheets-and-tables.docx",
+      "file_id": "2071048967613",
+      "box_url": "https://usu.app.box.com/file/2071048967613",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 2 Sheets & Tables/sheets-and-tables.docx",
+      "file_id": "2071054772518",
+      "box_url": "https://usu.app.box.com/file/2071054772518",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 3 Images & Links/images-and-links.docx",
+      "file_id": "2071055435167",
+      "box_url": "https://usu.app.box.com/file/2071055435167",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 3 Images & Links/section-3-images-and-links.docx",
+      "file_id": "2071060873243",
+      "box_url": "https://usu.app.box.com/file/2071060873243",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/Creating-Accessible-Charts-Part-3.docx",
+      "file_id": "2071057230095",
+      "box_url": "https://usu.app.box.com/file/2071057230095",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-1.docx",
+      "file_id": "2071048367258",
+      "box_url": "https://usu.app.box.com/file/2071048367258",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/creating-accessible-charts-part-2.docx",
+      "file_id": "2071060111115",
+      "box_url": "https://usu.app.box.com/file/2071060111115",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 4 Charts/section-4-charts.docx",
+      "file_id": "2071049680095",
+      "box_url": "https://usu.app.box.com/file/2071049680095",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 5 Optimizing Workbooks/optimizing-workbooks.docx",
+      "file_id": "2071057410242",
+      "box_url": "https://usu.app.box.com/file/2071057410242",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 5 Optimizing Workbooks/section-5-optimizing-workbooks.docx",
+      "file_id": "2071048102938",
+      "box_url": "https://usu.app.box.com/file/2071048102938",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/evaluating-accessibility-in-excel.docx",
+      "file_id": "2071060861274",
+      "box_url": "https://usu.app.box.com/file/2071060861274",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/Section 6 Evaluating Accessibility in Excel/section-6-evaluating-accessibility-in-excel.docx",
+      "file_id": "2071049542945",
+      "box_url": "https://usu.app.box.com/file/2071049542945",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/Module 5/module-5-accessible-excel.docx",
+      "file_id": "2071057674537",
+      "box_url": "https://usu.app.box.com/file/2071057674537",
+      "notes": ""
+    },
+    {
+      "relative_path": "Course Content - Word/home.docx",
+      "file_id": "2071048110996",
+      "box_url": "https://usu.app.box.com/file/2071048110996",
+      "notes": ""
+    }
+  ]
+}

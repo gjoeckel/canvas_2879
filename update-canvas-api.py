@@ -30,7 +30,14 @@ def update_canvas():
                 'message': 'Missing required parameters: box_file_id, canvas_page_slug'
             }), 400
 
-        # Run the update script
+        # Run the update script with environment variables
+        import os
+        env = os.environ.copy()
+        # Pass Box token if available
+        box_token = os.getenv('BOX_DEVELOPER_TOKEN')
+        if box_token:
+            env['BOX_DEVELOPER_TOKEN'] = box_token
+
         result = subprocess.run(
             [
                 'python3',
@@ -40,7 +47,8 @@ def update_canvas():
             ],
             capture_output=True,
             text=True,
-            timeout=300  # 5 minute timeout
+            timeout=300,  # 5 minute timeout
+            env=env  # Pass environment to subprocess
         )
 
         if result.returncode == 0:
