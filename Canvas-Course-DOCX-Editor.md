@@ -2,6 +2,8 @@
 
 This page provides direct links to edit course documents in Microsoft Word Online.
 
+> **Note:** All links are configured to open in new tabs. If links open in the same tab, use **Ctrl+Click** (Windows/Linux) or **Cmd+Click** (Mac), or right-click and select "Open in new tab".
+
 ## Summary
 
 ## Start Here
