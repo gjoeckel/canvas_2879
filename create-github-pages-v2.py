@@ -92,6 +92,8 @@ def load_box_file_ids():
 def load_canvas_links():
     """Load Canvas page links from JSON."""
     canvas_links = {}
+    title_to_url = {}  # Direct title -> URL mapping for exact matches
+
     if CANVAS_LINKS_JSON.exists():
         with open(CANVAS_LINKS_JSON, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -99,14 +101,29 @@ def load_canvas_links():
         for file_path, info in data.items():
             title = info.get('title', '')
             canvas_url = info.get('canvas_url', '')
-            if title:
+
+            if title and canvas_url:
+                # Direct title mapping (exact match)
+                title_to_url[title.lower()] = canvas_url
+
+                # Multiple normalized versions for fuzzy matching
                 canvas_links[title.lower()] = canvas_url
+                canvas_links[title.lower().replace(' ', '-')] = canvas_url
+                canvas_links[title.lower().replace(':', '').replace('&', '').replace(',', '')] = canvas_url
+                # Remove leading numbers
+                title_no_num = re.sub(r'^\d+\s*[\.\s]*', '', title).lower().strip()
+                if title_no_num:
+                    canvas_links[title_no_num] = canvas_url
+                    canvas_links[title_no_num.replace(' ', '-')] = canvas_url
+
             # Also map by file path
-            canvas_links[file_path.lower()] = canvas_url
-            # Map by filename without extension
-            filename = Path(file_path).stem.lower()
-            canvas_links[filename] = canvas_url
-    return canvas_links
+            if canvas_url:
+                canvas_links[file_path.lower()] = canvas_url
+                # Map by filename without extension
+                filename = Path(file_path).stem.lower()
+                canvas_links[filename] = canvas_url
+
+    return canvas_links, title_to_url
 
 def find_box_file_for_title(title, box_files, section_path_hint=None):
     """Find Box file ID for a given title."""
@@ -154,39 +171,67 @@ def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url
 
     return f'{escape(page_name)}: {" | ".join(links)}'
 
-def find_canvas_url_for_title(title, canvas_links):
+def find_canvas_url_for_title(title, canvas_links, title_to_url, module_title=None):
     """Find Canvas URL for a given title."""
-    # Try exact match (case-insensitive)
-    title_lower = title.lower()
+    title_lower = title.lower().strip()
+
+    # Try exact match first (direct title mapping)
+    if title_lower in title_to_url:
+        return title_to_url[title_lower]
+
+    # Try in canvas_links (normalized versions)
     if title_lower in canvas_links:
         return canvas_links[title_lower]
-    
+
     # Try normalized versions
-    title_normalized = title_lower.replace(' ', '-').replace('_', '-').replace('&', '').replace(':', '').replace(',', '')
-    for key, url in canvas_links.items():
-        key_normalized = key.replace(' ', '-').replace('_', '-').replace('&', '').replace(':', '').replace(',', '')
-        if title_normalized in key_normalized or key_normalized in title_normalized:
-            return url
-    
-    # Try partial match
-    title_words = set(title_lower.split())
-    for key, url in canvas_links.items():
-        key_words = set(key.split())
-        if len(title_words) > 0 and len(title_words & key_words) / len(title_words) >= 0.7:
-            return url
-    
+    title_normalized = title_lower.replace(' ', '-').replace('_', '-').replace('&', '').replace(':', '').replace(',', '').replace('  ', ' ')
+    if title_normalized in canvas_links:
+        return canvas_links[title_normalized]
+
+    # Try removing leading numbers
+    title_no_num = re.sub(r'^\d+\s*[\.\s]*', '', title).lower().strip()
+    if title_no_num in title_to_url:
+        return title_to_url[title_no_num]
+    if title_no_num in canvas_links:
+        return canvas_links[title_no_num]
+
+    normalized_title_no_num = title_no_num.replace(' ', '-').replace('&', '').replace(':', '').replace(',', '').replace('  ', ' ')
+    if normalized_title_no_num in canvas_links:
+        return canvas_links[normalized_title_no_num]
+
+    # Try fuzzy matching: check if title contains key words from any Canvas page title
+    title_words = set(re.findall(r'\w+', title_lower))
+    best_match = None
+    best_score = 0
+
+    for canvas_title, canvas_url in title_to_url.items():
+        canvas_words = set(re.findall(r'\w+', canvas_title))
+        if len(title_words) > 0 and len(canvas_words) > 0:
+            # Calculate overlap
+            overlap = len(title_words & canvas_words)
+            total = len(title_words | canvas_words)
+            if total > 0:
+                score = overlap / total
+                # Prefer matches where most words match
+                if score > 0.5 and score > best_score:
+                    best_score = score
+                    best_match = canvas_url
+
+    if best_match:
+        return best_match
+
     return None
 
 def main():
     print("📝 Creating GitHub Pages HTML site with new format...")
-    
+
     # Load Box file IDs
     box_files = load_box_file_ids()
     print(f"📖 Loaded {len(box_files)} Box file mappings")
-    
+
     # Load Canvas links
-    canvas_links = load_canvas_links()
-    print(f"📖 Loaded {len(canvas_links)} Canvas link mappings")
+    canvas_links, title_to_url = load_canvas_links()
+    print(f"📖 Loaded {len(canvas_links)} Canvas link mappings ({len(title_to_url)} direct title mappings)")
 
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
@@ -282,31 +327,36 @@ def main():
             module_match = re.match(r'^(.+?)(?:\s*-\s*\[([^\]]+)\]\(([^)]+)\))?$', h2_text)
             if module_match:
                 module_name = module_match.group(1).strip()
-                edit_link_url = module_match.group(3) if module_match.group(3) else None
 
-                # Extract Box file ID from edit link
-                box_file_id = None
-                if edit_link_url:
-                    match = re.search(r'fileId=(\d+)', edit_link_url)
-                    if match:
-                        box_file_id = match.group(1)
+                # Special handling for "Start Here" - no links
+                if "Start Here" in module_name:
+                    html_lines.append(f'    <h2>{escape(module_name)}</h2>')
+                else:
+                    edit_link_url = module_match.group(3) if module_match.group(3) else None
 
-                # Get Box URL
-                box_url = None
-                if box_file_id:
-                    box_url = get_box_file_url(box_file_id)
+                    # Extract Box file ID from edit link
+                    box_file_id = None
+                    if edit_link_url:
+                        match = re.search(r'fileId=(\d+)', edit_link_url)
+                        if match:
+                            box_file_id = match.group(1)
 
-                # Find Canvas URL for module
-                canvas_url = find_canvas_url_for_title(module_name, canvas_links)
-                if not canvas_url:
-                    # Fallback to HTML file extraction
-                    html_file = find_html_file_for_section(module_name, None)
-                    if html_file:
-                        canvas_url = extract_canvas_url_from_html(html_file)
+                    # Get Box URL
+                    box_url = None
+                    if box_file_id:
+                        box_url = get_box_file_url(box_file_id)
 
-                # Format with links
-                formatted = format_page_with_links(module_name, canvas_url, box_file_id, box_url)
-                html_lines.append(f'    <h2>{formatted}</h2>')
+                    # Find Canvas URL for module
+                    canvas_url = find_canvas_url_for_title(module_name, canvas_links, title_to_url)
+                    if not canvas_url:
+                        # Fallback to HTML file extraction
+                        html_file = find_html_file_for_section(module_name, None)
+                        if html_file:
+                            canvas_url = extract_canvas_url_from_html(html_file)
+
+                    # Format with links
+                    formatted = format_page_with_links(module_name, canvas_url, box_file_id, box_url)
+                    html_lines.append(f'    <h2>{formatted}</h2>')
             else:
                 html_lines.append(f'    <h2>{escape(h2_text)}</h2>')
             current_module = h2_text
@@ -335,7 +385,7 @@ def main():
                     box_url = get_box_file_url(box_file_id)
 
                 # Find Canvas URL
-                canvas_url = find_canvas_url_for_title(section_name, canvas_links)
+                canvas_url = find_canvas_url_for_title(section_name, canvas_links, title_to_url, current_module)
                 if not canvas_url:
                     # Fallback to HTML file extraction
                     html_file = find_html_file_for_section(section_name, current_module)
@@ -424,7 +474,7 @@ def main():
                         box_url = get_box_file_url(box_file_id)
 
                     # Find Canvas URL for learning module
-                    canvas_url = find_canvas_url_for_title(link_text, canvas_links)
+                    canvas_url = find_canvas_url_for_title(link_text, canvas_links, title_to_url, current_module)
                     if not canvas_url:
                         # Fallback to HTML file extraction
                         html_file = find_html_file_for_section(link_text, current_module)
