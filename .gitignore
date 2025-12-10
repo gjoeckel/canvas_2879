@@ -15,3 +15,4 @@ venv/
 
 # Logs
 *.log
+.box-api-config.json
