@@ -1,0 +1,17 @@
+# Canvas grab files
+config.toml
+*.pyc
+__pycache__/
+venv/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
