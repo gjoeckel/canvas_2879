@@ -225,7 +225,13 @@
                     if (existingMsg) existingMsg.remove();
                     
                     // Call update endpoint
-                    fetch("/api/update-canvas", {
+                    // Note: For GitHub Pages (static), this would need a serverless function
+                    // For local development, use: http://localhost:5000/update-canvas-api
+                    const apiUrl = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+                        ? "http://localhost:5000/update-canvas-api"
+                        : "https://your-serverless-function-url/update-canvas-api";
+                    
+                    fetch(apiUrl, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
