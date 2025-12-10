@@ -146,15 +146,15 @@ def find_box_file_for_title(title, box_files, section_path_hint=None):
 
     return None, None
 
-def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url=None):
-    """Format a page name with three links - text left, links right."""
+def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url=None, is_course_orientation=False):
+    """Format a page name with links - text left, links right.
+
+    For Course Orientation: view docx | edit docx | view canvas | update canvas
+    For others: view docx | edit docx | view canvas
+    """
     links = []
 
-    if canvas_url:
-        links.append(f'<a href="{escape(canvas_url)}" target="_blank" rel="noopener noreferrer">canvas</a>')
-    else:
-        links.append('<span style="color: #999;">canvas</span>')
-
+    # View DOCX link
     if box_file_id and box_url:
         links.append(f'<a href="{escape(box_url)}" target="_blank" rel="noopener noreferrer">view docx</a>')
     elif box_file_id:
@@ -163,11 +163,32 @@ def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url
     else:
         links.append('<span style="color: #999;">view docx</span>')
 
+    # Edit DOCX link
     if box_file_id:
         edit_url = get_box_office_link(box_file_id)
         links.append(f'<a href="{escape(edit_url)}" target="_blank" rel="noopener noreferrer">edit docx</a>')
     else:
         links.append('<span style="color: #999;">edit docx</span>')
+
+    # View Canvas link
+    if canvas_url:
+        links.append(f'<a href="{escape(canvas_url)}" target="_blank" rel="noopener noreferrer">view canvas</a>')
+    else:
+        links.append('<span style="color: #999;">view canvas</span>')
+
+    # Update Canvas link (only for Course Orientation)
+    if is_course_orientation and box_file_id and canvas_url:
+        # Extract page URL slug from canvas_url for the update script
+        import re
+        page_slug_match = re.search(r'/pages/([^/?]+)', canvas_url)
+        page_slug = page_slug_match.group(1) if page_slug_match else None
+        if page_slug:
+            update_link = f'<a href="#" class="update-canvas-btn" data-box-file-id="{box_file_id}" data-canvas-page-slug="{page_slug}" data-page-name="{escape(page_name)}">update canvas</a>'
+            links.append(update_link)
+        else:
+            links.append('<span style="color: #999;">update canvas</span>')
+    elif is_course_orientation:
+        links.append('<span style="color: #999;">update canvas</span>')
 
     # Return with text left-aligned and links floated right
     return f'<span class="page-text">{escape(page_name)}</span> <span class="page-links">{" | ".join(links)}</span>'
@@ -423,7 +444,9 @@ def main():
                 # Check if we're in "Start Here" section - if so, treat as list item
                 if current_module and "Start Here" in current_module:
                     # For Start Here, just use the section name as-is (no "Section" prefix)
-                    formatted = format_page_with_links(section_name, canvas_url, box_file_id, box_url)
+                    # Check if this is Course Orientation for special link formatting
+                    is_course_orientation = "Course Orientation" in section_name
+                    formatted = format_page_with_links(section_name, canvas_url, box_file_id, box_url, is_course_orientation)
                     # Check if we need to start a new list (only if h2 was just added)
                     if html_lines and html_lines[-1].strip().startswith('<h2>'):
                         html_lines.append('    <ol>')
@@ -540,6 +563,71 @@ def main():
         i += 1
 
     html_lines.extend([
+        '    <script>',
+        '        document.addEventListener("DOMContentLoaded", function() {',
+        '            const updateButtons = document.querySelectorAll(".update-canvas-btn");',
+        '            updateButtons.forEach(button => {',
+        '                button.addEventListener("click", function(e) {',
+        '                    e.preventDefault();',
+        '                    const boxFileId = this.getAttribute("data-box-file-id");',
+        '                    const canvasPageSlug = this.getAttribute("data-canvas-page-slug");',
+        '                    const pageName = this.getAttribute("data-page-name");',
+        '                    ',
+        '                    // Show loading state',
+        '                    this.classList.add("loading");',
+        '                    this.textContent = "updating...";',
+        '                    ',
+        '                    // Remove any existing messages',
+        '                    const existingMsg = document.querySelector(".success-message, .error-message");',
+        '                    if (existingMsg) existingMsg.remove();',
+        '                    ',
+        '                    // Call update endpoint',
+        '                    fetch("/api/update-canvas", {',
+        '                        method: "POST",',
+        '                        headers: {',
+        '                            "Content-Type": "application/json",',
+        '                        },',
+        '                        body: JSON.stringify({',
+        '                            box_file_id: boxFileId,',
+        '                            canvas_page_slug: canvasPageSlug,',
+        '                            page_name: pageName',
+        '                        })',
+        '                    })',
+        '                    .then(response => response.json())',
+        '                    .then(data => {',
+        '                        // Remove loading state',
+        '                        this.classList.remove("loading");',
+        '                        this.textContent = "update canvas";',
+        '                        ',
+        '                        if (data.success) {',
+        '                            // Show success message',
+        '                            const successDiv = document.createElement("div");',
+        '                            successDiv.className = "note success-message";',
+        '                            successDiv.innerHTML = `<strong>Success!</strong> ${data.message}`;',
+        '                            document.body.insertBefore(successDiv, document.body.firstChild.nextSibling);',
+        '                        } else {',
+        '                            // Show error message',
+        '                            const errorDiv = document.createElement("div");',
+        '                            errorDiv.className = "note error-message";',
+        '                            errorDiv.innerHTML = `<strong>Error:</strong> ${data.message}`;',
+        '                            document.body.insertBefore(errorDiv, document.body.firstChild.nextSibling);',
+        '                        }',
+        '                    })',
+        '                    .catch(error => {',
+        '                        // Remove loading state',
+        '                        this.classList.remove("loading");',
+        '                        this.textContent = "update canvas";',
+        '                        ',
+        '                        // Show error message',
+        '                        const errorDiv = document.createElement("div");',
+        '                        errorDiv.className = "note error-message";',
+        '                        errorDiv.innerHTML = `<strong>Error:</strong> Failed to update Canvas. ${error.message}`;',
+        '                        document.body.insertBefore(errorDiv, document.body.firstChild.nextSibling);',
+        '                    });',
+        '                });',
+        '            });',
+        '        });',
+        '    </script>',
         '</body>',
         '</html>'
     ])
