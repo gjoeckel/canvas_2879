@@ -1,0 +1,121 @@
+/* CSS to hide all Canvas UI elements, showing only page content */
+/* Use this with a browser extension like Stylus, or inject via bookmarklet */
+
+/* Hide global header and navigation */
+header#header,
+header#mobile-header,
+#mobileContextNavContainer {
+    display: none !important;
+}
+
+/* Hide breadcrumbs and navigation toggle */
+.ic-app-nav-toggle-and-crumbs,
+#breadcrumbs,
+.ic-app-crumbs,
+#courseMenuToggle,
+button#courseMenuToggle {
+    display: none !important;
+}
+
+/* Hide left side navigation menu */
+#left-side,
+.ic-app-course-menu,
+#sticky-container {
+    display: none !important;
+}
+
+/* Hide right side wrapper */
+#right-side-wrapper,
+#right-side {
+    display: none !important;
+}
+
+/* Hide "View as Student" button and mobile header elements */
+#easy_student_view,
+.mobile-header-student-view,
+#mobile-student-view,
+.mobile-header-hamburger,
+.mobile-header-title,
+.mobile-header-space,
+.mobile-header-arrow {
+    display: none !important;
+}
+
+/* Hide nutrition facts container */
+#nutrition_facts_container,
+#nutrition_facts_mobile_container {
+    display: none !important;
+}
+
+/* Hide global navigation elements */
+.ic-app-header__main-navigation,
+.ic-app-header__secondary-navigation,
+.ic-app-header__logomark-container,
+#global_nav_tray_container,
+#global_nav_tour {
+    display: none !important;
+}
+
+/* Hide flash messages and alerts */
+#flash_message_holder,
+#flash_screenreader_holder,
+#skip_navigation_link,
+#aria_alerts {
+    display: none !important;
+}
+
+/* Hide footer and hidden elements */
+footer,
+#footer,
+iframe#post_message_forwarding,
+#StudentTray__Container,
+#react-router-portals,
+#instructure_ajax_error_box,
+.ic-Layout-watermark {
+    display: none !important;
+}
+
+/* Adjust main content to take full width */
+#wrapper.ic-Layout-wrapper {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+#main.ic-Layout-columns {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+#content-wrapper {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+#content.ic-Layout-contentMain {
+    margin-left: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* Make sure the page content is visible and properly styled */
+#wiki_page_show,
+#content {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+}
+
+/* Ensure page content has proper spacing */
+.user_content {
+    padding: 20px !important;
+}
+
+/* Hide any right-of-crumbs elements */
+.right-of-crumbs {
+    display: none !important;
+}
+
