@@ -24,13 +24,14 @@ def load_config():
             return json.load(f)
     return {}
 
-def get_authorization_url(client_id, redirect_uri, scope=None):
-    """Generate Box authorization URL."""
-    # Default scope - use root_readwrite for full access, or root_readonly for read-only
-    # You can also use specific scopes like 'root_readwrite' or leave empty for app default
-    if scope is None:
-        scope = 'root_readwrite'  # Full read/write access to user's root folder
+def get_authorization_url(client_id, redirect_uri, scope='root_readwrite'):
+    """Generate Box authorization URL.
     
+    Valid Box scopes:
+    - root_readwrite: Full read/write access to user's root folder
+    - root_readonly: Read-only access to user's root folder
+    - Or leave empty to use app's default scopes
+    """
     params = {
         'response_type': 'code',
         'client_id': client_id,
@@ -38,7 +39,7 @@ def get_authorization_url(client_id, redirect_uri, scope=None):
         'state': 'canvas_update'
     }
     
-    # Only add scope if provided (some apps work better without explicit scope)
+    # Add scope if provided (some apps work better without explicit scope)
     if scope:
         params['scope'] = scope
     
