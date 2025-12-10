@@ -1,0 +1,123 @@
+Canvas Page Links
+================================================================================
+
+Course Details
+  File: 1 Start Here/Course Details.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121438
+
+Course Orientation
+  File: 1 Start Here/Course Orientation.html
+  URL: https://usucourses.instructure.com/courses/2879/pages/course-orientation
+
+Terms of Use
+  File: 1 Start Here/Terms of Use.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121439
+
+Module 1: Document Content
+  File: 2 Module 1_ Document Content/Module 1_ Document Content.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121441
+
+Section 1: Overview of Document Accessibility
+  File: 2 Module 1_ Document Content/Section 1_ Overview of Document Accessibility.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121442
+
+Section 2: Images
+  File: 2 Module 1_ Document Content/Section 2_ Images.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121444
+
+Section 3: Hyperlinks
+  File: 2 Module 1_ Document Content/Section 3_ Hyperlinks.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121446
+
+Color Reliance
+  File: 2 Module 1_ Document Content/Section 4_ Contrast & Color Reliance.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121448
+
+Section 5: Optimizing Writing
+  File: 2 Module 1_ Document Content/Section 5_ Optimizing Writing.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121450
+
+Module 2: Document Structure
+  File: 3 Module 2_ Document Structure/Module 2_ Document Structure.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121453
+
+Section 1: Headings in Word
+  File: 3 Module 2_ Document Structure/Section 1_ Headings in Word.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121454
+
+Section 2: Optimizing PowerPoint Presentations
+  File: 3 Module 2_ Document Structure/Section 2_ Optimizing PowerPoint Presentations.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121456
+
+Columns
+  File: 3 Module 2_ Document Structure/Section 3_ Lists & Columns.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121458
+
+Section 4: Tables
+  File: 3 Module 2_ Document Structure/Section 4_ Tables.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121460
+
+Evaluating Accessibility
+  File: 4 Module 3_ Evaluating Accessibility & Creating PDFs/Module 3_ Evaluating Accessibility & Creating PDFs.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121463
+
+Section 1: Evaluating Accessibility
+  File: 4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 1_ Evaluating Accessibility.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121464
+
+Section 2: Practicing Evaluation &amp;amp;amp;amp;amp;amp;amp; Repair
+  File: 4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 2_ Practicing Evaluation & Repair.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121466
+
+Section 3: Creating PDFs
+  File: 4 Module 3_ Evaluating Accessibility & Creating PDFs/Section 3_ Creating PDFs.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121468
+
+Module 4: Optimizing PDFs in Acrobat
+  File: 5 Module 4_ Optimizing PDFs in Acrobat/Module 4_ Optimizing PDFs in Acrobat.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121471
+
+Section 1: Introduction To Optimizing PDFs
+  File: 5 Module 4_ Optimizing PDFs in Acrobat/Section 1_ Introduction To Optimizing PDFs.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121472
+
+Section 2: Checking Accessibility
+  File: 5 Module 4_ Optimizing PDFs in Acrobat/Section 2_ Checking Accessibility.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121474
+
+Section 3: Reading Order Tool
+  File: 5 Module 4_ Optimizing PDFs in Acrobat/Section 3_ Reading Order Tool.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121476
+
+Section 4: Content Order and Tags Order
+  File: 5 Module 4_ Optimizing PDFs in Acrobat/Section 4_ Content Order and Tags Order.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121478
+
+Module 5: Accessible Excel
+  File: 7 Module 5_ Accessible Excel/Module 5_ Accessible Excel.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121482
+
+Section 1: Navigating in Excel
+  File: 7 Module 5_ Accessible Excel/Section 1_ Navigating in Excel.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121483
+
+Tables
+  File: 7 Module 5_ Accessible Excel/Section 2_ Sheets & Tables.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121485
+
+Section 3: Images &amp;amp;amp;amp;amp;amp;amp; Links
+  File: 7 Module 5_ Accessible Excel/Section 3_ Images & Links.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121487
+
+Section 4: Charts
+  File: 7 Module 5_ Accessible Excel/Section 4_ Charts.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121489
+
+Section 5: Optimizing Workbooks
+  File: 7 Module 5_ Accessible Excel/Section 5_ Optimizing Workbooks.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121491
+
+Section 6: Evaluating Accessibility in Excel
+  File: 7 Module 5_ Accessible Excel/Section 6_ Evaluating Accessibility in Excel.html
+  URL: https://usucourses.instructure.com/courses/2879/modules/items/121493
+

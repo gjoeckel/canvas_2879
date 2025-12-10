@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 COURSE_DIR = Path("/Users/a00288946/Projects/canvas_2879")
 MAPPING_FILE = COURSE_DIR / "DOCX-HTML-MAPPING.md"
 BOX_FILE_IDS_JSON = COURSE_DIR / "box-file-ids.json"
+CANVAS_LINKS_JSON = COURSE_DIR / "canvas-page-links.json"
 OUTPUT_FILE = COURSE_DIR / "docs" / "index.html"
 HTML_DIR = COURSE_DIR / "WINTER 25-26 COURSE UPDATES"
 
@@ -49,7 +50,7 @@ def find_html_file_for_section(section_title, module_title=None):
     """Find the HTML file for a given section."""
     # Normalize section title for matching
     section_normalized = section_title.lower().replace(' ', '-').replace('&', '').replace(':', '')
-    
+
     # Try to find matching HTML file
     if module_title and "Start Here" in module_title:
         base_dir = HTML_DIR / "1 Start Here"
@@ -66,10 +67,10 @@ def find_html_file_for_section(section_title, module_title=None):
     else:
         # Search all directories
         base_dir = HTML_DIR
-    
+
     if not base_dir.exists():
         return None
-    
+
     # Look for HTML files matching the section
     for html_file in base_dir.glob("*.html"):
         if html_file.stem.lower().replace(' ', '-').replace('_', '-').replace('&', '').replace(':', '') == section_normalized:
@@ -77,7 +78,7 @@ def find_html_file_for_section(section_title, module_title=None):
         # Also try matching with "Section" prefix
         if f"section-{section_normalized}" in html_file.stem.lower().replace(' ', '-').replace('_', '-'):
             return html_file
-    
+
     return None
 
 def load_box_file_ids():
@@ -88,16 +89,35 @@ def load_box_file_ids():
         return {item['relative_path']: item for item in data['files']}
     return {}
 
+def load_canvas_links():
+    """Load Canvas page links from JSON."""
+    canvas_links = {}
+    if CANVAS_LINKS_JSON.exists():
+        with open(CANVAS_LINKS_JSON, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        # Create mappings by title and by file path
+        for file_path, info in data.items():
+            title = info.get('title', '')
+            canvas_url = info.get('canvas_url', '')
+            if title:
+                canvas_links[title.lower()] = canvas_url
+            # Also map by file path
+            canvas_links[file_path.lower()] = canvas_url
+            # Map by filename without extension
+            filename = Path(file_path).stem.lower()
+            canvas_links[filename] = canvas_url
+    return canvas_links
+
 def find_box_file_for_title(title, box_files, section_path_hint=None):
     """Find Box file ID for a given title."""
     title_normalized = title.lower().replace(' ', '-').replace('&', '').replace(':', '').replace(',', '')
-    
+
     # Try exact match first
     for path, file_info in box_files.items():
         filename = Path(path).stem.lower().replace(' ', '-').replace('_', '-')
         if filename == title_normalized:
             return file_info['file_id'], file_info.get('box_url', f"https://usu.app.box.com/file/{file_info['file_id']}")
-    
+
     # Try partial match
     for path, file_info in box_files.items():
         filename = Path(path).stem.lower()
@@ -106,18 +126,18 @@ def find_box_file_for_title(title, box_files, section_path_hint=None):
             if 'example' in filename:
                 continue
             return file_info['file_id'], file_info.get('box_url', f"https://usu.app.box.com/file/{file_info['file_id']}")
-    
+
     return None, None
 
 def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url=None):
     """Format a page name with three links."""
     links = []
-    
+
     if canvas_url:
         links.append(f'<a href="{escape(canvas_url)}" target="_blank" rel="noopener noreferrer">canvas</a>')
     else:
         links.append('<span style="color: #999;">canvas</span>')
-    
+
     if box_file_id and box_url:
         links.append(f'<a href="{escape(box_url)}" target="_blank" rel="noopener noreferrer">view docx</a>')
     elif box_file_id:
@@ -125,14 +145,37 @@ def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url
         links.append(f'<a href="{escape(box_url)}" target="_blank" rel="noopener noreferrer">view docx</a>')
     else:
         links.append('<span style="color: #999;">view docx</span>')
-    
+
     if box_file_id:
         edit_url = get_box_office_link(box_file_id)
         links.append(f'<a href="{escape(edit_url)}" target="_blank" rel="noopener noreferrer">edit docx</a>')
     else:
         links.append('<span style="color: #999;">edit docx</span>')
-    
+
     return f'{escape(page_name)}: {" | ".join(links)}'
+
+def find_canvas_url_for_title(title, canvas_links):
+    """Find Canvas URL for a given title."""
+    # Try exact match (case-insensitive)
+    title_lower = title.lower()
+    if title_lower in canvas_links:
+        return canvas_links[title_lower]
+    
+    # Try normalized versions
+    title_normalized = title_lower.replace(' ', '-').replace('_', '-').replace('&', '').replace(':', '').replace(',', '')
+    for key, url in canvas_links.items():
+        key_normalized = key.replace(' ', '-').replace('_', '-').replace('&', '').replace(':', '').replace(',', '')
+        if title_normalized in key_normalized or key_normalized in title_normalized:
+            return url
+    
+    # Try partial match
+    title_words = set(title_lower.split())
+    for key, url in canvas_links.items():
+        key_words = set(key.split())
+        if len(title_words) > 0 and len(title_words & key_words) / len(title_words) >= 0.7:
+            return url
+    
+    return None
 
 def main():
     print("📝 Creating GitHub Pages HTML site with new format...")
@@ -141,23 +184,15 @@ def main():
     box_files = load_box_file_ids()
     print(f"📖 Loaded {len(box_files)} Box file mappings")
     
-    # Create a mapping of page titles to Canvas URLs by scanning HTML files
-    canvas_url_map = {}
-    if HTML_DIR.exists():
-        for html_file in HTML_DIR.rglob("*.html"):
-            canvas_url = extract_canvas_url_from_html(html_file)
-            if canvas_url:
-                # Use filename as key (without extension)
-                page_key = html_file.stem
-                canvas_url_map[page_key] = canvas_url
-                # Also try normalized versions
-                canvas_url_map[page_key.lower().replace(' ', '-').replace('_', '-')] = canvas_url
-    
+    # Load Canvas links
+    canvas_links = load_canvas_links()
+    print(f"📖 Loaded {len(canvas_links)} Canvas link mappings")
+
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
-    
+
     with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
         mapping_content = f.read()
-    
+
     html_lines = [
         '<!DOCTYPE html>',
         '<html lang="en">',
@@ -224,32 +259,60 @@ def main():
         '        <strong>Note:</strong> All links open in new tabs automatically.',
         '    </div>',
     ]
-    
+
     # Parse the mapping file
     lines = mapping_content.split('\n')
     i = 0
     current_module = None
-    
+
     while i < len(lines):
         line = lines[i].strip()
-        
+
         # Skip summary section
         if line.startswith('## Summary'):
             i += 1
             while i < len(lines) and not lines[i].strip().startswith('---'):
                 i += 1
             continue
-        
+
         # H2 headings (modules)
         if line.startswith('## '):
             h2_text = line[3:].strip()
-            # Remove markdown links from module title
-            h2_text = re.sub(r'\s*-\s*\[([^\]]+)\]\([^)]+\)', '', h2_text)
-            html_lines.append(f'    <h2>{escape(h2_text)}</h2>')
+            # Extract module name and links
+            module_match = re.match(r'^(.+?)(?:\s*-\s*\[([^\]]+)\]\(([^)]+)\))?$', h2_text)
+            if module_match:
+                module_name = module_match.group(1).strip()
+                edit_link_url = module_match.group(3) if module_match.group(3) else None
+
+                # Extract Box file ID from edit link
+                box_file_id = None
+                if edit_link_url:
+                    match = re.search(r'fileId=(\d+)', edit_link_url)
+                    if match:
+                        box_file_id = match.group(1)
+
+                # Get Box URL
+                box_url = None
+                if box_file_id:
+                    box_url = get_box_file_url(box_file_id)
+
+                # Find Canvas URL for module
+                canvas_url = find_canvas_url_for_title(module_name, canvas_links)
+                if not canvas_url:
+                    # Fallback to HTML file extraction
+                    html_file = find_html_file_for_section(module_name, None)
+                    if html_file:
+                        canvas_url = extract_canvas_url_from_html(html_file)
+
+                # Format with links
+                formatted = format_page_with_links(module_name, canvas_url, box_file_id, box_url)
+                html_lines.append(f'    <h2>{formatted}</h2>')
+            else:
+                html_lines.append(f'    <h2>{escape(h2_text)}</h2>')
             current_module = h2_text
             i += 1
             continue
-        
+
         # H3 headings (sections)
         if line.startswith('### '):
             h3_text = line[4:].strip()
@@ -258,37 +321,86 @@ def main():
             if section_match:
                 section_name = section_match.group(1).strip()
                 edit_link_url = section_match.group(3) if section_match.group(3) else None
-                
+
                 # Extract Box file ID from edit link
                 box_file_id = None
                 if edit_link_url:
                     match = re.search(r'fileId=(\d+)', edit_link_url)
                     if match:
                         box_file_id = match.group(1)
-                
+
                 # Get Box URL
                 box_url = None
                 if box_file_id:
                     box_url = get_box_file_url(box_file_id)
-                
+
                 # Find Canvas URL
-                canvas_url = None
-                html_file = find_html_file_for_section(section_name, current_module)
-                if html_file:
-                    canvas_url = extract_canvas_url_from_html(html_file)
-                
-                # Format with links
-                formatted = format_page_with_links(section_name, canvas_url, box_file_id, box_url)
-                html_lines.append(f'    <h3>{formatted}</h3>')
+                canvas_url = find_canvas_url_for_title(section_name, canvas_links)
+                if not canvas_url:
+                    # Fallback to HTML file extraction
+                    html_file = find_html_file_for_section(section_name, current_module)
+                    if html_file:
+                        canvas_url = extract_canvas_url_from_html(html_file)
+
+                # Check if we're in "Start Here" section - if so, treat as list item
+                if current_module and "Start Here" in current_module:
+                    # For Start Here, just use the section name as-is (no "Section" prefix)
+                    formatted = format_page_with_links(section_name, canvas_url, box_file_id, box_url)
+                    # Check if we need to start a new list (only if h2 was just added)
+                    if html_lines and html_lines[-1].strip().startswith('<h2>'):
+                        html_lines.append('    <ol>')
+                    html_lines.append(f'        <li>{formatted}</li>')
+                else:
+                    # Add "Section" prefix and ":" after number
+                    # Match pattern like "1  Overview" or "1. Course Orientation"
+                    section_name_formatted = section_name
+                    section_num_match = re.match(r'^(\d+)\.?\s+(.+)$', section_name)
+                    if section_num_match:
+                        num = section_num_match.group(1)
+                        rest = section_num_match.group(2)
+                        section_name_formatted = f'Section {num}: {rest}'
+                    elif re.match(r'^\d+', section_name):
+                        # If it starts with a number but no space, add "Section" prefix
+                        section_name_formatted = f'Section {section_name}'
+
+                    # Format with links
+                    formatted = format_page_with_links(section_name_formatted, canvas_url, box_file_id, box_url)
+                    html_lines.append(f'    <h3>{formatted}</h3>')
             else:
-                html_lines.append(f'    <h3>{escape(h3_text)}</h3>')
+                if current_module and "Start Here" in current_module:
+                    # For Start Here, add as list item
+                    if not html_lines or html_lines[-1].strip() != '<ol>':
+                        html_lines.append('    <ol>')
+                    html_lines.append(f'        <li>{escape(h3_text)}</li>')
+                else:
+                    html_lines.append(f'    <h3>{escape(h3_text)}</h3>')
             i += 1
             continue
-        
-        # H4 Learning Modules
+
+        # H4 Learning Modules - remove the h4 heading, just start the list
         if line.startswith('#### Learning Modules'):
-            html_lines.append('    <h4>Learning Modules</h4>')
-            html_lines.append('    <ol>')
+            # For Start Here, skip the Learning Modules section entirely
+            # (the h3 already has the links, and Learning Modules just duplicates it)
+            if current_module and "Start Here" in current_module:
+                i += 1
+                # Skip blank line if present
+                if i < len(lines) and lines[i].strip() == '':
+                    i += 1
+                # Skip the list items (they're duplicates of the h3)
+                while i < len(lines):
+                    next_line = lines[i].strip()
+                    if next_line.startswith(('---', '##', '###', '*No Learning')):
+                        break
+                    elif next_line == '':
+                        if i + 1 < len(lines):
+                            peek = lines[i + 1].strip()
+                            if peek.startswith(('---', '##', '###', '*No Learning')):
+                                break
+                    i += 1
+                continue
+            else:
+                # For other sections, start a new list
+                html_lines.append('    <ol>')
             i += 1
             # Skip blank line if present
             if i < len(lines) and lines[i].strip() == '':
@@ -305,18 +417,20 @@ def main():
                     box_match = re.search(r'fileId=(\d+)', link_url)
                     if box_match:
                         box_file_id = box_match.group(1)
-                    
+
                     # Get Box URL
                     box_url = None
                     if box_file_id:
                         box_url = get_box_file_url(box_file_id)
-                    
+
                     # Find Canvas URL for learning module
-                    canvas_url = None
-                    html_file = find_html_file_for_section(link_text, current_module)
-                    if html_file:
-                        canvas_url = extract_canvas_url_from_html(html_file)
-                    
+                    canvas_url = find_canvas_url_for_title(link_text, canvas_links)
+                    if not canvas_url:
+                        # Fallback to HTML file extraction
+                        html_file = find_html_file_for_section(link_text, current_module)
+                        if html_file:
+                            canvas_url = extract_canvas_url_from_html(html_file)
+
                     # Format with links
                     formatted = format_page_with_links(link_text, canvas_url, box_file_id, box_url)
                     html_lines.append(f'        <li>{formatted}</li>')
@@ -330,24 +444,33 @@ def main():
                 i += 1
             html_lines.append('    </ol>')
             continue
-        
-        # Skip other lines
-        if line.startswith('*No Learning') or line == '' or line.startswith('---'):
+
+        # Handle section breaks - close any open lists
+        if line.startswith('---'):
+            # Close any open list if we're leaving Start Here
+            if current_module and "Start Here" in current_module:
+                if html_lines and (html_lines[-1].strip().startswith('<li>') or '</ol>' not in '\n'.join(html_lines[-5:])):
+                    html_lines.append('    </ol>')
             i += 1
             continue
-        
+
+        # Skip other lines
+        if line.startswith('*No Learning') or line == '':
+            i += 1
+            continue
+
         i += 1
-    
+
     html_lines.extend([
         '</body>',
         '</html>'
     ])
-    
+
     # Write output
     print(f"💾 Writing to {OUTPUT_FILE}...")
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(html_lines))
-    
+
     print(f"✅ Created GitHub Pages site: {OUTPUT_FILE}")
 
 if __name__ == "__main__":
