@@ -154,7 +154,10 @@ def extract_tracked_changes_from_docx(docx_content):
             return ' '.join(texts)
 
         # Find all insertions (w:ins)
-        for ins in root.findall('.//w:ins', namespaces):
+        ins_elements = root.findall('.//w:ins', namespaces)
+        print(f"  📝 Found {len(ins_elements)} w:ins (insertion) elements in XML")
+
+        for ins in ins_elements:
             text = extract_text_from_element(ins)
             if text.strip():
                 changes['insertions'].append({
@@ -164,7 +167,10 @@ def extract_tracked_changes_from_docx(docx_content):
                 })
 
         # Find all deletions (w:del)
-        for dele in root.findall('.//w:del', namespaces):
+        del_elements = root.findall('.//w:del', namespaces)
+        print(f"  🗑️  Found {len(del_elements)} w:del (deletion) elements in XML")
+
+        for dele in del_elements:
             text = extract_text_from_element(dele)
             if text.strip():
                 changes['deletions'].append({
@@ -172,6 +178,13 @@ def extract_tracked_changes_from_docx(docx_content):
                     'author': dele.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author', 'Unknown'),
                     'date': dele.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', '')
                 })
+
+        # Additional debugging: Check for any revision-related elements
+        if len(ins_elements) == 0 and len(del_elements) == 0:
+            print("  ℹ️  No tracked changes found. This could mean:")
+            print("     - Track Changes is not enabled in Word")
+            print("     - The document has no edits with tracking enabled")
+            print("     - All changes have been accepted/rejected")
 
     return changes
 
