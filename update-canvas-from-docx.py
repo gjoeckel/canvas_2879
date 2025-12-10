@@ -153,6 +153,81 @@ def extract_tracked_changes_from_docx(docx_content):
                     texts.append(t_elem.text)
             return ' '.join(texts)
 
+        def get_context_around_element(elem, root, namespaces, context_length=100):
+            """Get text context before and after an element to help locate it in HTML."""
+            # Find parent paragraph by searching up the tree
+            parent_p = None
+            current = elem
+            for _ in range(10):  # Limit search depth
+                if current is None:
+                    break
+                if current.tag == f'{{{namespaces["w"]}}}p':
+                    parent_p = current
+                    break
+                current = current.getparent() if hasattr(current, 'getparent') else None
+                # Alternative: search for parent in tree
+                if current is None:
+                    # Search for paragraph containing this element
+                    for p in root.findall('.//w:p', namespaces):
+                        if elem in p.iter():
+                            parent_p = p
+                            break
+                    break
+
+            if parent_p is None:
+                return None, None
+
+            # Get text before the insertion in the same paragraph
+            before_text = ""
+            for sibling in list(parent_p):
+                if sibling == elem:
+                    break
+                # Extract text from runs (w:r) and other text-containing elements
+                if sibling.tag == f'{{{namespaces["w"]}}}r':
+                    for t in sibling.findall('.//w:t', namespaces):
+                        if t.text:
+                            before_text += t.text
+                elif sibling.tag == f'{{{namespaces["w"]}}}ins':
+                    # Skip other insertions, but could include their text for context
+                    continue
+                # Also check for text in other elements
+                for t in sibling.findall('.//w:t', namespaces):
+                    if t.text:
+                        before_text += t.text
+
+            # Get text after the insertion in the same paragraph
+            after_text = ""
+            found_elem = False
+            for sibling in list(parent_p):
+                if sibling == elem:
+                    found_elem = True
+                    continue
+                if found_elem:
+                    if sibling.tag == f'{{{namespaces["w"]}}}r':
+                        for t in sibling.findall('.//w:t', namespaces):
+                            if t.text:
+                                after_text += t.text
+                    elif sibling.tag == f'{{{namespaces["w"]}}}ins':
+                        # Skip other insertions
+                        continue
+                    # Extract text from any text elements
+                    for t in sibling.findall('.//w:t', namespaces):
+                        if t.text:
+                            after_text += t.text
+                    if after_text:
+                        break  # Stop after getting some context
+
+            # Limit context length and clean up
+            before_text = before_text.strip()
+            if len(before_text) > context_length:
+                before_text = '...' + before_text[-context_length:]
+
+            after_text = after_text.strip()
+            if len(after_text) > context_length:
+                after_text = after_text[:context_length] + '...'
+
+            return before_text, after_text
+
         # Find all insertions (w:ins)
         ins_elements = root.findall('.//w:ins', namespaces)
         print(f"  📝 Found {len(ins_elements)} w:ins (insertion) elements in XML")
@@ -160,10 +235,15 @@ def extract_tracked_changes_from_docx(docx_content):
         for ins in ins_elements:
             text = extract_text_from_element(ins)
             if text.strip():
+                # Get context to help locate insertion point in HTML
+                before_context, after_context = get_context_around_element(ins, root, namespaces)
+
                 changes['insertions'].append({
                     'text': text,
                     'author': ins.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author', 'Unknown'),
-                    'date': ins.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', '')
+                    'date': ins.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', ''),
+                    'before_context': before_context,  # Text that comes before this insertion
+                    'after_context': after_context      # Text that comes after this insertion
                 })
 
         # Find all deletions (w:del)
@@ -226,7 +306,7 @@ def update_html_with_changes(html_file_path, changes):
                         text_node.replace_with(text_node.replace(deleted_text, ''))
 
     # Apply insertions: Add new text as paragraphs
-    # In a more sophisticated implementation, we'd try to match context and insert at the right location
+    # Try to match context to insert at the correct location
     for insertion in changes['insertions']:
         new_text = insertion['text'].strip()
         if not new_text:
@@ -236,25 +316,58 @@ def update_html_with_changes(html_file_path, changes):
         new_p = soup.new_tag('p')
         new_p.string = new_text
 
-        # Find the last element inside user_content to append after
-        # This ensures the new paragraph is INSIDE user_content, not outside
-        last_child = None
-        for child in user_content.descendants:
-            if hasattr(child, 'name') and child.name:
-                last_child = child
+        # Try to find insertion point using context
+        insertion_point = None
+        before_context = insertion.get('before_context', '').strip()
+        after_context = insertion.get('after_context', '').strip()
 
-        # If we found a last child, insert after it; otherwise append to user_content
-        if last_child and last_child.parent == user_content:
-            # Insert after the last direct child
-            last_child.insert_after(new_p)
+        if before_context or after_context:
+            # Search for elements containing the context text
+            for element in user_content.find_all(['p', 'div', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
+                element_text = element.get_text().strip()
+
+                # Try to find element that contains the "after" context
+                # This means the insertion should go BEFORE this element
+                if after_context and after_context.lower() in element_text.lower():
+                    # Check if before_context also matches (for more precision)
+                    if before_context:
+                        # Look for the element that comes before this one
+                        prev_elem = element.find_previous_sibling(['p', 'div', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+                        if prev_elem and before_context.lower() in prev_elem.get_text().lower():
+                            insertion_point = element
+                            break
+                    else:
+                        insertion_point = element
+                        break
+
+                # Alternative: find element containing "before" context
+                # Insertion should go AFTER this element
+                elif before_context and before_context.lower() in element_text.lower():
+                    insertion_point = element
+                    break
+
+        # Insert at the found location, or fallback to end
+        if insertion_point:
+            print(f"  📍 Found insertion point using context: '{before_context[:30]}...' -> '{after_context[:30]}...'")
+            insertion_point.insert_before(new_p)
         else:
-            # Find the last direct child of user_content
-            direct_children = [child for child in user_content.children if hasattr(child, 'name')]
+            # Fallback: Find the last element inside user_content to append after
+            # This ensures the new paragraph is INSIDE user_content, not outside
+            direct_children = [child for child in user_content.children if hasattr(child, 'name') and child.name]
             if direct_children:
-                direct_children[-1].insert_after(new_p)
+                # Find the deepest last child
+                last_child = direct_children[-1]
+                while last_child.children:
+                    last_children = [c for c in last_child.children if hasattr(c, 'name') and c.name]
+                    if last_children:
+                        last_child = last_children[-1]
+                    else:
+                        break
+                last_child.insert_after(new_p)
             else:
-                # Fallback: append directly to user_content
+                # Final fallback: append directly to user_content
                 user_content.append(new_p)
+            print(f"  📍 No context match found, appending to end of user_content")
 
     # Write updated HTML
     with open(html_file_path, 'w', encoding='utf-8') as f:
