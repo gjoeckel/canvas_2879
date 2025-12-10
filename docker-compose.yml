@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  canvas-api:
+    build: .
+    container_name: canvas-2879-api
+    ports:
+      - "5000:5000"
+    volumes:
+      # Mount config files (read-only)
+      - ./.box-api-config.json:/app/.box-api-config.json:ro
+      - ./config.toml:/app/config.toml:ro
+      # Mount HTML files directory for updates
+      - ./WINTER 25-26 COURSE UPDATES:/app/WINTER 25-26 COURSE UPDATES:rw
+    environment:
+      # Pass environment variables if needed
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import requests; requests.get('http://localhost:5000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
