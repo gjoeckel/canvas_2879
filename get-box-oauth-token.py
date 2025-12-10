@@ -26,7 +26,7 @@ def load_config():
 
 def get_authorization_url(client_id, redirect_uri, scope='root_readwrite'):
     """Generate Box authorization URL.
-    
+
     Valid Box scopes:
     - root_readwrite: Full read/write access to user's root folder
     - root_readonly: Read-only access to user's root folder
@@ -38,11 +38,11 @@ def get_authorization_url(client_id, redirect_uri, scope='root_readwrite'):
         'redirect_uri': redirect_uri,
         'state': 'canvas_update'
     }
-    
+
     # Add scope if provided (some apps work better without explicit scope)
     if scope:
         params['scope'] = scope
-    
+
     return f"{BOX_AUTH_URL}?{urlencode(params)}"
 
 def exchange_code_for_token(client_id, client_secret, authorization_code, redirect_uri):
@@ -56,7 +56,19 @@ def exchange_code_for_token(client_id, client_secret, authorization_code, redire
     }
 
     response = requests.post(BOX_TOKEN_URL, data=data)
-    response.raise_for_status()
+
+    # Check for errors and provide helpful messages
+    if response.status_code != 200:
+        error_detail = response.text
+        print(f"❌ Error exchanging authorization code: {response.status_code}")
+        print(f"   Response: {error_detail}")
+        if 'invalid_grant' in error_detail:
+            print("\n💡 This usually means:")
+            print("   - Authorization code has expired (they expire after 30 seconds)")
+            print("   - Authorization code was already used")
+            print("   - Redirect URI doesn't match exactly")
+        response.raise_for_status()
+
     return response.json()
 
 def refresh_access_token(client_id, client_secret, refresh_token):
@@ -81,6 +93,8 @@ def main():
     parser.add_argument('--client-secret', type=str, help='Box OAuth Client Secret')
     parser.add_argument('--redirect-uri', type=str, default='http://localhost:5000/callback',
                        help='Redirect URI (default: http://localhost:5000/callback)')
+    parser.add_argument('--scope', type=str, default='root_readwrite',
+                       help='OAuth scope (default: root_readwrite). Options: root_readwrite, root_readonly, or leave empty for app default')
     parser.add_argument('--authorization-code', type=str,
                        help='Authorization code from Box redirect')
     parser.add_argument('--refresh', action='store_true',
