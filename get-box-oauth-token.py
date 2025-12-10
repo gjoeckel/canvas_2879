@@ -24,15 +24,24 @@ def load_config():
             return json.load(f)
     return {}
 
-def get_authorization_url(client_id, redirect_uri):
+def get_authorization_url(client_id, redirect_uri, scope=None):
     """Generate Box authorization URL."""
+    # Default scope - use root_readwrite for full access, or root_readonly for read-only
+    # You can also use specific scopes like 'root_readwrite' or leave empty for app default
+    if scope is None:
+        scope = 'root_readwrite'  # Full read/write access to user's root folder
+    
     params = {
         'response_type': 'code',
         'client_id': client_id,
         'redirect_uri': redirect_uri,
-        'scope': 'content:read read_all_files_and_folders',
         'state': 'canvas_update'
     }
+    
+    # Only add scope if provided (some apps work better without explicit scope)
+    if scope:
+        params['scope'] = scope
+    
     return f"{BOX_AUTH_URL}?{urlencode(params)}"
 
 def exchange_code_for_token(client_id, client_secret, authorization_code, redirect_uri):
@@ -44,7 +53,7 @@ def exchange_code_for_token(client_id, client_secret, authorization_code, redire
         'client_secret': client_secret,
         'redirect_uri': redirect_uri
     }
-    
+
     response = requests.post(BOX_TOKEN_URL, data=data)
     response.raise_for_status()
     return response.json()
@@ -57,7 +66,7 @@ def refresh_access_token(client_id, client_secret, refresh_token):
         'client_id': client_id,
         'client_secret': client_secret
     }
-    
+
     response = requests.post(BOX_TOKEN_URL, data=data)
     response.raise_for_status()
     return response.json()
@@ -65,7 +74,7 @@ def refresh_access_token(client_id, client_secret, refresh_token):
 def main():
     """Main function to get OAuth token."""
     import argparse
-    
+
     parser = argparse.ArgumentParser(description='Get Box OAuth 2.0 Access Token')
     parser.add_argument('--client-id', type=str, help='Box OAuth Client ID')
     parser.add_argument('--client-secret', type=str, help='Box OAuth Client Secret')
@@ -76,15 +85,16 @@ def main():
     parser.add_argument('--refresh', action='store_true',
                        help='Refresh existing access token')
     args = parser.parse_args()
-    
+
     config = load_config()
     oauth2_config = config.get('oauth2', {})
-    
+
     # Get credentials from args, config, or prompt
     client_id = args.client_id or oauth2_config.get('client_id')
     client_secret = args.client_secret or oauth2_config.get('client_secret')
     redirect_uri = args.redirect_uri or oauth2_config.get('redirect_uri', 'http://localhost:5000/callback')
-    
+    scope = args.scope or oauth2_config.get('scope', 'root_readwrite')
+
     if not client_id or not client_secret:
         print("❌ Missing OAuth credentials!")
         print("\n📝 Setup:")
@@ -95,37 +105,37 @@ def main():
         print("\nThen run:")
         print("  python3 get-box-oauth-token.py --client-id YOUR_ID --client-secret YOUR_SECRET")
         return
-    
+
     if args.refresh:
         # Refresh existing token
         refresh_token = oauth2_config.get('refresh_token')
         if not refresh_token:
             print("❌ No refresh token found in config")
             return
-        
+
         print("🔄 Refreshing access token...")
         token_data = refresh_access_token(client_id, client_secret, refresh_token)
-        
+
         # Update config
         oauth2_config['access_token'] = token_data['access_token']
         if 'refresh_token' in token_data:
             oauth2_config['refresh_token'] = token_data['refresh_token']
-        
+
         config['oauth2'] = oauth2_config
         with open(CONFIG_FILE, 'w') as f:
             json.dump(config, f, indent=2)
-        
+
         print(f"✅ Access token refreshed!")
         print(f"   New token: {token_data['access_token'][:20]}...")
         return
-    
+
     if args.authorization_code:
         # Exchange code for token
         print("🔄 Exchanging authorization code for access token...")
         token_data = exchange_code_for_token(
             client_id, client_secret, args.authorization_code, redirect_uri
         )
-        
+
         # Save to config
         oauth2_config.update({
             'client_id': client_id,
@@ -134,19 +144,19 @@ def main():
             'refresh_token': token_data.get('refresh_token'),
             'redirect_uri': redirect_uri
         })
-        
+
         config['oauth2'] = oauth2_config
         with open(CONFIG_FILE, 'w') as f:
             json.dump(config, f, indent=2)
-        
+
         print(f"✅ OAuth token saved to {CONFIG_FILE}")
         print(f"   Access token: {token_data['access_token'][:20]}...")
         print(f"   Expires in: {token_data.get('expires_in', 'unknown')} seconds")
         return
-    
+
     # Step 1: Get authorization URL
-    auth_url = get_authorization_url(client_id, redirect_uri)
-    
+    auth_url = get_authorization_url(client_id, redirect_uri, scope)
+
     print("📋 Box OAuth 2.0 Setup")
     print("=" * 50)
     print("\n1️⃣  Open this URL in your browser:")
