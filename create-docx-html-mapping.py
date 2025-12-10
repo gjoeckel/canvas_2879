@@ -1,237 +1,232 @@
 #!/usr/bin/env python3
 """
-Create a mapping between .docx files in Box and HTML files in canvas_2879 project.
+Create mapping between DOCX file structure and HTML file structure.
+
+This establishes a baseline mapping that can be used to apply tracked changes
+to the correct locations in the HTML file.
 """
 
-import os
+import argparse
+import json
+import zipfile
+import io
+import xml.etree.ElementTree as ET
 from pathlib import Path
-import re
+from bs4 import BeautifulSoup
+import requests
 
-BOX_DIR = Path("/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update")
-CANVAS_DIR = Path("/Users/a00288946/Projects/canvas_2879")
+COURSE_DIR = Path("/Users/a00288946/Projects/canvas_2879")
+BOX_API_BASE = "https://api.box.com/2.0"
 
-def normalize_name(name):
-    """Normalize a filename for comparison."""
-    # Remove extension
-    name = name.replace('.docx', '').replace('.html', '')
-    # Convert to lowercase
-    name = name.lower()
-    # Replace underscores and hyphens with spaces
-    name = name.replace('_', ' ').replace('-', ' ')
-    # Remove "and" variations
-    name = name.replace(' & ', ' and ')
-    # Remove extra spaces
-    name = ' '.join(name.split())
-    return name
+def get_box_access_token():
+    """Get Box access token from config."""
+    import os
+    config_file = COURSE_DIR / ".box-api-config.json"
+    if config_file.exists():
+        import json as json_lib
+        with open(config_file, 'r') as f:
+            config = json_lib.load(f)
+            oauth2 = config.get('oauth2', {})
+            if oauth2.get('access_token'):
+                return oauth2['access_token']
+            if config.get('developer_token'):
+                return config.get('developer_token')
+    return os.getenv('BOX_DEVELOPER_TOKEN')
 
-def extract_base_name(path):
-    """Extract a meaningful base name from a path."""
-    name = path.stem
-    # Remove common prefixes/suffixes
-    name = re.sub(r'^section-\d+-', '', name, flags=re.IGNORECASE)
-    name = re.sub(r'^module-\d+-', '', name, flags=re.IGNORECASE)
-    return name
+def download_docx_from_box(file_id, access_token):
+    """Download DOCX file from Box."""
+    headers = {'Authorization': f'Bearer {access_token}'}
+    content_url = f'{BOX_API_BASE}/files/{file_id}/content'
+    response = requests.get(content_url, headers=headers, stream=True)
+    response.raise_for_status()
+    return response.content
 
-def find_docx_files(base_dir):
-    """Find all .docx files in Box directory."""
-    docx_files = []
-    for docx_path in base_dir.rglob("*.docx"):
-        # Skip files in Annotation Options/Course Export (those are exports, not source)
-        if "Course Export" in str(docx_path):
-            continue
-        # Skip test files
-        if "-test" in docx_path.name.lower():
-            continue
+def extract_docx_structure(docx_content):
+    """Extract paragraph structure from DOCX file."""
+    structure = []
 
-        relative_path = docx_path.relative_to(base_dir)
-        docx_files.append({
-            'path': docx_path,
-            'relative_path': str(relative_path),
-            'name': docx_path.stem,
-            'normalized': normalize_name(docx_path.stem),
-            'base_name': extract_base_name(docx_path)
-        })
-    return sorted(docx_files, key=lambda x: x['relative_path'])
+    with zipfile.ZipFile(io.BytesIO(docx_content)) as docx:
+        document_xml = docx.read('word/document.xml')
+        root = ET.fromstring(document_xml)
 
-def find_html_files(base_dir):
-    """Find all HTML files in canvas_2879 directory."""
-    html_files = []
-    for html_path in base_dir.rglob("*.html"):
-        # Skip files in .git
-        if ".git" in str(html_path):
-            continue
-        # Skip README and other non-course files
-        if html_path.name.lower().startswith(('readme', 'custom-css', 'quick')):
-            continue
+        namespaces = {
+            'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+        }
 
-        relative_path = html_path.relative_to(base_dir)
-        html_files.append({
-            'path': html_path,
-            'relative_path': str(relative_path),
-            'name': html_path.stem,
-            'normalized': normalize_name(html_path.stem),
-            'base_name': extract_base_name(html_path)
-        })
-    return sorted(html_files, key=lambda x: x['relative_path'])
+        # Extract all paragraphs with their text and position
+        for idx, para in enumerate(root.findall('.//w:p', namespaces)):
+            # Extract all text from this paragraph
+            texts = []
+            for t_elem in para.findall('.//w:t', namespaces):
+                if t_elem.text:
+                    texts.append(t_elem.text)
 
-def match_files(docx_files, html_files):
-    """Match docx files to HTML files."""
-    matches = []
-    unmatched_docx = []
-    unmatched_html = []
+            para_text = ' '.join(texts).strip()
+            if para_text:  # Only include non-empty paragraphs
+                structure.append({
+                    'index': idx,
+                    'text': para_text,
+                    'text_hash': hash(para_text[:100])  # Hash for matching
+                })
 
-    # Create lookup dictionaries
-    html_by_normalized = {h['normalized']: h for h in html_files}
-    html_by_base = {h['base_name']: h for h in html_files}
+    return structure
 
-    for docx in docx_files:
-        matched = False
+def extract_html_structure(html_file_path):
+    """Extract paragraph structure from HTML file."""
+    structure = []
 
-        # Try exact normalized match
-        if docx['normalized'] in html_by_normalized:
-            matches.append({
-                'docx': docx,
-                'html': html_by_normalized[docx['normalized']],
-                'match_type': 'exact_normalized'
+    with open(html_file_path, 'r', encoding='utf-8') as f:
+        html_content = f.read()
+
+    soup = BeautifulSoup(html_content, 'html.parser')
+    user_content = soup.find('div', class_='user_content')
+
+    if not user_content:
+        raise ValueError("Could not find .user_content div in HTML file")
+
+    # Extract all text elements (p, div, li, headings) with their text
+    for idx, element in enumerate(user_content.find_all(['p', 'div', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])):
+        element_text = element.get_text().strip()
+        if element_text:  # Only include non-empty elements
+            structure.append({
+                'index': idx,
+                'tag': element.name,
+                'text': element_text,
+                'text_hash': hash(element_text[:100]),  # Hash for matching
+                'element_id': f"elem_{idx}"  # For later reference
             })
-            matched = True
-        # Try base name match
-        elif docx['base_name'] in html_by_base:
-            matches.append({
-                'docx': docx,
-                'html': html_by_base[docx['base_name']],
-                'match_type': 'base_name'
+
+    return structure, soup, user_content
+
+def normalize_text(text):
+    """Normalize text for comparison (remove extra whitespace, lowercase, etc.)."""
+    import re
+    # Remove extra whitespace, normalize to lowercase
+    text = re.sub(r'\s+', ' ', text.lower().strip())
+    # Remove HTML entities that might be in HTML but not DOCX
+    text = text.replace('&amp;', '&').replace('&nbsp;', ' ')
+    return text
+
+def calculate_similarity(text1, text2):
+    """Calculate similarity between two texts (0-1)."""
+    norm1 = normalize_text(text1)
+    norm2 = normalize_text(text2)
+
+    if not norm1 or not norm2:
+        return 0.0
+
+    # Exact match
+    if norm1 == norm2:
+        return 1.0
+
+    # Substring match
+    if norm1 in norm2 or norm2 in norm1:
+        return 0.8
+
+    # Word overlap
+    words1 = set(norm1.split())
+    words2 = set(norm2.split())
+    if words1 and words2:
+        overlap = len(words1 & words2)
+        total = len(words1 | words2)
+        if total > 0:
+            return overlap / total
+
+    return 0.0
+
+def create_mapping(docx_structure, html_structure):
+    """Create mapping between DOCX paragraphs and HTML elements."""
+    mapping = []
+
+    # Use a more flexible matching algorithm
+    # Try to match each DOCX paragraph to the best HTML element
+
+    for docx_para in docx_structure:
+        best_match = None
+        best_score = 0.0
+        best_html_idx = -1
+
+        # Search through HTML elements to find best match
+        for html_idx, html_elem in enumerate(html_structure):
+            # Skip if already mapped
+            if any(m['html_index'] == html_elem['index'] for m in mapping):
+                continue
+
+            # Calculate similarity
+            score = calculate_similarity(docx_para['text'], html_elem['text'])
+
+            if score > best_score and score >= 0.3:  # Minimum threshold
+                best_score = score
+                best_match = html_elem
+                best_html_idx = html_idx
+
+        # If we found a good match, add it to mapping
+        if best_match and best_score >= 0.3:
+            mapping.append({
+                'docx_index': docx_para['index'],
+                'docx_text_preview': docx_para['text'][:100],
+                'html_index': best_match['index'],
+                'html_tag': best_match['tag'],
+                'html_text_preview': best_match['text'][:100],
+                'html_element_id': best_match['element_id'],
+                'similarity_score': round(best_score, 3)
             })
-            matched = True
-        # Try partial match
-        else:
-            for html in html_files:
-                if docx['base_name'] in html['normalized'] or html['base_name'] in docx['normalized']:
-                    matches.append({
-                        'docx': docx,
-                        'html': html,
-                        'match_type': 'partial'
-                    })
-                    matched = True
-                    break
 
-        if not matched:
-            unmatched_docx.append(docx)
-
-    # Find unmatched HTML files
-    matched_html_names = {m['html']['name'] for m in matches}
-    unmatched_html = [h for h in html_files if h['name'] not in matched_html_names]
-
-    return matches, unmatched_docx, unmatched_html
+    return mapping
 
 def main():
-    print("🔍 Finding .docx files in Box...")
-    docx_files = find_docx_files(BOX_DIR)
-    print(f"   Found {len(docx_files)} .docx files")
+    parser = argparse.ArgumentParser(description='Create mapping between DOCX and HTML files')
+    parser.add_argument('--box-file-id', required=True, help='Box file ID of the DOCX document')
+    parser.add_argument('--html-file', required=True, help='Path to HTML file (relative to COURSE_DIR)')
+    parser.add_argument('--output', default=None, help='Output JSON file for mapping (default: html_file.mapping.json)')
 
-    print("\n🔍 Finding HTML files in canvas_2879...")
-    html_files = find_html_files(CANVAS_DIR)
-    print(f"   Found {len(html_files)} HTML files")
+    args = parser.parse_args()
 
-    print("\n🔗 Matching files...")
-    matches, unmatched_docx, unmatched_html = match_files(docx_files, html_files)
-    print(f"   Matched: {len(matches)}")
-    print(f"   Unmatched .docx: {len(unmatched_docx)}")
-    print(f"   Unmatched HTML: {len(unmatched_html)}")
+    # Get access token
+    access_token = get_box_access_token()
+    if not access_token:
+        raise ValueError("Box access token not found")
 
-    # Create mapping file
-    mapping_file = CANVAS_DIR / "DOCX-HTML-MAPPING.md"
-    print(f"\n📝 Creating mapping file: {mapping_file}")
+    # Download DOCX
+    print(f"📥 Downloading DOCX from Box (file_id: {args.box_file_id})...")
+    docx_content = download_docx_from_box(args.box_file_id, access_token)
+    print("✅ DOCX downloaded")
 
-    with open(mapping_file, 'w') as f:
-        f.write("# DOCX to HTML File Mapping\n\n")
-        f.write("This document maps .docx source files in Box to HTML files in the canvas_2879 GitHub repository.\n\n")
-        f.write("## Summary\n\n")
-        f.write(f"- **Total .docx files**: {len(docx_files)}\n")
-        f.write(f"- **Total HTML files**: {len(html_files)}\n")
-        f.write(f"- **Matched pairs**: {len(matches)}\n")
-        f.write(f"- **Unmatched .docx files**: {len(unmatched_docx)}\n")
-        f.write(f"- **Unmatched HTML files**: {len(unmatched_html)}\n\n")
+    # Extract structures
+    print("🔍 Extracting DOCX structure...")
+    docx_structure = extract_docx_structure(docx_content)
+    print(f"   Found {len(docx_structure)} paragraphs in DOCX")
 
-        f.write("---\n\n")
-        f.write("## Matched Files\n\n")
-        f.write("| .docx File (Box) | HTML File (GitHub) | Match Type |\n")
-        f.write("|------------------|---------------------|------------|\n")
+    html_file_path = COURSE_DIR / args.html_file
+    print(f"🔍 Extracting HTML structure from {html_file_path}...")
+    html_structure, soup, user_content = extract_html_structure(html_file_path)
+    print(f"   Found {len(html_structure)} elements in HTML")
 
-        for match in sorted(matches, key=lambda x: x['docx']['relative_path']):
-            docx_rel = match['docx']['relative_path']
-            html_rel = match['html']['relative_path']
-            match_type = match['match_type']
-            f.write(f"| `{docx_rel}` | `{html_rel}` | {match_type} |\n")
+    # Create mapping
+    print("🗺️  Creating mapping...")
+    mapping = create_mapping(docx_structure, html_structure)
+    print(f"   Created {len(mapping)} mappings")
 
-        if unmatched_docx:
-            f.write("\n---\n\n")
-            f.write("## Unmatched .docx Files\n\n")
-            f.write("These .docx files in Box don't have a corresponding HTML file:\n\n")
-            for docx in unmatched_docx:
-                f.write(f"- `{docx['relative_path']}`\n")
-
-        if unmatched_html:
-            f.write("\n---\n\n")
-            f.write("## Unmatched HTML Files\n\n")
-            f.write("These HTML files don't have a corresponding .docx file:\n\n")
-            for html in unmatched_html:
-                f.write(f"- `{html['relative_path']}`\n")
-
-        f.write("\n---\n\n")
-        f.write("## Notes\n\n")
-        f.write("- Match types:\n")
-        f.write("  - `exact_normalized`: Exact match after normalization\n")
-        f.write("  - `base_name`: Match based on base name (removed prefixes)\n")
-        f.write("  - `partial`: Partial match (one name contains the other)\n")
-        f.write("\n- Box directory: `/Users/a00288946/Library/CloudStorage/Box-Box/WebAIM Shared/5 Online Courses/Winter 25-25 Course Update`\n")
-        f.write("- GitHub directory: `/Users/a00288946/Projects/canvas_2879`\n")
-
-    print(f"✅ Mapping file created: {mapping_file}")
-
-    # Also create a JSON mapping for programmatic use
-    import json
-    json_file = CANVAS_DIR / "docx-html-mapping.json"
+    # Save mapping
+    output_file = args.output or (html_file_path.parent / f"{html_file_path.stem}.mapping.json")
     mapping_data = {
-        'matches': [
-            {
-                'docx': {
-                    'path': str(m['docx']['path']),
-                    'relative_path': m['docx']['relative_path'],
-                    'name': m['docx']['name']
-                },
-                'html': {
-                    'path': str(m['html']['path']),
-                    'relative_path': m['html']['relative_path'],
-                    'name': m['html']['name']
-                },
-                'match_type': m['match_type']
-            }
-            for m in matches
-        ],
-        'unmatched_docx': [
-            {
-                'path': str(d['path']),
-                'relative_path': d['relative_path'],
-                'name': d['name']
-            }
-            for d in unmatched_docx
-        ],
-        'unmatched_html': [
-            {
-                'path': str(h['path']),
-                'relative_path': h['relative_path'],
-                'name': h['name']
-            }
-            for h in unmatched_html
-        ]
+        'box_file_id': args.box_file_id,
+        'html_file': str(args.html_file),
+        'docx_structure': docx_structure,
+        'html_structure': html_structure,
+        'mapping': mapping,
+        'created_at': str(Path(__file__).stat().st_mtime)  # Simple timestamp
     }
 
-    with open(json_file, 'w') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(mapping_data, f, indent=2)
 
-    print(f"✅ JSON mapping file created: {json_file}")
+    print(f"✅ Mapping saved to {output_file}")
+    print(f"\n📊 Mapping Summary:")
+    print(f"   DOCX paragraphs: {len(docx_structure)}")
+    print(f"   HTML elements: {len(html_structure)}")
+    print(f"   Mapped pairs: {len(mapping)}")
+    print(f"   Coverage: {len(mapping)/max(len(docx_structure), len(html_structure))*100:.1f}%")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
-

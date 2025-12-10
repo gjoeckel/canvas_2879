@@ -127,8 +127,16 @@ def download_docx_from_box(file_id, access_token):
         else:
             raise
 
-def extract_tracked_changes_from_docx(docx_content):
-    """Extract tracked changes (insertions and deletions) from DOCX file."""
+def extract_tracked_changes_from_docx(docx_content, include_paragraph_index=False):
+    """Extract tracked changes (insertions and deletions) from DOCX file.
+
+    Args:
+        docx_content: DOCX file content as bytes
+        include_paragraph_index: If True, include the paragraph index for each change
+
+    Returns:
+        dict with 'insertions' and 'deletions' lists, each containing change info
+    """
     changes = {
         'insertions': [],
         'deletions': []
@@ -228,6 +236,9 @@ def extract_tracked_changes_from_docx(docx_content):
 
             return before_text, after_text
 
+        # Find all paragraphs first (for paragraph index tracking)
+        all_paragraphs = root.findall('.//w:p', namespaces)
+
         # Find all insertions (w:ins)
         ins_elements = root.findall('.//w:ins', namespaces)
         print(f"  📝 Found {len(ins_elements)} w:ins (insertion) elements in XML")
@@ -235,6 +246,14 @@ def extract_tracked_changes_from_docx(docx_content):
         for ins in ins_elements:
             text = extract_text_from_element(ins)
             if text.strip():
+                # Find which paragraph contains this insertion
+                para_index = None
+                if include_paragraph_index:
+                    for idx, para in enumerate(all_paragraphs):
+                        if ins in para.iter():
+                            para_index = idx
+                            break
+
                 # Get context to help locate insertion point in HTML
                 before_context, after_context = get_context_around_element(ins, root, namespaces)
 
@@ -243,7 +262,8 @@ def extract_tracked_changes_from_docx(docx_content):
                     'author': ins.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author', 'Unknown'),
                     'date': ins.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', ''),
                     'before_context': before_context,  # Text that comes before this insertion
-                    'after_context': after_context      # Text that comes after this insertion
+                    'after_context': after_context,     # Text that comes after this insertion
+                    'paragraph_index': para_index        # Index of paragraph containing this insertion
                 })
 
         # Find all deletions (w:del)
@@ -253,10 +273,19 @@ def extract_tracked_changes_from_docx(docx_content):
         for dele in del_elements:
             text = extract_text_from_element(dele)
             if text.strip():
+                # Find which paragraph contains this deletion
+                para_index = None
+                if include_paragraph_index:
+                    for idx, para in enumerate(all_paragraphs):
+                        if dele in para.iter():
+                            para_index = idx
+                            break
+
                 changes['deletions'].append({
                     'text': text,
                     'author': dele.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author', 'Unknown'),
-                    'date': dele.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', '')
+                    'date': dele.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', ''),
+                    'paragraph_index': para_index  # Index of paragraph containing this deletion
                 })
 
         # Additional debugging: Check for any revision-related elements
@@ -267,6 +296,71 @@ def extract_tracked_changes_from_docx(docx_content):
             print("     - All changes have been accepted/rejected")
 
     return changes
+
+def update_html_using_mapping(html_file_path, mapping, changes):
+    """Update HTML file using the mapping to locate changes."""
+    # Read HTML
+    with open(html_file_path, 'r', encoding='utf-8') as f:
+        html_content = f.read()
+    
+    soup = BeautifulSoup(html_content, 'html.parser')
+    user_content = soup.find('div', class_='user_content')
+    
+    if not user_content:
+        raise ValueError("Could not find .user_content div in HTML file")
+    
+    # Create a lookup: paragraph_index -> HTML element
+    para_to_html = {}
+    html_elements = list(user_content.find_all(['p', 'div', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']))
+    
+    for mapping_entry in mapping['mapping']:
+        docx_idx = mapping_entry['docx_index']
+        html_idx = mapping_entry['html_index']
+        if html_idx < len(html_elements):
+            para_to_html[docx_idx] = html_elements[html_idx]
+    
+    # Apply deletions
+    for deletion in changes['deletions']:
+        para_idx = deletion.get('paragraph_index')
+        deleted_text = deletion['text'].strip()
+        
+        if para_idx is not None and para_idx in para_to_html:
+            html_elem = para_to_html[para_idx]
+            elem_text = html_elem.get_text()
+            if deleted_text in elem_text:
+                new_text = elem_text.replace(deleted_text, '')
+                html_elem.clear()
+                html_elem.string = new_text
+                print(f"  🗑️  Deleted text from mapped paragraph {para_idx}")
+    
+    # Apply insertions
+    for insertion in changes['insertions']:
+        para_idx = insertion.get('paragraph_index')
+        new_text = insertion['text'].strip()
+        
+        if para_idx is not None and para_idx in para_to_html:
+            # Insert after the mapped HTML element
+            html_elem = para_to_html[para_idx]
+            new_p = soup.new_tag('p')
+            new_p.string = new_text
+            html_elem.insert_after(new_p)
+            print(f"  📝 Inserted text after mapped paragraph {para_idx}")
+        else:
+            # Fallback: append to end of user_content
+            new_p = soup.new_tag('p')
+            new_p.string = new_text
+            direct_children = [child for child in user_content.children if hasattr(child, 'name') and child.name]
+            if direct_children:
+                direct_children[-1].insert_after(new_p)
+            else:
+                user_content.append(new_p)
+            print(f"  📝 Inserted text at end (no mapping for paragraph {para_idx})")
+    
+    # Write updated HTML
+    with open(html_file_path, 'w', encoding='utf-8') as f:
+        f.write(str(soup))
+    
+    return True
 
 def update_html_with_changes(html_file_path, changes):
     """Update HTML file based on tracked changes.
