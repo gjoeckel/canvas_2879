@@ -47,10 +47,13 @@ def load_config():
 
 def get_box_access_token():
     """Get Box access token from environment or config.
-
+    
     Supports:
     - Developer Token (BOX_DEVELOPER_TOKEN env var or config)
-    - OAuth 2.0 Access Token (from config file)
+    - OAuth 2.0 Access Token (from config file, preferred for better permissions)
+    
+    Returns:
+        tuple: (access_token, token_type) where token_type is 'oauth2' or 'developer'
     """
     # Try OAuth 2.0 access token first (better permissions)
     config_file = COURSE_DIR / ".box-api-config.json"
@@ -60,17 +63,17 @@ def get_box_access_token():
             # Check for OAuth 2.0 access token
             oauth2 = config.get('oauth2', {})
             if oauth2.get('access_token'):
-                return oauth2['access_token']
+                return oauth2['access_token'], 'oauth2'
             # Fallback to developer token
             if config.get('developer_token'):
-                return config.get('developer_token')
-
+                return config.get('developer_token'), 'developer'
+    
     # Try environment variable
     token = os.getenv('BOX_DEVELOPER_TOKEN')
     if token:
-        return token
-
-    return None
+        return token, 'developer'
+    
+    return None, None
 
 def download_docx_from_box(file_id, access_token):
     """Download DOCX file from Box."""
