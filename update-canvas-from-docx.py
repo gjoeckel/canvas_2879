@@ -63,11 +63,51 @@ def download_docx_from_box(file_id, access_token):
         'Authorization': f'Bearer {access_token}',
     }
 
-    url = f'{BOX_API_BASE}/files/{file_id}/content'
-    response = requests.get(url, headers=headers, stream=True)
-    response.raise_for_status()
+    # First, try to get file info to check permissions
+    info_url = f'{BOX_API_BASE}/files/{file_id}'
+    info_response = requests.get(info_url, headers=headers)
+    info_response.raise_for_status()
+    file_info = info_response.json()
 
-    return response.content
+    # Try to get download URL from file info
+    download_url = None
+    if 'shared_link' in file_info and file_info['shared_link']:
+        # If file has a shared link, try using it
+        shared_link = file_info['shared_link']
+        if shared_link.get('download_url'):
+            download_url = shared_link['download_url']
+
+    # Try direct content download first
+    content_url = f'{BOX_API_BASE}/files/{file_id}/content'
+    try:
+        response = requests.get(content_url, headers=headers, stream=True)
+        response.raise_for_status()
+        return response.content
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 403:
+            # If 403, try using download_url if available
+            if download_url:
+                # Download from shared link (may need to handle authentication differently)
+                response = requests.get(download_url, stream=True)
+                response.raise_for_status()
+                return response.content
+            else:
+                # Try alternative: get a temporary download URL
+                download_url_endpoint = f'{BOX_API_BASE}/files/{file_id}?fields=download_url'
+                download_response = requests.get(download_url_endpoint, headers=headers)
+                if download_response.status_code == 200:
+                    download_data = download_response.json()
+                    if 'download_url' in download_data:
+                        response = requests.get(download_data['download_url'], stream=True)
+                        response.raise_for_status()
+                        return response.content
+
+                # If all else fails, raise the original error
+                raise Exception(f"403 Forbidden: Token does not have permission to download file content. "
+                              f"You may need to grant 'Read all files and folders' permission to your Box app, "
+                              f"or use a token with higher permissions.")
+        else:
+            raise
 
 def extract_tracked_changes_from_docx(docx_content):
     """Extract tracked changes (insertions and deletions) from DOCX file."""
@@ -142,7 +182,7 @@ def update_html_with_changes(html_file_path, changes):
         deleted_text = deletion['text'].strip()
         if not deleted_text:
             continue
-        
+
         # Find all text nodes and check if they contain the deleted text
         for element in user_content.find_all(['p', 'li', 'div', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
             if element.string and deleted_text in element.string:
@@ -153,14 +193,14 @@ def update_html_with_changes(html_file_path, changes):
                 for text_node in element.find_all(string=True):
                     if deleted_text in text_node:
                         text_node.replace_with(text_node.replace(deleted_text, ''))
-    
+
     # Apply insertions: Add new text as paragraphs
     # In a more sophisticated implementation, we'd try to match context and insert at the right location
     for insertion in changes['insertions']:
         new_text = insertion['text'].strip()
         if not new_text:
             continue
-        
+
         # Create a new paragraph for the insertion
         new_p = soup.new_tag('p')
         new_p.string = new_text
