@@ -1,0 +1,4 @@
+# GitHub Pages Configuration
+# This file disables Jekyll processing
+plugins: []
+
