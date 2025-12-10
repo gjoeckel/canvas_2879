@@ -531,8 +531,19 @@ def main():
         print("📥 Downloading DOCX from Box...")
         docx_content = download_docx_from_box(args.box_file_id, box_token)
 
+        # Determine HTML file path
+        html_file_path = Path(args.html_file)
+
+        # Check if mapping file exists
+        mapping_file = html_file_path.parent / f"{html_file_path.stem}.mapping.json"
+        use_mapping = mapping_file.exists()
+
+        # Extract tracked changes with paragraph indices if mapping exists
         print("🔍 Extracting tracked changes...")
-        changes = extract_tracked_changes_from_docx(docx_content)
+        changes = extract_tracked_changes_from_docx(docx_content, include_paragraph_index=use_mapping)
+
+        if use_mapping:
+            print(f"  📖 Mapping file found: {mapping_file.name}")
 
         print(f"   Found {len(changes['insertions'])} insertions and {len(changes['deletions'])} deletions")
 
@@ -544,9 +555,16 @@ def main():
                 'timestamp': datetime.now().isoformat()
             }
 
-        print("📝 Updating local HTML file...")
-        html_file_path = Path(args.html_file)
-        update_html_with_changes(html_file_path, changes)
+        # Update HTML using mapping if available, otherwise use context-based approach
+        if use_mapping:
+            print(f"📝 Updating local HTML file using mapping...")
+            import json
+            with open(mapping_file, 'r', encoding='utf-8') as f:
+                mapping = json.load(f)
+            update_html_using_mapping(html_file_path, mapping, changes)
+        else:
+            print(f"📝 Updating local HTML file (context-based)...")
+            update_html_with_changes(html_file_path, changes)
 
         print("🚀 Pushing changes to Canvas...")
         push_to_canvas(html_file_path, args.canvas_page_slug, config)
