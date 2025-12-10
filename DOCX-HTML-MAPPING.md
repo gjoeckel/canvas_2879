@@ -22,7 +22,7 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 *No Learning Activities found in HTML*
 
-### 3. Terms of Use - [View Folder](https://usu.app.box.com/folder/355251740485)
+### 3. Terms of Use - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046889406&sharedAccessCode=)
 
 *No Learning Activities found in HTML*
 
