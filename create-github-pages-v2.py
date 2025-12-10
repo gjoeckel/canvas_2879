@@ -147,7 +147,7 @@ def find_box_file_for_title(title, box_files, section_path_hint=None):
     return None, None
 
 def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url=None):
-    """Format a page name with three links."""
+    """Format a page name with three links - text left, links right."""
     links = []
 
     if canvas_url:
@@ -169,7 +169,8 @@ def format_page_with_links(page_name, canvas_url=None, box_file_id=None, box_url
     else:
         links.append('<span style="color: #999;">edit docx</span>')
 
-    return f'{escape(page_name)}: {" | ".join(links)}'
+    # Return with text left-aligned and links floated right
+    return f'<span class="page-text">{escape(page_name)}</span> <span class="page-links">{" | ".join(links)}</span>'
 
 def find_canvas_url_for_title(title, canvas_links, title_to_url, module_title=None):
     """Find Canvas URL for a given title."""
@@ -255,25 +256,30 @@ def main():
         '            color: #24292e;',
         '            background-color: #ffffff;',
         '        }',
+        '        /* Canvas heading styles */',
         '        h1 {',
-        '            color: #0366d6;',
-        '            border-bottom: 1px solid #eaecef;',
-        '            padding-bottom: 10px;',
+        '            text-align: center;',
+        '            font-size: 2em;',
+        '            color: #1c205b;',
+        '            margin: 0.5em 0;',
         '        }',
         '        h2 {',
-        '            color: #0366d6;',
-        '            margin-top: 30px;',
-        '            border-bottom: 1px solid #eaecef;',
-        '            padding-bottom: 8px;',
+        '            font-size: 1.75em;',
+        '            line-height: 1.5;',
+        '            color: #bf1722;',
+        '            margin: 0.5em 0;',
+        '            border-bottom: none;',
         '        }',
         '        h3 {',
-        '            color: #24292e;',
-        '            margin-top: 20px;',
+        '            font-size: 1.5em;',
+        '            color: #1c205b;',
+        '            margin: 0.5em 0 0.5em 0.5em;',
         '        }',
         '        h4 {',
-        '            color: #586069;',
-        '            margin-top: 15px;',
-        '            font-size: 1.1em;',
+        '            font-size: 1.25em;',
+        '            color: #111111;',
+        '            margin: 0.5em 0 0.5em 1.25em;',
+        '            border-bottom: 1px dashed #ccc;',
         '        }',
         '        a {',
         '            color: #0366d6;',
@@ -294,6 +300,23 @@ def main():
         '            border-radius: 4px;',
         '            padding: 10px;',
         '            margin: 20px 0;',
+        '        }',
+        '        /* Layout: text left, links right */',
+        '        .page-text {',
+        '            display: inline-block;',
+        '        }',
+        '        .page-links {',
+        '            float: right;',
+        '            margin-left: 20px;',
+        '        }',
+        '        h2, h3, li {',
+        '            overflow: hidden;',
+        '            clear: both;',
+        '        }',
+        '        h2::after, h3::after {',
+        '            content: "";',
+        '            display: table;',
+        '            clear: both;',
         '        }',
         '    </style>',
         '</head>',
@@ -408,12 +431,12 @@ def main():
                     if section_num_match:
                         num = section_num_match.group(1)
                         rest = section_num_match.group(2)
-                        section_name_formatted = f'Section {num}: {rest}'
+                        section_name_formatted = f'Section {num} {rest}'
                     elif re.match(r'^\d+', section_name):
                         # If it starts with a number but no space, add "Section" prefix
                         section_name_formatted = f'Section {section_name}'
 
-                    # Format with links
+                    # Format with links (no colon)
                     formatted = format_page_with_links(section_name_formatted, canvas_url, box_file_id, box_url)
                     html_lines.append(f'    <h3>{formatted}</h3>')
             else:
