@@ -302,28 +302,28 @@ def update_html_using_mapping(html_file_path, mapping, changes):
     # Read HTML
     with open(html_file_path, 'r', encoding='utf-8') as f:
         html_content = f.read()
-    
+
     soup = BeautifulSoup(html_content, 'html.parser')
     user_content = soup.find('div', class_='user_content')
-    
+
     if not user_content:
         raise ValueError("Could not find .user_content div in HTML file")
-    
+
     # Create a lookup: paragraph_index -> HTML element
     para_to_html = {}
     html_elements = list(user_content.find_all(['p', 'div', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']))
-    
+
     for mapping_entry in mapping['mapping']:
         docx_idx = mapping_entry['docx_index']
         html_idx = mapping_entry['html_index']
         if html_idx < len(html_elements):
             para_to_html[docx_idx] = html_elements[html_idx]
-    
+
     # Apply deletions
     for deletion in changes['deletions']:
         para_idx = deletion.get('paragraph_index')
         deleted_text = deletion['text'].strip()
-        
+
         if para_idx is not None and para_idx in para_to_html:
             html_elem = para_to_html[para_idx]
             elem_text = html_elem.get_text()
@@ -332,12 +332,12 @@ def update_html_using_mapping(html_file_path, mapping, changes):
                 html_elem.clear()
                 html_elem.string = new_text
                 print(f"  🗑️  Deleted text from mapped paragraph {para_idx}")
-    
+
     # Apply insertions
     for insertion in changes['insertions']:
         para_idx = insertion.get('paragraph_index')
         new_text = insertion['text'].strip()
-        
+
         if para_idx is not None and para_idx in para_to_html:
             # Insert after the mapped HTML element
             html_elem = para_to_html[para_idx]
@@ -355,11 +355,11 @@ def update_html_using_mapping(html_file_path, mapping, changes):
             else:
                 user_content.append(new_p)
             print(f"  📝 Inserted text at end (no mapping for paragraph {para_idx})")
-    
+
     # Write updated HTML
     with open(html_file_path, 'w', encoding='utf-8') as f:
         f.write(str(soup))
-    
+
     return True
 
 def update_html_with_changes(html_file_path, changes):
