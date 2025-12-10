@@ -13,7 +13,7 @@
     style.id = 'hide-canvas-ui-styles';
     style.textContent = `
         /* Hide global header and navigation */
-        header#header, header#mobile-header, #mobileContextNavContainer { display: none !important; }
+        header#header, header#mobile-header, #mobileContextNavContainer, div.header-bar-outer-container { display: none !important; }
 
         /* Hide breadcrumbs and navigation toggle */
         .ic-app-nav-toggle-and-crumbs, #breadcrumbs, .ic-app-crumbs, #courseMenuToggle, button#courseMenuToggle { display: none !important; }
@@ -41,7 +41,7 @@
 
         /* Adjust main content to take full width */
         #wrapper.ic-Layout-wrapper { margin-left: 0 !important; padding-left: 0 !important; }
-        #main.ic-Layout-columns { margin-left: 0 !important; padding-left: 0 !important; }
+        #main.ic-Layout-columns { margin-left: 30px !important; margin-right: 30px !important; padding-left: 0 !important; }
         #content-wrapper { margin-left: 0 !important; padding-left: 0 !important; }
         #content.ic-Layout-contentMain { margin-left: 0 !important; padding-left: 20px !important; padding-right: 20px !important; max-width: 100% !important; width: 100% !important; }
 

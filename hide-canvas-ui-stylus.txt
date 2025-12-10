@@ -1,5 +1,5 @@
-/* CSS to hide all Canvas UI elements, showing only page content */
-/* Use this with a browser extension like Stylus, or inject via bookmarklet */
+/* Canvas UI Hide CSS - Ready to paste into Stylus */
+/* URL pattern: https://usucourses.instructure.com/courses/2879/* */
 
 /* Hide global header and navigation */
 header#header,
