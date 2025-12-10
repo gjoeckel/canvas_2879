@@ -136,25 +136,35 @@ def update_html_with_changes(html_file_path, changes):
     if not user_content:
         raise ValueError("Could not find .user_content div in HTML file")
 
-    # Get all text content
-    text_content = user_content.get_text()
-
-    # Apply deletions (remove strikethrough text)
+    # Apply deletions: Remove text that matches deleted content
+    # Look for exact text matches in paragraphs and other elements
     for deletion in changes['deletions']:
-        deleted_text = deletion['text']
-        # Remove the text from content
-        # Use regex to find and remove the text
-        pattern = re.escape(deleted_text)
-        text_content = re.sub(pattern, '', text_content, flags=re.IGNORECASE)
-
-    # Apply insertions (add new text)
-    # For now, append new text at the end of user_content
-    # In a more sophisticated implementation, we'd try to match context
+        deleted_text = deletion['text'].strip()
+        if not deleted_text:
+            continue
+        
+        # Find all text nodes and check if they contain the deleted text
+        for element in user_content.find_all(['p', 'li', 'div', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
+            if element.string and deleted_text in element.string:
+                # Replace the deleted text with empty string
+                element.string = element.string.replace(deleted_text, '')
+            elif element.get_text() and deleted_text in element.get_text():
+                # For elements with nested tags, replace in all text nodes
+                for text_node in element.find_all(string=True):
+                    if deleted_text in text_node:
+                        text_node.replace_with(text_node.replace(deleted_text, ''))
+    
+    # Apply insertions: Add new text as paragraphs
+    # In a more sophisticated implementation, we'd try to match context and insert at the right location
     for insertion in changes['insertions']:
-        new_text = insertion['text']
+        new_text = insertion['text'].strip()
+        if not new_text:
+            continue
+        
         # Create a new paragraph for the insertion
         new_p = soup.new_tag('p')
         new_p.string = new_text
+        # Append to the end of user_content
         user_content.append(new_p)
 
     # Write updated HTML
