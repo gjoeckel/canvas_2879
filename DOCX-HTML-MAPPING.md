@@ -16,15 +16,21 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 ### 1. Course Orientation - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049022878&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+#### Learning Modules
+
+1. [Course Orientation](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049022878&sharedAccessCode=)
 
 ### 2. Course Details - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048844794&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+#### Learning Modules
+
+1. [Course Details](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048844794&sharedAccessCode=)
 
 ### 3. Terms of Use - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046889406&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+#### Learning Modules
+
+1. [Terms of Use](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046889406&sharedAccessCode=)
 
 ---
 
@@ -54,7 +60,13 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 ### 4  Contrast & Color Reliance - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053356901&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Contrast Part 1](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058307624&sharedAccessCode=)
+2. [Contrast Part 2](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050450474&sharedAccessCode=)
+3. [Color Reliance](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059095632&sharedAccessCode=)
+
 
 ### 5  Optimizing Writing - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060463328&sharedAccessCode=)
 
@@ -86,7 +98,12 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 ### 3  Lists & Columns - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058502459&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Lists](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060682150&sharedAccessCode=)
+2. [Columns](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060732439&sharedAccessCode=)
+
 
 ### 4  Tables - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060727363&sharedAccessCode=)
 
@@ -153,15 +170,27 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 ### 1  Navigating in Excel - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060054883&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Navigating in Excel](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058456462&sharedAccessCode=)
+
 
 ### 2  Sheets & Tables - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048967613&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Sheets & Tables](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071054772518&sharedAccessCode=)
+
 
 ### 3  Images & Links - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060873243&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Images & Links](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071055435167&sharedAccessCode=)
+
 
 ### 4  Charts - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049680095&sharedAccessCode=)
 
@@ -173,10 +202,18 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 ### 5  Optimizing Workbooks - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048102938&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Optimizing Workbooks](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057410242&sharedAccessCode=)
+
 
 ### 6  Evaluating Accessibility in Excel - [Edit Section Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049542945&sharedAccessCode=)
 
-*No Learning Activities found in HTML*
+
+#### Learning Modules
+
+1. [Evaluating Accessibility in Excel](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060861274&sharedAccessCode=)
+
 
 ---
