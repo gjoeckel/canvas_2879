@@ -2,39 +2,139 @@
 
 This page provides direct links to edit course documents in Microsoft Word Online.
 
-## Course Documents
+## Start Here
 
-1. [Course Details](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2066348459620&sharedAccessCode=)
-2. [Course Details](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048844794&sharedAccessCode=)
-3. [Course Orientation](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049022878&sharedAccessCode=)
-4. [Terms of Use for WebAIM Online Courses](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046889406&sharedAccessCode=)
-5. [Section 1_ Overview of Document Accessibility](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047961795&sharedAccessCode=)
-6. [Section 2_ Images](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071051707711&sharedAccessCode=)
-7. [Section 3_ Hyperlinks](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056078296&sharedAccessCode=)
-8. [Color Reliance](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053356901&sharedAccessCode=)
-9. [Section 5_ Optimizing Writing](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060463328&sharedAccessCode=)
-10. [Module 1_ Document Content](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059544418&sharedAccessCode=)
-11. [Section 1_ Headings in Word](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053143414&sharedAccessCode=)
-12. [Section 2_ Optimizing PowerPoint Presentations](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049300940&sharedAccessCode=)
-13. [Columns](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060732439&sharedAccessCode=)
-14. [Columns](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060682150&sharedAccessCode=)
-15. [Columns](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058502459&sharedAccessCode=)
-16. [Section 4_ Tables](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060727363&sharedAccessCode=)
-17. [Section 4_ Tables](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058178466&sharedAccessCode=)
-18. [Module 2_ Document Structure](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046620417&sharedAccessCode=)
-19. [Section 1_ Evaluating Accessibility](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052958469&sharedAccessCode=)
-20. [Section 2_ Practicing Evaluation & Repair](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056724708&sharedAccessCode=)
-21. [Section 3_ Creating PDFs](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050058834&sharedAccessCode=)
-22. [Evaluating Accessibility](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046725660&sharedAccessCode=)
-23. [Section 1_ Introduction To Optimizing PDFs](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052241332&sharedAccessCode=)
-24. [Section 2_ Checking Accessibility](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058504972&sharedAccessCode=)
-25. [Section 3_ Reading Order Tool](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050229317&sharedAccessCode=)
-26. [Section 4_ Content Order and Tags Order](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056970986&sharedAccessCode=)
-27. [Module 4_ Optimizing PDFs in Acrobat](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047020564&sharedAccessCode=)
-28. [Section 1_ Navigating in Excel](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060054883&sharedAccessCode=)
-29. [Tables](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048967613&sharedAccessCode=)
-30. [Section 3_ Images & Links](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060873243&sharedAccessCode=)
-31. [Section 4_ Charts](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049680095&sharedAccessCode=)
-32. [Section 5_ Optimizing Workbooks](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048102938&sharedAccessCode=)
-33. [Section 6_ Evaluating Accessibility in Excel](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049542945&sharedAccessCode=)
-34. [Module 5_ Accessible Excel](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057674537&sharedAccessCode=)
+### Course Details
+
+### Course Orientation
+
+### Terms of Use
+
+## Module 1: Document Content - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059544418&sharedAccessCode=" target="_blank">Edit Module Document</a>
+
+### 1  Overview of Document Accessibility - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047961795&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047997212&sharedAccessCode=" target="_blank">Overview Of Document Accessibility Part 1</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060528255&sharedAccessCode=" target="_blank">Overview of Document Accessibility: Part 2</a>
+
+### 2  Images - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071051707711&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049722936&sharedAccessCode=" target="_blank">Images: Part 1</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071055406741&sharedAccessCode=" target="_blank">Images: Part 2</a>
+3. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058293739&sharedAccessCode=" target="_blank">Images: Part 3</a>
+
+### 3  Hyperlinks - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056078296&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057940942&sharedAccessCode=" target="_blank">Optimizing Hyperlinks</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059956736&sharedAccessCode=" target="_blank">Adding and Editing Hyperlinks</a>
+
+### 4  Contrast & Color Reliance - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053356901&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+### 5  Optimizing Writing - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060463328&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071055870233&sharedAccessCode=" target="_blank">Plain Language, Spelling, and Grammar</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060583287&sharedAccessCode=" target="_blank">Readability</a>
+3. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057852137&sharedAccessCode=" target="_blank">Legible Documents</a>
+
+## Module 2: Document Structure - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046620417&sharedAccessCode=" target="_blank">Edit Module Document</a>
+
+### 1  Headings in Word - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053143414&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053930144&sharedAccessCode=" target="_blank">The Importance of Headings</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049301083&sharedAccessCode=" target="_blank">Creating Headings</a>
+3. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057350242&sharedAccessCode=" target="_blank">Modifying Headings</a>
+
+### 2  Optimizing PowerPoint Presentations - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049300940&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049116198&sharedAccessCode=" target="_blank">Themes and Layouts</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053872558&sharedAccessCode=" target="_blank">Slide Master</a>
+3. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059806018&sharedAccessCode=" target="_blank">Reading Order & Principles of Accessibility</a>
+
+### 3  Lists & Columns - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058502459&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+### 4  Tables - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060727363&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058178466&sharedAccessCode=" target="_blank">Tables</a>
+
+## Module 3: Evaluating Accessibility & Creating PDFs - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071046725660&sharedAccessCode=" target="_blank">Edit Module Document</a>
+
+### 1  Evaluating Accessibility - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052958469&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060624163&sharedAccessCode=" target="_blank">Evaluating Accessibility</a>
+
+### 2  Practicing Evaluation & Repair - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056724708&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071051590404&sharedAccessCode=" target="_blank">Practicing Evaluation & Repair</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059378035&sharedAccessCode=" target="_blank">Filename & Document Title</a>
+
+### 3  Creating PDFs - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050058834&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059967175&sharedAccessCode=" target="_blank">Creating PDFs: Part 1</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056727108&sharedAccessCode=" target="_blank">Creating PDFs: Part 2</a>
+
+## Module 4: Optimizing PDFs in Acrobat - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047020564&sharedAccessCode=" target="_blank">Edit Module Document</a>
+
+### 1  Introduction To Optimizing PDFs - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052241332&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052846272&sharedAccessCode=" target="_blank">Introduction to Optimizing PDFs: Part 1</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048832979&sharedAccessCode=" target="_blank">Introduction To Optimizing PDFs: Part 2</a>
+
+### 2  Checking Accessibility - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058504972&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050445313&sharedAccessCode=" target="_blank">Checking Accessibility</a>
+
+### 3  Reading Order Tool - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050229317&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056942814&sharedAccessCode=" target="_blank">Reading Order Tool</a>
+
+### 4  Content Order and Tags Order - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056970986&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060703561&sharedAccessCode=" target="_blank">Content Order and Tags Order</a>
+
+## Module 5: Accessible Excel - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057674537&sharedAccessCode=" target="_blank">Edit Module Document</a>
+
+### 1  Navigating in Excel - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060054883&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+### 2  Sheets & Tables - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048967613&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+### 3  Images & Links - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060873243&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+### 4  Charts - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049680095&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+#### Learning Modules
+
+1. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048367258&sharedAccessCode=" target="_blank">Creating Accessible Charts: Part 1</a>
+2. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060111115&sharedAccessCode=" target="_blank">Creating Accessible Charts: Part 2</a>
+3. <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057230095&sharedAccessCode=" target="_blank">Creating Accessible Charts: Part 3</a>
+
+### 5  Optimizing Workbooks - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048102938&sharedAccessCode=" target="_blank">Edit Section Document</a>
+
+### 6  Evaluating Accessibility in Excel - <a href="https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049542945&sharedAccessCode=" target="_blank">Edit Section Document</a>
