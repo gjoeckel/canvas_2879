@@ -90,8 +90,8 @@ def clean_html_content(element, output_dir=None):
                 local_path = download_image(img_src, images_dir)
 
                 if local_path:
-                    # Update img src to relative path (Pandoc will handle it)
-                    img['src'] = str(local_path.relative_to(output_dir))
+                    # Update img src to just the filename (Pandoc will look in same dir as HTML)
+                    img['src'] = local_path.name
                     print(f"     ✅ Saved to: {local_path.name}")
                 else:
                     # Keep alt text as placeholder
@@ -154,6 +154,19 @@ def convert_html_to_docx(html_content, output_docx_path, reference_doc=None):
 
     # Write HTML to temporary file
     temp_html = output_docx_path.parent / f"{output_docx_path.stem}.temp.html"
+    
+    # Copy images to same directory as temp HTML so Pandoc can find them
+    images_dir = output_docx_path.parent / 'images'
+    if images_dir.exists():
+        import shutil
+        for img_file in images_dir.glob('*'):
+            if img_file.is_file():
+                # Copy to same directory as temp HTML
+                dest = temp_html.parent / img_file.name
+                if not dest.exists():
+                    shutil.copy2(img_file, dest)
+                    print(f"  📋 Copied {img_file.name} to temp directory for Pandoc")
+    
     with open(temp_html, 'w', encoding='utf-8') as f:
         f.write(str(html_content))
 
@@ -168,19 +181,13 @@ def convert_html_to_docx(html_content, output_docx_path, reference_doc=None):
         '--wrap=none',   # Don't wrap lines
     ]
 
-    # If images directory exists, add it to the path
-    images_dir = output_docx_path.parent / 'images'
-    if images_dir.exists():
-        # Pandoc will automatically find images in the same directory
-        pass
-
     # Add reference document if provided
     if reference_doc and Path(reference_doc).exists():
         cmd.extend(['--reference-doc', str(reference_doc)])
 
-    # Run Pandoc
+    # Run Pandoc from the HTML file's directory so it can find images
     print(f"🔄 Converting HTML to DOCX using Pandoc...")
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(temp_html.parent))
 
     # Clean up temp file
     temp_html.unlink()
