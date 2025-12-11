@@ -14,11 +14,11 @@ This document maps .docx source files in Box to HTML files in the canvas_2879 Gi
 
 ## Start Here
 
-### 1. Course Orientation - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049022878&sharedAccessCode=)
+### 1. Course Orientation - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2072202817948&sharedAccessCode=)
 
 #### Learning Modules
 
-1. [Course Orientation](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049022878&sharedAccessCode=)
+1. [Course Orientation](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2072202817948&sharedAccessCode=)
 
 ### 2. Course Details - [Edit Document](https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048844794&sharedAccessCode=)
 
