@@ -171,10 +171,11 @@ def convert_html_to_docx(html_content, output_docx_path, reference_doc=None):
         f.write(str(html_content))
 
     # Build Pandoc command with options to preserve formatting
+    # Use relative paths since we'll run from temp_html.parent
     cmd = [
         'pandoc',
-        str(temp_html),
-        '-o', str(output_docx_path),
+        temp_html.name,  # Just the filename since we'll be in that directory
+        '-o', str(output_docx_path.relative_to(temp_html.parent)),  # Relative path
         '--from', 'html',
         '--to', 'docx',
         '--standalone',  # Include header/footer
@@ -183,7 +184,11 @@ def convert_html_to_docx(html_content, output_docx_path, reference_doc=None):
 
     # Add reference document if provided
     if reference_doc and Path(reference_doc).exists():
-        cmd.extend(['--reference-doc', str(reference_doc)])
+        ref_path = Path(reference_doc)
+        if ref_path.is_absolute():
+            cmd.extend(['--reference-doc', str(ref_path)])
+        else:
+            cmd.extend(['--reference-doc', str(ref_path.relative_to(temp_html.parent))])
 
     # Run Pandoc from the HTML file's directory so it can find images
     print(f"🔄 Converting HTML to DOCX using Pandoc...")
