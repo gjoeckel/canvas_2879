@@ -42,10 +42,10 @@ function generatePageLinks(page) {
   const viewDocxUrl = page.box.file_url || `https://usu.app.box.com/file/${page.box.file_id}`;
   const editDocxUrl = page.box.word_online_url ||
     `https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=${page.box.file_id}&sharedAccessCode=`;
-  // Fix path for GitHub Pages: remove ../ prefix to make it root-relative
-  // (We'll add ../ prefix later for docs version)
+  // Generate absolute GitHub Pages URL for view canvas links
+  // Format: https://gjoeckel.github.io/canvas_2879/data/current/...
   const viewCanvasUrl = page.github?.local_html_path
-    ? page.github.local_html_path.replace(/^\.\.\//, '')
+    ? `https://gjoeckel.github.io/canvas_2879/${page.github.local_html_path.replace(/^\.\.\//, '')}`
     : '';
   const editCanvasUrl = `https://usucourses.instructure.com/courses/2879/pages/${page.canvas.page_id}/edit`;
 
@@ -156,13 +156,10 @@ async function main() {
   // Combine
   const newHTML = header + content + footer;
 
-  // Write output to both locations
+  // Write output to both locations (both use absolute URLs now)
   console.log('💾 Writing index.html files...');
   writeFileSync(OUTPUT_FILE_ROOT, newHTML, 'utf8');
-
-  // For docs folder, paths need ../ prefix since docs is served as root
-  const docsHTML = newHTML.replace(/href="data\//g, 'href="../data/');
-  writeFileSync(OUTPUT_FILE_DOCS, docsHTML, 'utf8');
+  writeFileSync(OUTPUT_FILE_DOCS, newHTML, 'utf8');
 
   console.log('✅ HTML generation complete!');
   console.log(`📄 Updated: ${OUTPUT_FILE_ROOT}`);
