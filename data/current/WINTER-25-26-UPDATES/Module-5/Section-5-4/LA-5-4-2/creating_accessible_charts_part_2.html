@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f2f2f2" name="theme-color"/>
+<title>Creating Accessible Charts: Part 2: WINTER 25-26 COURSE UPDATES</title>
+<!-- Canvas Core CSS Files (in order from Canvas source) -->
+<link href="../../canvas-fonts.css" media="screen" rel="stylesheet"/>
+<link href="../../canvas-variables.css" media="all" rel="stylesheet"/>
+<link href="../../canvas-common.css" media="all" rel="stylesheet"/>
+<link href="../../canvas-wiki-page.css" media="screen" rel="stylesheet"/>
+<link href="../../catalog_canvas_global.css" media="all" rel="stylesheet"/>
+<link href="../../webaimCatalog.css" media="all" rel="stylesheet"/>
+<link href="../../AD-365-V4.css" media="all" rel="stylesheet"/>
+<link href="../../canvas-custom-overrides.css" media="all" rel="stylesheet"/>
+</head>
+<body class="with-left-side course-menu-expanded padless-content pages primary-nav-expanded context-course_2879">
+<div class="content" style="margin-left: 30px; margin-right: 30px;">
+<div class="user_content">
+
+<link href="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016014/canvas_global_app.css" rel="stylesheet"/><div>
+<p><a class="Button" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/section-4-charts" data-api-returntype="Page" data-course-type="wikiPages" data-published="true" href="https://usucourses.instructure.com/courses/2879/pages/section-4-charts" title="Section 4: Charts">Return to Section 4</a></p>
+</div>
+<div>
+<h2>Video</h2>
+<p><iframe allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *; clipboard-write *; display-capture *" allowfullscreen="allowfullscreen" class="lti-embed" height="231" loading="lazy" mozallowfullscreen="mozallowfullscreen" src="https://usucourses.instructure.com/courses/2879/external_tools/retrieve?display=borderless&amp;url=https%3A%2F%2F2246721.kaf.kaltura.com%2Fbrowseandembed%2Findex%2Fmedia%2Fentryid%2F1_3u6o0p8p%2FshowDescription%2Ffalse%2FshowTitle%2Ffalse%2FshowTags%2Ffalse%2FshowDuration%2Ffalse%2FshowOwner%2Ffalse%2FshowUploadDate%2Ffalse%2FplayerSize%2F304x231%2FplayerSkin%2F43060302%2F" style="width: 304px; height: 231px;" title="Charts: Part 2 (07:52)" webkitallowfullscreen="webkitallowfullscreen" width="304"></iframe></p>
+</div>
+<div>
+<h2>Example Files</h2>
+<ul>
+<li><a class="instructure_file_link instructure_scribd_file" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235916" data-api-returntype="File" href="https://usucourses.instructure.com/courses/2879/files/1235916/download?verifier=jMhEBNNIkTFDA3bYKeUEvtZTK8fXYnC9clr3lYSg&amp;wrap=1" title="Creating-Accessible-Charts-Part-2.xlsx">Creating-Accessible-Charts-Part-2 (.xlsx)</a></li>
+</ul>
+</div>
+<div>
+<h2>Guide</h2>
+<div class="guide">
+<h1>Creating Accessible Charts: Part 2</h1>
+<div>
+<p>In the previous video, I covered the first two keys to accessible charts:</p>
+<ol>
+<li>Provide the chart data in text format.</li>
+<li>Optimize the chart's default elements.</li>
+</ol>
+<p>In this video, I will cover the next two:</p>
+<ol start="3">
+<li>Add data labels if needed.</li>
+<li>Follow accessibility principles for non-text chart elements.</li>
+</ol>
+<div>
+<h2>Objectives</h2>
+<ul>
+<li>State two recommendations for labeling a chart's data elements.</li>
+<li>Describe the process for adding an Alt Text to a Chart Area.</li>
+</ul>
+</div>
+<div>
+<h2>Add Data Labels if Needed</h2>
+<p>When a user does not have access to a chart's data in text format, adding text labels for some of a chart's elements may be required to optimize accessibility. When a chart's data is not presented on the same sheet as the chart, providing text labels for some of a chart's elements should be strongly considered.</p>
+<p>Another major factor to take into account is the type of chart being used. Ultimately—</p>
+<div class="callout note">
+<div><img alt="note" class="floatLeft" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235769" data-api-returntype="File" height="50" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235769/preview?verifier=Syfedmoi3YSMiABC3MSZso1uGMq1Dy4H2BagMHzi" width="50"/>
+<p>You must decide when, where and how to label a chart's data elements.</p>
+</div>
+</div>
+<h3>Two recommendations for data labels</h3>
+<p>When you do add data labels, we suggest that you follow two recommendations:</p>
+<ol type="A">
+<li>Select the best position for labels according to the context.</li>
+<li>Replicate any number formatting used in the data text.</li>
+</ol>
+<p>For charts that use shapes, labels can be positioned inside a shape, <br/>and aligned with the shape in various ways depending on the chart's configuration.</p>
+<p>I'll open the example file in Excel 2016 on Windows, and make sure that the "Spending on U.S. Pets by Type" sheet is open.</p>
+<h3>Positioning data labels</h3>
+<h4>Inside data shapes</h4>
+<p>In this example, my choices for positioning labels inside the data bars are:</p>
+<p>Center,</p>
+<p><img alt="Screenshot of data labels positioned inside a data bar in the middle of each category segment." class="screen" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235818" data-api-returntype="File" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235818/preview?verifier=EJxJhtT0vP7HJ7tVOfKiAYRSgT1YjMINcqE3TJCS" width="50%"/></p>
+<p>Inside End,</p>
+<p><img alt="Screenshot of data labels positioned inside a data bar before the end of each category segment." class="screen" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235866" data-api-returntype="File" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235866/preview?verifier=IWPxhtjq9B2Wd0SJBklDLbD651hkazyo88qHQEJb" width="50%"/></p>
+<p>and, Inside Base:</p>
+<p><img alt="Screenshot of data labels positioned inside a data bar after the beginning of each category segment." class="screen" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235867" data-api-returntype="File" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235867/preview?verifier=G5f8WfSWwcm1JejLLWfJeNqTZ1c0QlCU0WaC4fka" width="50%"/></p>
+<div class="callout instructions">
+<div><img alt="mac and windows instructions" class="floatRight" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235778" data-api-returntype="File" height="85" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235778/preview?verifier=OPyr7hvoAL9CdVDxrEanyoygsk8V6ONhvhvilGdh" width="100"/></div>
+<div>
+<h4>To add data labels to a chart:</h4>
+<ol class="">
+<ol class="">
+<li>
+<p>Select the chart, and click the "Design" tab under "Chart Tools" on the Ribbon.<br/><img alt='Screenshot of "Add Chart Element" highlighted and selected.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235797" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235797/preview?verifier=I6c3b1QzIyqsHhCiKnIsialQeQBnrwM1m2Sy1BM1" width="30%"/></p>
+</li>
+<li>
+<p>Click the "Add Chart Element" tool.<br/><img alt='Screenshot of "Add Chart Element" highlighted and selected.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235787" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235787/preview?verifier=YSgo31lvjFN9eSbsL09NXklivwODE3ll9oUmqf2q" width="30%"/></p>
+</li>
+<li>
+<p>Navigate to "Data Labels", and select a label position (I'll select "Center" for this example).<br/><img alt="selectCenter.png" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235790" data-api-returntype="File" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235790/preview?verifier=4f8ha03f1KBz3P9h3hkbjxbMNiopEptx5TXJwhJw" width="50%"/></p>
+</li>
+</ol>
+</ol>
+</div>
+</div>
+<h4>Outside data shapes</h4>
+<p>Labels can also be placed outside a shape by navigating to the "Add Chart Element" tool and selecting "Data Callout":</p>
+<p><img alt='Screenshot of "Data Callout" highlighted and selected on the submenu for "Data Labels".' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235853" data-api-returntype="File" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235853/preview?verifier=KB0IELkH5AYqnXjftiu50jiJi71oYeEcB9SyhjYD" width="50%"/></p>
+<p>In this example, by default each data callout is positioned directly "on top of" its corresponding segment of the data bar:</p>
+<p><img alt="" class="screen" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235789" data-api-returntype="File" data-decorative="true" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235789/preview?verifier=hHNQqEr8SGS8qnvaa7mNsd1wyt0W1FEZFOrrWS79" width="50%"/></p>
+<p>Using the mouse to drag and drop, I'll move each label toward the top of the chart, so that it is positioned "above" its segment of the data bar:</p>
+<p><img alt="" class="screen" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235792" data-api-returntype="File" data-decorative="true" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235792/preview?verifier=X4NxCwenIcck0gqO1Kf5WekkYiVNHLYJLDiFKUh5" width="50%"/></p>
+<p>As I mentioned previously, there may be insufficient contrast between the default color of text in a data label, and the default colors of shapes. In this example, the default text color has insufficient contrast with both the orange and yellow background colors. I'll darken the color of the text to address this issue, and increase the font size from 9 points to 10.</p>
+<h3>Formatting labels</h3>
+<p>The data for this chart is in dollars. I'll select a data cell and make sure the <span>Hᴏᴍᴇ</span> tab on the <strong>Ribbon</strong> is showing. I can see that the format "Currency" in the "Numbers" section has been applied:</p>
+<p><img alt='Screenshot of one data cell selected on a data table, with a second screenshot showing "Currency" highlighted on the "Numbers" dropdown.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235773" data-api-returntype="File" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235773/preview?verifier=8dNo4Kl4t8dQeNJ5f48bYh8tf9EQD29sZAYU0CP3" width="70%"/></p>
+<p>Returning to my chart, I'll double-click the horizontal axis to open the "Format Axis" side panel. On the "Axis Options" tab, I'll expand the "Numbers" section, and I see that the "Currency" format was automatically applied when the chart was created:</p>
+<p><img alt='Screenshot of "Currency" highlighted on the Category dropdown.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235788" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235788/preview?verifier=OP6uaC5nOQEMiaNWRwkWwGuW9Xi1ISoMU6JQaFx3" width="30%"/></p>
+<p>However, when I click on a data label on one of the chart's bars, open the "Format Data Labels" side panel, and expand the "Numbers" section, I see that these labels are formatted as "General":</p>
+<p><img alt='Screenshot of "General" highlighted on the Category dropdown.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235805" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235805/preview?verifier=2sdlavlvOhnqVXMdw8lVC8znx1ply1S0pSD7ttSK" width="30%"/></p>
+<p>To provide the most equivalent information, I want to ensure that these labels have the same descriptive number formatting that was automatically applied to the horizontal axis.</p>
+<div class="callout instructions">
+<div><img alt="mac and windows instructions" class="floatRight" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235778" data-api-returntype="File" height="85" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235778/preview?verifier=OPyr7hvoAL9CdVDxrEanyoygsk8V6ONhvhvilGdh" width="100"/></div>
+<div>
+<h4>To apply a "Number" category to a label:</h4>
+<ol class="">
+<ol class="">
+<li>
+<p>Open the "Format Data Labels" side panel.<br/><img alt='Screenshot of "Format Data Labels" highlighted and selected on the right-click menu.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235775" data-api-returntype="File" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235775/preview?verifier=IJUuWAm0VQJaeRXYpAXpHxHWc176fj85veYmqZ7M" width="50%"/></p>
+</li>
+<li>
+<p>Select a category from the drop-down menu in the "Number" section (I'll select "Currency" for this example).<br/><img alt='Screenshot of "Currency" highlighted and selected on the "Category" dropdown.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235806" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235806/preview?verifier=fbV8RxxYnNsC8BgTLsT23I9uLRS9rkHl964f90Rs" width="30%"/></p>
+</li>
+<li>
+<p>Set the "Decimal places" value appropriately for the context (in this example data, the data are rounded off to closest hundred million, so I'll change this value from "2" to "1").<br/><img alt='Screenshot of the "Decimal places" field highlighted in its location below the "Category" dropdown.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235876" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235876/preview?verifier=u5tvBL1KI4osDHCmTQZyiqhxG9irMH7NNxxMufoE" width="30%"/></p>
+</li>
+</ol>
+</ol>
+</div>
+</div>
+</div>
+<div>
+<h2>Follow Accessibility Principles for Non-text Chart Elements</h2>
+<p>Accessibility principles for non-text chart elements can be organized into two categories: <em>Alt Text</em> and Contrast.</p>
+<h3><em>Alt Text</em> for non-text chart elements</h3>
+<p>Add an <em>Alt Text</em> value to the <em>Chart Area</em> following the process demonstrated in the <a data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/images-part-3" data-api-returntype="Page" href="https://usucourses.instructure.com/courses/2879/pages/images-part-3" title="Images: Part 3">Images: Part 3 video</a>. We recommend providing a high-level description that includes the chart's type. For this chart, I'll use: "Stacked bar chart of spending on dogs, cats, and other pets in the U.S. from 2011 - 2017":</p>
+<p><img alt='Screenshot of "Alt Text" added to the "Description" field.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235772" data-api-returntype="File" height="30%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235772/preview?verifier=G9iFMhWdJhSeOBk3fak3dGS3SxxRGQw1Jdx41blU" width="30%"/><br/><br/>Please remember that—</p>
+<div class="callout note">
+<div><img alt="note" class="floatLeft" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235769" data-api-returntype="File" height="50" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235769/preview?verifier=Syfedmoi3YSMiABC3MSZso1uGMq1Dy4H2BagMHzi" width="50"/>
+<p>When a chart's data is not presented in an accessible text format, a chart summary provided as Alt Text is NOT an equivalent experience for a blind user.</p>
+</div>
+</div>
+<h3>Contrast for non-text chart elements</h3>
+<p>There is no contrast requirement for a non-text chart element when an accessible text alternative, such as a data table or a data label, has been provided. When an accessible text alternative has not been provided, a minimum contrast ratio of 3:1 is required between the color values of a non-text chart element and the background, and/or elements that are adjacent to it.</p>
+<p>Returning to the example file, I'll open the "Browser Market Share" sheet. This is a pie chart we have reproduced from an example provided online for the WCAG Success Criteria 1.4.11: Non-text Contrast:</p>
+<p><img alt="" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235800" data-api-returntype="File" data-decorative="true" height="70%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235800/preview?verifier=APEMHCEjGRQznGOt8H5DxcUJyZ0eZX4s2JaRbCw8" width="70%"/></p>
+<p>We have provided a link to this page in the Resource Links for this Section.</p>
+<p>This chart fails 1.4.11, as explained on the page:</p>
+<blockquote>The pie chart has labels for each slice (so passes 1.4.1 Use of Color), <br/>but in order to understand the proportions of the slices you must discern the edges of the slices (the graphical objects conveying essential information),<br/>and the contrast between the slices is not 3:1 or greater.</blockquote>
+<p>Fortunately, Excel pie charts feature a border between shapes by default. Each shape in this example must have 3:1 contrast with its white border. Five of the shapes meet this requirement, but the yellow shape labeled "Safari" does not:</p>
+<p><img alt="" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235802" data-api-returntype="File" data-decorative="true" height="70%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235802/preview?verifier=hxU6c2ZsRW1zxgsXkocw8EzfFBrTLHE8eenUkQ1q" width="70%"/></p>
+<p>To address this issue, I'll change the shape's color to a darker yellow.</p>
+<div class="callout instructions">
+<div><img alt="mac and windows instructions" class="floatRight" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235778" data-api-returntype="File" height="85" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235778/preview?verifier=OPyr7hvoAL9CdVDxrEanyoygsk8V6ONhvhvilGdh" width="100"/></div>
+<div>
+<h4>To change a chart shape's color:</h4>
+<ol class="">
+<ol class="">
+<li>
+<p>Click the Chart Area.</p>
+</li>
+<li>
+<p>Click the shape.</p>
+</li>
+<li>
+<p>Select "Format Data Point" from the menu.<br/><img alt='Screenshot of the chart area labeled with the number "1", the "Safari" chart shape labeled with the number "2", and "Format Data Point" labeled number "3" and selected on the right-click menu.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235794" data-api-returntype="File" height="70%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235794/preview?verifier=sGPQXfBn3bTd3nP9xaLckt4yrPPhAulsidF6J5Rz" width="70%"/></p>
+</li>
+<li>
+<p>On the "Format Data Point" side panel, click the "Fill &amp; Line" tab.</p>
+</li>
+<li>
+<p>Expand the "Fill" section.<br/><img alt='Screenshot of the "Fill &amp; Line" tab labeled with the number "4", and the expanded "Fill" section labeled with the number "5".' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235798" data-api-returntype="File" height="40%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235798/preview?verifier=BFakCGlDhuu8ZgRedVpL9ATe4vMhH27Cc54Yq0HP" width="40%"/></p>
+</li>
+<li>
+<p>Click on the "Color" tool and select "More Colors" from the picker.<br/><img alt='Screenshot of "More Colors" highlighted and selected on the picker.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235408" data-api-returntype="File" height="40%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235408/preview?verifier=BWux6V7wjeV8nubYo9B9vXPoCo4Z9mCVt7I2HS3n" width="40%"/></p>
+</li>
+<li>
+<p>On the "Color" dialog, enter the new values on the "Custom" tab.</p>
+</li>
+<li>
+<p>Click "OK".<br/><img alt='Screenshot of the Red, Green, &amp; Blue color value fields labeled with the number "7" and the "OK" labeled with the number "8" and selected.' data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235879" data-api-returntype="File" height="50%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235879/preview?verifier=b1tH5y6sAOMp8gBTlBGBQKyrTkLfApZ9M37ZUFHx" width="50%"/></p>
+</li>
+</ol>
+</ol>
+</div>
+</div>
+</div>
+<p><img alt="Screenshot of the chart with the darker shade of yellow applied." data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/files/1235878" data-api-returntype="File" height="70%" loading="lazy" src="https://usucourses.instructure.com/courses/2879/files/1235878/preview?verifier=jvinGI2J0SxuClBysnU2r722YCfUE1hNoNxsgabk" width="70%"/></p>
+<div>
+<div class="topSpace">
+<p>The next video will cover using charts in Word &amp; PowerPoint.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p><a class="Button" data-api-endpoint="https://usucourses.instructure.com/api/v1/courses/2879/pages/section-4-charts" data-api-returntype="Page" data-course-type="wikiPages" data-published="true" href="https://usucourses.instructure.com/courses/2879/pages/section-4-charts" title="Section 4: Charts">Return to Section 4</a></p>
+</div>
+</div>
+</div><script src="https://instructure-uploads.s3.amazonaws.com/account_43980000000000001/attachments/1016015/canvas_global_app.js"></script>
+</div>
+</div>
+</body>
+</html>

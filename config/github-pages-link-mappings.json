@@ -1,0 +1,469 @@
+{
+  "mappings": [
+    {
+      "docx_file": "Module-1/Section-1-1/LA-1-1-1/overview_of_document_accessibility_part_1.docx",
+      "docx_name": "overview_of_document_accessibility_part_1",
+      "box_file_id": "2071047997212",
+      "box_url": "https://usu.app.box.com/file/2071047997212",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047997212&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-1/LA-1-1-1/overview_of_document_accessibility_part_1_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-1/LA-1-1-1/overview_of_document_accessibility_part_1_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-1/LA-1-1-2/overview_of_document_accessibility_part_2.docx",
+      "docx_name": "overview_of_document_accessibility_part_2",
+      "box_file_id": "2071060528255",
+      "box_url": "https://usu.app.box.com/file/2071060528255",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060528255&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-1/LA-1-1-2/overview_of_document_accessibility_part_2_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-1/LA-1-1-2/overview_of_document_accessibility_part_2_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-2/LA-1-2-1/images_part_1.docx",
+      "docx_name": "images_part_1",
+      "box_file_id": "2071047651774",
+      "box_url": "https://usu.app.box.com/file/2071047651774",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047651774&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-2/LA-1-2-1/images_part_1_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/LA-1-2-1/images_part_1_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-2/LA-1-2-2/images_part_2.docx",
+      "docx_name": "images_part_2",
+      "box_file_id": "2071058247752",
+      "box_url": "https://usu.app.box.com/file/2071058247752",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058247752&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-2/LA-1-2-2/images_part_2_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/LA-1-2-2/images_part_2_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-2/LA-1-2-3/images_part_3.docx",
+      "docx_name": "images_part_3",
+      "box_file_id": "2071058238893",
+      "box_url": "https://usu.app.box.com/file/2071058238893",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058238893&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-2/LA-1-2-3/images_part_3_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/LA-1-2-3/images_part_3_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-3/LA-1-3-1/optimizing_hyperlinks.docx",
+      "docx_name": "optimizing_hyperlinks",
+      "box_file_id": "2071057940942",
+      "box_url": "https://usu.app.box.com/file/2071057940942",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057940942&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/optimizing-hyperlinks",
+      "github_html_path": "Module-1/Section-1-3/LA-1-3-1/optimizing_hyperlinks_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-3/LA-1-3-1/optimizing_hyperlinks_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-3/LA-1-3-2/adding_and_editing_hyperlinks.docx",
+      "docx_name": "adding_and_editing_hyperlinks",
+      "box_file_id": "2071059956736",
+      "box_url": "https://usu.app.box.com/file/2071059956736",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059956736&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/adding-and-editing-hyperlinks",
+      "github_html_path": "Module-1/Section-1-3/LA-1-3-2/adding_and_editing_hyperlinks_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-3/LA-1-3-2/adding_and_editing_hyperlinks_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-4/LA-1-4-1/contrast_part_1.docx",
+      "docx_name": "contrast_part_1",
+      "box_file_id": "2071052946786",
+      "box_url": "https://usu.app.box.com/file/2071052946786",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052946786&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-4/LA-1-4-1/contrast_part_1_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/LA-1-4-1/contrast_part_1_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-4/LA-1-4-2/contrast_part_2.docx",
+      "docx_name": "contrast_part_2",
+      "box_file_id": "2071050450474",
+      "box_url": "https://usu.app.box.com/file/2071050450474",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050450474&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-4/LA-1-4-2/contrast_part_2_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/LA-1-4-2/contrast_part_2_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-4/LA-1-4-3/color_reliance.docx",
+      "docx_name": "color_reliance",
+      "box_file_id": "2071047337984",
+      "box_url": "https://usu.app.box.com/file/2071047337984",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047337984&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/color-reliance",
+      "github_html_path": "Module-1/Section-1-4/LA-1-4-3/color_reliance_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/LA-1-4-3/color_reliance_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-4/section_4__contrast_&_color_reliance.docx",
+      "docx_name": "section_4__contrast_&_color_reliance",
+      "box_file_id": "2071059095632",
+      "box_url": "https://usu.app.box.com/file/2071059095632",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059095632&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/color-reliance",
+      "github_html_path": "Module-1/Section-1-4/section_4__contrast_&_color_reliance_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/section_4__contrast_&_color_reliance_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-5/LA-1-5-1/plain_language_spelling_and_grammar.docx",
+      "docx_name": "plain_language_spelling_and_grammar",
+      "box_file_id": "2071055870233",
+      "box_url": "https://usu.app.box.com/file/2071055870233",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071055870233&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-1/Section-1-5/LA-1-5-1/plain_language_spelling_and_grammar_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/LA-1-5-1/plain_language_spelling_and_grammar_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-5/LA-1-5-2/readability.docx",
+      "docx_name": "readability",
+      "box_file_id": "2071059244433",
+      "box_url": "https://usu.app.box.com/file/2071059244433",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059244433&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/readability",
+      "github_html_path": "Module-1/Section-1-5/LA-1-5-2/readability_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/LA-1-5-2/readability_local.html"
+    },
+    {
+      "docx_file": "Module-1/Section-1-5/LA-1-5-3/legible_documents.docx",
+      "docx_name": "legible_documents",
+      "box_file_id": "2071057852137",
+      "box_url": "https://usu.app.box.com/file/2071057852137",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057852137&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/legible-documents",
+      "github_html_path": "Module-1/Section-1-5/LA-1-5-3/legible_documents_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/LA-1-5-3/legible_documents_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-1/LA-2-1-1/the_importance_of_headings.docx",
+      "docx_name": "the_importance_of_headings",
+      "box_file_id": "2071053930144",
+      "box_url": "https://usu.app.box.com/file/2071053930144",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053930144&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/the-importance-of-headings",
+      "github_html_path": "Module-2/Section-2-1/LA-2-1-1/the_importance_of_headings_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/LA-2-1-1/the_importance_of_headings_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-1/LA-2-1-2/creating_headings.docx",
+      "docx_name": "creating_headings",
+      "box_file_id": "2071053592226",
+      "box_url": "https://usu.app.box.com/file/2071053592226",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053592226&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/creating-headings",
+      "github_html_path": "Module-2/Section-2-1/LA-2-1-2/creating_headings_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/LA-2-1-2/creating_headings_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-1/LA-2-1-3/modifying_headings.docx",
+      "docx_name": "modifying_headings",
+      "box_file_id": "2071054773431",
+      "box_url": "https://usu.app.box.com/file/2071054773431",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071054773431&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/modifying-headings",
+      "github_html_path": "Module-2/Section-2-1/LA-2-1-3/modifying_headings_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/LA-2-1-3/modifying_headings_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-2/LA-2-2-1/themes_and_layouts.docx",
+      "docx_name": "themes_and_layouts",
+      "box_file_id": "2071049116198",
+      "box_url": "https://usu.app.box.com/file/2071049116198",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071049116198&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/themes-and-layouts",
+      "github_html_path": "Module-2/Section-2-2/LA-2-2-1/themes_and_layouts_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/LA-2-2-1/themes_and_layouts_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-2/LA-2-2-2/slide_master.docx",
+      "docx_name": "slide_master",
+      "box_file_id": "2071053872558",
+      "box_url": "https://usu.app.box.com/file/2071053872558",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053872558&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/slide-master",
+      "github_html_path": "Module-2/Section-2-2/LA-2-2-2/slide_master_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/LA-2-2-2/slide_master_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-2/LA-2-2-3/reading_order_principles_of_accessibility.docx",
+      "docx_name": "reading_order_principles_of_accessibility",
+      "box_file_id": null,
+      "box_url": null,
+      "box_edit_url": null,
+      "canvas_url": null,
+      "github_html_path": "Module-2/Section-2-2/LA-2-2-3/reading_order_principles_of_accessibility_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/LA-2-2-3/reading_order_principles_of_accessibility_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-3/LA-2-3-1/lists.docx",
+      "docx_name": "lists",
+      "box_file_id": "2071057602523",
+      "box_url": "https://usu.app.box.com/file/2071057602523",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057602523&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/columns",
+      "github_html_path": "Module-2/Section-2-3/LA-2-3-1/lists_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-3/LA-2-3-1/lists_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-3/LA-2-3-2/columns.docx",
+      "docx_name": "columns",
+      "box_file_id": "2071047918151",
+      "box_url": "https://usu.app.box.com/file/2071047918151",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071047918151&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/columns",
+      "github_html_path": "Module-2/Section-2-3/LA-2-3-2/columns_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-3/LA-2-3-2/columns_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-3/section_3__lists_&_columns.docx",
+      "docx_name": "section_3__lists_&_columns",
+      "box_file_id": "2071060732439",
+      "box_url": "https://usu.app.box.com/file/2071060732439",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060732439&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/columns",
+      "github_html_path": "Module-2/Section-2-3/section_3__lists_&_columns_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-3/section_3__lists_&_columns_local.html"
+    },
+    {
+      "docx_file": "Module-2/Section-2-4/LA-2-4-1/tables.docx",
+      "docx_name": "tables",
+      "box_file_id": "2071054459018",
+      "box_url": "https://usu.app.box.com/file/2071054459018",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071054459018&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-4-tables",
+      "github_html_path": "Module-2/Section-2-4/LA-2-4-1/tables_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-2/Section-2-4/LA-2-4-1/tables_local.html"
+    },
+    {
+      "docx_file": "Module-3/Section-3-1/LA-3-1-1/evaluating_accessibility.docx",
+      "docx_name": "evaluating_accessibility",
+      "box_file_id": "2071053230221",
+      "box_url": "https://usu.app.box.com/file/2071053230221",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071053230221&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/evaluating-accessibility",
+      "github_html_path": "Module-3/Section-3-1/LA-3-1-1/evaluating_accessibility_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-3/Section-3-1/LA-3-1-1/evaluating_accessibility_local.html"
+    },
+    {
+      "docx_file": "Module-3/Section-3-2/LA-3-2-1/practicing_evaluation_repair.docx",
+      "docx_name": "practicing_evaluation_repair",
+      "box_file_id": null,
+      "box_url": null,
+      "box_edit_url": null,
+      "canvas_url": null,
+      "github_html_path": "Module-3/Section-3-2/LA-3-2-1/practicing_evaluation_repair_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-3/Section-3-2/LA-3-2-1/practicing_evaluation_repair_local.html"
+    },
+    {
+      "docx_file": "Module-3/Section-3-2/LA-3-2-2/filename_document_title.docx",
+      "docx_name": "filename_document_title",
+      "box_file_id": null,
+      "box_url": null,
+      "box_edit_url": null,
+      "canvas_url": null,
+      "github_html_path": "Module-3/Section-3-2/LA-3-2-2/filename_document_title_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-3/Section-3-2/LA-3-2-2/filename_document_title_local.html"
+    },
+    {
+      "docx_file": "Module-3/Section-3-3/LA-3-3-1/creating_pdfs_part_1.docx",
+      "docx_name": "creating_pdfs_part_1",
+      "box_file_id": "2071059967175",
+      "box_url": "https://usu.app.box.com/file/2071059967175",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071059967175&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-3/Section-3-3/LA-3-3-1/creating_pdfs_part_1_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-3/Section-3-3/LA-3-3-1/creating_pdfs_part_1_local.html"
+    },
+    {
+      "docx_file": "Module-3/Section-3-3/LA-3-3-2/creating_pdfs_part_2.docx",
+      "docx_name": "creating_pdfs_part_2",
+      "box_file_id": "2071056727108",
+      "box_url": "https://usu.app.box.com/file/2071056727108",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056727108&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-3/Section-3-3/LA-3-3-2/creating_pdfs_part_2_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-3/Section-3-3/LA-3-3-2/creating_pdfs_part_2_local.html"
+    },
+    {
+      "docx_file": "Module-3/module_3__evaluating_accessibility_&_creating_pdfs.docx",
+      "docx_name": "module_3__evaluating_accessibility_&_creating_pdfs",
+      "box_file_id": "2071060624163",
+      "box_url": "https://usu.app.box.com/file/2071060624163",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060624163&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/evaluating-accessibility",
+      "github_html_path": "Module-3/module_3__evaluating_accessibility_&_creating_pdfs_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-3/module_3__evaluating_accessibility_&_creating_pdfs_local.html"
+    },
+    {
+      "docx_file": "Module-4/Section-4-1/LA-4-1-1/introduction_to_optimizing_pdfs_part_1.docx",
+      "docx_name": "introduction_to_optimizing_pdfs_part_1",
+      "box_file_id": "2071052846272",
+      "box_url": "https://usu.app.box.com/file/2071052846272",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071052846272&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-4/Section-4-1/LA-4-1-1/introduction_to_optimizing_pdfs_part_1_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-4/Section-4-1/LA-4-1-1/introduction_to_optimizing_pdfs_part_1_local.html"
+    },
+    {
+      "docx_file": "Module-4/Section-4-1/LA-4-1-2/introduction_to_optimizing_pdfs_part_2.docx",
+      "docx_name": "introduction_to_optimizing_pdfs_part_2",
+      "box_file_id": "2071048832979",
+      "box_url": "https://usu.app.box.com/file/2071048832979",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048832979&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-4/Section-4-1/LA-4-1-2/introduction_to_optimizing_pdfs_part_2_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-4/Section-4-1/LA-4-1-2/introduction_to_optimizing_pdfs_part_2_local.html"
+    },
+    {
+      "docx_file": "Module-4/Section-4-2/LA-4-2-1/checking_accessibility.docx",
+      "docx_name": "checking_accessibility",
+      "box_file_id": "2071050445313",
+      "box_url": "https://usu.app.box.com/file/2071050445313",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071050445313&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-2-checking-accessibility",
+      "github_html_path": "Module-4/Section-4-2/LA-4-2-1/checking_accessibility_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-4/Section-4-2/LA-4-2-1/checking_accessibility_local.html"
+    },
+    {
+      "docx_file": "Module-4/Section-4-3/LA-4-3-1/reading_order_tool.docx",
+      "docx_name": "reading_order_tool",
+      "box_file_id": "2071056942814",
+      "box_url": "https://usu.app.box.com/file/2071056942814",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071056942814&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-3-reading-order-tool",
+      "github_html_path": "Module-4/Section-4-3/LA-4-3-1/reading_order_tool_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-4/Section-4-3/LA-4-3-1/reading_order_tool_local.html"
+    },
+    {
+      "docx_file": "Module-4/Section-4-4/LA-4-4-1/content_order_and_tags_order.docx",
+      "docx_name": "content_order_and_tags_order",
+      "box_file_id": "2071060703561",
+      "box_url": "https://usu.app.box.com/file/2071060703561",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060703561&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-4-content-order-and-tags-order",
+      "github_html_path": "Module-4/Section-4-4/LA-4-4-1/content_order_and_tags_order_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-4/Section-4-4/LA-4-4-1/content_order_and_tags_order_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-1/LA-5-1-1/navigating_in_excel.docx",
+      "docx_name": "navigating_in_excel",
+      "box_file_id": "2071058456462",
+      "box_url": "https://usu.app.box.com/file/2071058456462",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058456462&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-1-navigating-in-excel",
+      "github_html_path": "Module-5/Section-5-1/LA-5-1-1/navigating_in_excel_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-1/LA-5-1-1/navigating_in_excel_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-2/LA-5-2-1/sheets_tables.docx",
+      "docx_name": "sheets_tables",
+      "box_file_id": "2071058178466",
+      "box_url": "https://usu.app.box.com/file/2071058178466",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071058178466&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-5/Section-5-2/LA-5-2-1/sheets_tables_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-2/LA-5-2-1/sheets_tables_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-3/LA-5-3-1/images_links.docx",
+      "docx_name": "images_links",
+      "box_file_id": null,
+      "box_url": null,
+      "box_edit_url": null,
+      "canvas_url": null,
+      "github_html_path": "Module-5/Section-5-3/LA-5-3-1/images_links_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-3/LA-5-3-1/images_links_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-4/LA-5-4-1/creating_accessible_charts_part_1.docx",
+      "docx_name": "creating_accessible_charts_part_1",
+      "box_file_id": "2071048367258",
+      "box_url": "https://usu.app.box.com/file/2071048367258",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071048367258&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-5/Section-5-4/LA-5-4-1/creating_accessible_charts_part_1_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/LA-5-4-1/creating_accessible_charts_part_1_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-4/LA-5-4-2/creating_accessible_charts_part_2.docx",
+      "docx_name": "creating_accessible_charts_part_2",
+      "box_file_id": "2071060111115",
+      "box_url": "https://usu.app.box.com/file/2071060111115",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060111115&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-5/Section-5-4/LA-5-4-2/creating_accessible_charts_part_2_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/LA-5-4-2/creating_accessible_charts_part_2_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-4/LA-5-4-3/creating_accessible_charts_part_3.docx",
+      "docx_name": "creating_accessible_charts_part_3",
+      "box_file_id": "2071057230095",
+      "box_url": "https://usu.app.box.com/file/2071057230095",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057230095&sharedAccessCode=",
+      "canvas_url": null,
+      "github_html_path": "Module-5/Section-5-4/LA-5-4-3/creating_accessible_charts_part_3_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/LA-5-4-3/creating_accessible_charts_part_3_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-5/LA-5-5-1/optimizing_workbooks.docx",
+      "docx_name": "optimizing_workbooks",
+      "box_file_id": "2071057410242",
+      "box_url": "https://usu.app.box.com/file/2071057410242",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071057410242&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-5-optimizing-workbooks",
+      "github_html_path": "Module-5/Section-5-5/LA-5-5-1/optimizing_workbooks_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-5/LA-5-5-1/optimizing_workbooks_local.html"
+    },
+    {
+      "docx_file": "Module-5/Section-5-6/LA-5-6-1/evaluating_accessibility_in_excel.docx",
+      "docx_name": "evaluating_accessibility_in_excel",
+      "box_file_id": "2071060624163",
+      "box_url": "https://usu.app.box.com/file/2071060624163",
+      "box_edit_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2071060624163&sharedAccessCode=",
+      "canvas_url": "https://usucourses.instructure.com/courses/2879/pages/section-6-evaluating-accessibility-in-excel",
+      "github_html_path": "Module-5/Section-5-6/LA-5-6-1/evaluating_accessibility_in_excel_local.html",
+      "github_url": "https://YOUR-USERNAME.github.io/YOUR-REPO/data/current/WINTER-25-26-UPDATES/Module-5/Section-5-6/LA-5-6-1/evaluating_accessibility_in_excel_local.html"
+    }
+  ],
+  "summary": {
+    "total_docx_files": 43,
+    "files_with_box_ids": 39,
+    "files_with_canvas_urls": 23,
+    "missing_box_ids": 4,
+    "missing_canvas_urls": 20
+  },
+  "missing_box": [
+    "reading_order_principles_of_accessibility",
+    "practicing_evaluation_repair",
+    "filename_document_title",
+    "images_links"
+  ],
+  "missing_canvas": [
+    "overview_of_document_accessibility_part_1",
+    "overview_of_document_accessibility_part_2",
+    "images_part_1",
+    "images_part_2",
+    "images_part_3",
+    "contrast_part_1",
+    "contrast_part_2",
+    "plain_language_spelling_and_grammar",
+    "reading_order_principles_of_accessibility",
+    "practicing_evaluation_repair",
+    "filename_document_title",
+    "creating_pdfs_part_1",
+    "creating_pdfs_part_2",
+    "introduction_to_optimizing_pdfs_part_1",
+    "introduction_to_optimizing_pdfs_part_2",
+    "sheets_tables",
+    "images_links",
+    "creating_accessible_charts_part_1",
+    "creating_accessible_charts_part_2",
+    "creating_accessible_charts_part_3"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "convert": "node convert-html-to-docx.js ."
+  },
+  "devDependencies": {
+    "html-to-docx": "^1.8.0"
+  }
+}

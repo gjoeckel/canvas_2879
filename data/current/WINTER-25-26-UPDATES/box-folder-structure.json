@@ -1,0 +1,413 @@
+{
+  "base_folder_id": "355471834847",
+  "scanned_at": "2025-12-15T22:06:36.022Z",
+  "start_here": {
+    "folder_name": "Start-Here",
+    "folder_id": "355472814432",
+    "subfolders": [
+      {
+        "folder_name": "1-course-orientation",
+        "folder_id": "356024870284"
+      },
+      {
+        "folder_name": "2-course-details",
+        "folder_id": "356023244847"
+      },
+      {
+        "folder_name": "3-terms-of-use",
+        "folder_id": "356022969543"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "module_number": 1,
+      "folder_name": "Module-1",
+      "folder_id": "355472828832",
+      "sections": [
+        {
+          "section_number": 1,
+          "folder_name": "Section-1-1",
+          "folder_id": "355470702235",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-1-1-1",
+              "folder_id": "355473801426"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-1-1-2",
+              "folder_id": "355473013592"
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "folder_name": "Section-1-2",
+          "folder_id": "355472944690",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-1-2-1",
+              "folder_id": "355472984866"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-1-2-2",
+              "folder_id": "355474130314"
+            },
+            {
+              "la_number": 3,
+              "folder_name": "LA-1-2-3",
+              "folder_id": "355470767773"
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "folder_name": "Section-1-3",
+          "folder_id": "355474103285",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-1-3-1",
+              "folder_id": "355471671911"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-1-3-2",
+              "folder_id": "355474311855"
+            }
+          ]
+        },
+        {
+          "section_number": 4,
+          "folder_name": "Section-1-4",
+          "folder_id": "355470493749",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-1-4-1",
+              "folder_id": "355472265476"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-1-4-2",
+              "folder_id": "355470647708"
+            },
+            {
+              "la_number": 3,
+              "folder_name": "LA-1-4-3",
+              "folder_id": "355474519086"
+            }
+          ]
+        },
+        {
+          "section_number": 5,
+          "folder_name": "Section-1-5",
+          "folder_id": "355472847649",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-1-5-1",
+              "folder_id": "355472034381"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-1-5-2",
+              "folder_id": "355474122256"
+            },
+            {
+              "la_number": 3,
+              "folder_name": "LA-1-5-3",
+              "folder_id": "355471981360"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_number": 2,
+      "folder_name": "Module-2",
+      "folder_id": "355474168042",
+      "sections": [
+        {
+          "section_number": 1,
+          "folder_name": "Section-2-1",
+          "folder_id": "355471712475",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-2-1-1",
+              "folder_id": "355474587717"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-2-1-2",
+              "folder_id": "355471835928"
+            },
+            {
+              "la_number": 3,
+              "folder_name": "LA-2-1-3",
+              "folder_id": "355472389852"
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "folder_name": "Section-2-2",
+          "folder_id": "355471941183",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-2-2-1",
+              "folder_id": "355473829477"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-2-2-2",
+              "folder_id": "355473623902"
+            },
+            {
+              "la_number": 3,
+              "folder_name": "LA-2-2-3",
+              "folder_id": "355473778964"
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "folder_name": "Section-2-3",
+          "folder_id": "355470551274",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-2-3-1",
+              "folder_id": "355470887835"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-2-3-2",
+              "folder_id": "355471852227"
+            }
+          ]
+        },
+        {
+          "section_number": 4,
+          "folder_name": "Section-2-4",
+          "folder_id": "355474206810",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-2-4-1",
+              "folder_id": "355470885178"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_number": 3,
+      "folder_name": "Module-3",
+      "folder_id": "355474585317",
+      "sections": [
+        {
+          "section_number": 1,
+          "folder_name": "Section-3-1",
+          "folder_id": "355473711957",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-3-1-1",
+              "folder_id": "355473633562"
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "folder_name": "Section-3-2",
+          "folder_id": "355471051063",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-3-2-1",
+              "folder_id": "355472276406"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-3-2-2",
+              "folder_id": "355473858115"
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "folder_name": "Section-3-3",
+          "folder_id": "355473878253",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-3-3-1",
+              "folder_id": "355470205593"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-3-3-2",
+              "folder_id": "355470707035"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_number": 4,
+      "folder_name": "Module-4",
+      "folder_id": "355473798714",
+      "sections": [
+        {
+          "section_number": 1,
+          "folder_name": "Section-4-1",
+          "folder_id": "355474125514",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-4-1-1",
+              "folder_id": "355474621534"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-4-1-2",
+              "folder_id": "355472264971"
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "folder_name": "Section-4-2",
+          "folder_id": "355473868653",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-4-2-1",
+              "folder_id": "355472987199"
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "folder_name": "Section-4-3",
+          "folder_id": "355472679803",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-4-3-1",
+              "folder_id": "355471725542"
+            }
+          ]
+        },
+        {
+          "section_number": 4,
+          "folder_name": "Section-4-4",
+          "folder_id": "355473846068",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-4-4-1",
+              "folder_id": "355471962881"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_number": 5,
+      "folder_name": "Module-5",
+      "folder_id": "355473710096",
+      "sections": [
+        {
+          "section_number": 1,
+          "folder_name": "Section-5-1",
+          "folder_id": "355473886872",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-5-1-1",
+              "folder_id": "355471336539"
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "folder_name": "Section-5-2",
+          "folder_id": "355473819876",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-5-2-1",
+              "folder_id": "355474410954"
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "folder_name": "Section-5-3",
+          "folder_id": "355472293301",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-5-3-1",
+              "folder_id": "355471739428"
+            }
+          ]
+        },
+        {
+          "section_number": 4,
+          "folder_name": "Section-5-4",
+          "folder_id": "355472221770",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-5-4-1",
+              "folder_id": "355473741363"
+            },
+            {
+              "la_number": 2,
+              "folder_name": "LA-5-4-2",
+              "folder_id": "355470654710"
+            },
+            {
+              "la_number": 3,
+              "folder_name": "LA-5-4-3",
+              "folder_id": "355470486549"
+            }
+          ]
+        },
+        {
+          "section_number": 5,
+          "folder_name": "Section-5-5",
+          "folder_id": "355472224170",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-5-5-1",
+              "folder_id": "355474180126"
+            }
+          ]
+        },
+        {
+          "section_number": 6,
+          "folder_name": "Section-5-6",
+          "folder_id": "355470054428",
+          "las": [
+            {
+              "la_number": 1,
+              "folder_name": "LA-5-6-1",
+              "folder_id": "355470299748"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3450 @@
+{
+  "schema_version": "1.0",
+  "course": {
+    "id": "2879",
+    "name": "Document Accessibility",
+    "canvas_url": "https://usucourses.instructure.com/courses/2879",
+    "semester": "Winter 2025-26",
+    "instructor": ""
+  },
+  "metadata": {
+    "created": "2025-12-15T22:15:38.759Z",
+    "last_updated": "2025-12-15T22:26:38.519Z",
+    "last_synced": null,
+    "version": "1.0.0"
+  },
+  "repositories": {
+    "main": {
+      "url": "https://github.com/gjoeckel/canvas_2879",
+      "branch": "main",
+      "path": "data/current/WINTER-25-26-UPDATES"
+    }
+  },
+  "box": {
+    "folder_id": "355471834847",
+    "folder_url": "https://usu.app.box.com/folder/355471834847",
+    "base_path": "/WINTER-25-26-UPDATES"
+  },
+  "start_here": {
+    "folder_name": "Start-Here",
+    "folder_id": "355472814432",
+    "subfolders": [
+      {
+        "id": "course-orientation",
+        "title": "Course Orientation",
+        "folder_name": "1-course-orientation",
+        "box_folder_id": "356024870284",
+        "order": 1,
+        "status": "draft",
+        "canvas": {
+          "url": "https://usucourses.instructure.com/courses/2879/pages/course-orientation",
+          "page_id": "course-orientation",
+          "published": false,
+          "published_at": null
+        },
+        "github": {
+          "repository": "main",
+          "source_docx": {
+            "path": "pages/course-orientation/course-orientation.docx",
+            "branch": "main"
+          },
+          "canvas_copy": {
+            "path": "pages/course-orientation/canvas-copy.html",
+            "branch": "main"
+          },
+          "with_assets": {
+            "path": "pages/course-orientation/index.html",
+            "branch": "main"
+          },
+          "local_html_path": "../data/current/WINTER-25-26-UPDATES/Start-Here/1-course-orientation/course_orientation_local.html"
+        },
+        "box": {
+          "file_id": "2075931468000",
+          "file_name": "course_orientation.docx",
+          "file_url": "https://usu.app.box.com/file/2075931468000",
+          "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931468000&sharedAccessCode=",
+          "folder_id": "356060620706",
+          "modified_at": null,
+          "version": 1
+        },
+        "sync": {
+          "last_synced": null,
+          "sync_status": "pending",
+          "sync_errors": []
+        },
+        "metadata": {
+          "type": "start_here",
+          "created": "2025-12-15T22:15:39.049Z"
+        }
+      },
+      {
+        "id": "course-details",
+        "title": "Course Details",
+        "folder_name": "2-course-details",
+        "box_folder_id": "356023244847",
+        "order": 2,
+        "status": "draft",
+        "canvas": {
+          "url": "https://usucourses.instructure.com/courses/2879/pages/course-details",
+          "page_id": "course-details",
+          "published": false,
+          "published_at": null
+        },
+        "github": {
+          "repository": "main",
+          "source_docx": {
+            "path": "pages/course-details/course-details.docx",
+            "branch": "main"
+          },
+          "canvas_copy": {
+            "path": "pages/course-details/canvas-copy.html",
+            "branch": "main"
+          },
+          "with_assets": {
+            "path": "pages/course-details/index.html",
+            "branch": "main"
+          },
+          "local_html_path": "../data/current/WINTER-25-26-UPDATES/Start-Here/2-course-details/course_details_local.html"
+        },
+        "box": {
+          "file_id": "2075931325376",
+          "file_name": "course_details.docx",
+          "file_url": "https://usu.app.box.com/file/2075931325376",
+          "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931325376&sharedAccessCode=",
+          "folder_id": "356061505729",
+          "modified_at": null,
+          "version": 1
+        },
+        "sync": {
+          "last_synced": null,
+          "sync_status": "pending",
+          "sync_errors": []
+        },
+        "metadata": {
+          "type": "start_here",
+          "created": "2025-12-15T22:15:39.463Z"
+        }
+      },
+      {
+        "id": "terms-of-use",
+        "title": "Terms Of Use",
+        "folder_name": "3-terms-of-use",
+        "box_folder_id": "356022969543",
+        "order": 3,
+        "status": "draft",
+        "canvas": {
+          "url": "https://usucourses.instructure.com/courses/2879/pages/terms-of-use",
+          "page_id": "terms-of-use",
+          "published": false,
+          "published_at": null
+        },
+        "github": {
+          "repository": "main",
+          "source_docx": {
+            "path": "pages/terms-of-use/terms-of-use.docx",
+            "branch": "main"
+          },
+          "canvas_copy": {
+            "path": "pages/terms-of-use/canvas-copy.html",
+            "branch": "main"
+          },
+          "with_assets": {
+            "path": "pages/terms-of-use/index.html",
+            "branch": "main"
+          },
+          "local_html_path": "../data/current/WINTER-25-26-UPDATES/Start-Here/3-terms-of-use/terms_of_use_local.html"
+        },
+        "box": {
+          "file_id": "2075935732147",
+          "file_name": "terms_of_use.docx",
+          "file_url": "https://usu.app.box.com/file/2075935732147",
+          "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075935732147&sharedAccessCode=",
+          "folder_id": "356057238117",
+          "modified_at": null,
+          "version": 1
+        },
+        "sync": {
+          "last_synced": null,
+          "sync_status": "pending",
+          "sync_errors": []
+        },
+        "metadata": {
+          "type": "start_here",
+          "created": "2025-12-15T22:15:39.789Z"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "id": "module-1-document-content",
+      "title": "Module 1 Document Content",
+      "folder_name": "Module-1",
+      "box_folder_id": "355472828832",
+      "order": 1,
+      "status": "draft",
+      "canvas": {
+        "url": "https://usucourses.instructure.com/courses/2879/pages/module-1-document-content",
+        "page_id": "module-1-document-content",
+        "published": false,
+        "published_at": null
+      },
+      "github": {
+        "repository": "main",
+        "source_docx": {
+          "path": "pages/module-1-document-content/module-1-document-content.docx",
+          "branch": "main"
+        },
+        "canvas_copy": {
+          "path": "pages/module-1-document-content/canvas-copy.html",
+          "branch": "main"
+        },
+        "with_assets": {
+          "path": "pages/module-1-document-content/index.html",
+          "branch": "main"
+        },
+        "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/module_1_document_content_local.html"
+      },
+      "box": {
+        "file_id": "2075931499060",
+        "file_name": "module_1_document_content.docx",
+        "file_url": "https://usu.app.box.com/file/2075931499060",
+        "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931499060&sharedAccessCode=",
+        "folder_id": "356060764349",
+        "modified_at": null,
+        "version": 1
+      },
+      "sync": {
+        "last_synced": null,
+        "sync_status": "pending",
+        "sync_errors": []
+      },
+      "metadata": {
+        "type": "module",
+        "created": "2025-12-15T22:15:40.116Z"
+      },
+      "sections": [
+        {
+          "id": "section-1-overview-of-document-accessibility",
+          "title": "Section 1 Overview Of Document Accessibility",
+          "folder_name": "Section-1-1",
+          "box_folder_id": "355470702235",
+          "order": 1,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-1-overview-of-document-accessibility",
+            "page_id": "section-1-overview-of-document-accessibility",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-1-overview-of-document-accessibility/section-1-overview-of-document-accessibility.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-1-overview-of-document-accessibility/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-1-overview-of-document-accessibility/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-1/section_1_overview_of_document_accessibility_local.html"
+          },
+          "box": {
+            "file_id": "2075956317507",
+            "file_name": "section_1_overview_of_document_accessibility.docx",
+            "file_url": "https://usu.app.box.com/file/2075956317507",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075956317507&sharedAccessCode=",
+            "folder_id": "356061448118",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:40.349Z"
+          },
+          "las": [
+            {
+              "id": "overview-of-document-accessibility-part-1",
+              "title": "Overview Of Document Accessibility Part 1",
+              "folder_name": "LA-1-1-1",
+              "box_folder_id": "355473801426",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/overview-of-document-accessibility-part-1",
+                "page_id": "overview-of-document-accessibility-part-1",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/overview-of-document-accessibility-part-1/overview-of-document-accessibility-part-1.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/overview-of-document-accessibility-part-1/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/overview-of-document-accessibility-part-1/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-1/LA-1-1-1/overview_of_document_accessibility_part_1_local.html"
+              },
+              "box": {
+                "file_id": "2075946971290",
+                "file_name": "overview_of_document_accessibility_part_1.docx",
+                "file_url": "https://usu.app.box.com/file/2075946971290",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075946971290&sharedAccessCode=",
+                "folder_id": "356056089338",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:40.608Z"
+              }
+            },
+            {
+              "id": "overview-of-document-accessibility-part-2",
+              "title": "Overview Of Document Accessibility Part 2",
+              "folder_name": "LA-1-1-2",
+              "box_folder_id": "355473013592",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/overview-of-document-accessibility-part-2",
+                "page_id": "overview-of-document-accessibility-part-2",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/overview-of-document-accessibility-part-2/overview-of-document-accessibility-part-2.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/overview-of-document-accessibility-part-2/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/overview-of-document-accessibility-part-2/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-1/LA-1-1-2/overview_of_document_accessibility_part_2_local.html"
+              },
+              "box": {
+                "file_id": "2075954718449",
+                "file_name": "overview_of_document_accessibility_part_2.docx",
+                "file_url": "https://usu.app.box.com/file/2075954718449",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075954718449&sharedAccessCode=",
+                "folder_id": "356059497259",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:40.922Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-2-images",
+          "title": "Section 2 Images",
+          "folder_name": "Section-1-2",
+          "box_folder_id": "355472944690",
+          "order": 2,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-2-images",
+            "page_id": "section-2-images",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-2-images/section-2-images.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-2-images/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-2-images/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/section_2_images_local.html"
+          },
+          "box": {
+            "file_id": "2075945042377",
+            "file_name": "section_2_images.docx",
+            "file_url": "https://usu.app.box.com/file/2075945042377",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075945042377&sharedAccessCode=",
+            "folder_id": "356061419608",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:41.448Z"
+          },
+          "las": [
+            {
+              "id": "images-part-1",
+              "title": "Images Part 1",
+              "folder_name": "LA-1-2-1",
+              "box_folder_id": "355472984866",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/images-part-1",
+                "page_id": "images-part-1",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/images-part-1/images-part-1.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/images-part-1/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/images-part-1/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/LA-1-2-1/images_part_1_local.html"
+              },
+              "box": {
+                "file_id": "2075953917390",
+                "file_name": "images_part_1.docx",
+                "file_url": "https://usu.app.box.com/file/2075953917390",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075953917390&sharedAccessCode=",
+                "folder_id": "356055931022",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:41.686Z"
+              }
+            },
+            {
+              "id": "images-part-2",
+              "title": "Images Part 2",
+              "folder_name": "LA-1-2-2",
+              "box_folder_id": "355474130314",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/images-part-2",
+                "page_id": "images-part-2",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/images-part-2/images-part-2.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/images-part-2/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/images-part-2/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/LA-1-2-2/images_part_2_local.html"
+              },
+              "box": {
+                "file_id": "2075951034421",
+                "file_name": "images_part_2.docx",
+                "file_url": "https://usu.app.box.com/file/2075951034421",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075951034421&sharedAccessCode=",
+                "folder_id": "356056494201",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:42.038Z"
+              }
+            },
+            {
+              "id": "images-part-3",
+              "title": "Images Part 3",
+              "folder_name": "LA-1-2-3",
+              "box_folder_id": "355470767773",
+              "order": 3,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/images-part-3",
+                "page_id": "images-part-3",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/images-part-3/images-part-3.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/images-part-3/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/images-part-3/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-2/LA-1-2-3/images_part_3_local.html"
+              },
+              "box": {
+                "file_id": "2075944295953",
+                "file_name": "images_part_3.docx",
+                "file_url": "https://usu.app.box.com/file/2075944295953",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075944295953&sharedAccessCode=",
+                "folder_id": "356053717216",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:42.365Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-3-hyperlinks",
+          "title": "Section 3 Hyperlinks",
+          "folder_name": "Section-1-3",
+          "box_folder_id": "355474103285",
+          "order": 3,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-3-hyperlinks",
+            "page_id": "section-3-hyperlinks",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-3-hyperlinks/section-3-hyperlinks.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-3-hyperlinks/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-3-hyperlinks/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-3/section_3_hyperlinks_local.html"
+          },
+          "box": {
+            "file_id": "2075951663339",
+            "file_name": "section_3_hyperlinks.docx",
+            "file_url": "https://usu.app.box.com/file/2075951663339",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075951663339&sharedAccessCode=",
+            "folder_id": "356060959034",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:42.816Z"
+          },
+          "las": [
+            {
+              "id": "optimizing-hyperlinks",
+              "title": "Optimizing Hyperlinks",
+              "folder_name": "LA-1-3-1",
+              "box_folder_id": "355471671911",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/optimizing-hyperlinks",
+                "page_id": "optimizing-hyperlinks",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/optimizing-hyperlinks/optimizing-hyperlinks.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/optimizing-hyperlinks/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/optimizing-hyperlinks/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-3/LA-1-3-1/optimizing_hyperlinks_local.html"
+              },
+              "box": {
+                "file_id": "2075946574962",
+                "file_name": "optimizing_hyperlinks.docx",
+                "file_url": "https://usu.app.box.com/file/2075946574962",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075946574962&sharedAccessCode=",
+                "folder_id": "356057854889",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:43.058Z"
+              }
+            },
+            {
+              "id": "adding-and-editing-hyperlinks",
+              "title": "Adding And Editing Hyperlinks",
+              "folder_name": "LA-1-3-2",
+              "box_folder_id": "355474311855",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/adding-and-editing-hyperlinks",
+                "page_id": "adding-and-editing-hyperlinks",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/adding-and-editing-hyperlinks/adding-and-editing-hyperlinks.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/adding-and-editing-hyperlinks/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/adding-and-editing-hyperlinks/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-3/LA-1-3-2/adding_and_editing_hyperlinks_local.html"
+              },
+              "box": {
+                "file_id": "2075945440583",
+                "file_name": "adding_and_editing_hyperlinks.docx",
+                "file_url": "https://usu.app.box.com/file/2075945440583",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075945440583&sharedAccessCode=",
+                "folder_id": "356055985268",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:43.393Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-4-contrast-and-color-reliance",
+          "title": "Section 4 Contrast And Color Reliance",
+          "folder_name": "Section-1-4",
+          "box_folder_id": "355470493749",
+          "order": 4,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-4-contrast-and-color-reliance",
+            "page_id": "section-4-contrast-and-color-reliance",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-4-contrast-and-color-reliance/section-4-contrast-and-color-reliance.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-4-contrast-and-color-reliance/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-4-contrast-and-color-reliance/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/section_4_contrast_and_color_reliance_local.html"
+          },
+          "box": {
+            "file_id": "2075948051063",
+            "file_name": "section_4_contrast_and_color_reliance.docx",
+            "file_url": "https://usu.app.box.com/file/2075948051063",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075948051063&sharedAccessCode=",
+            "folder_id": "356061083034",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:43.888Z"
+          },
+          "las": [
+            {
+              "id": "contrast-part-1",
+              "title": "Contrast Part 1",
+              "folder_name": "LA-1-4-1",
+              "box_folder_id": "355472265476",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/contrast-part-1",
+                "page_id": "contrast-part-1",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/contrast-part-1/contrast-part-1.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/contrast-part-1/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/contrast-part-1/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/LA-1-4-1/contrast_part_1_local.html"
+              },
+              "box": {
+                "file_id": "2075952817606",
+                "file_name": "contrast_part_1.docx",
+                "file_url": "https://usu.app.box.com/file/2075952817606",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075952817606&sharedAccessCode=",
+                "folder_id": "356059826025",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:44.137Z"
+              }
+            },
+            {
+              "id": "contrast-part-2",
+              "title": "Contrast Part 2",
+              "folder_name": "LA-1-4-2",
+              "box_folder_id": "355470647708",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/contrast-part-2",
+                "page_id": "contrast-part-2",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/contrast-part-2/contrast-part-2.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/contrast-part-2/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/contrast-part-2/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/LA-1-4-2/contrast_part_2_local.html"
+              },
+              "box": {
+                "file_id": "2075950148983",
+                "file_name": "contrast_part_2.docx",
+                "file_url": "https://usu.app.box.com/file/2075950148983",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075950148983&sharedAccessCode=",
+                "folder_id": "356056756253",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:44.469Z"
+              }
+            },
+            {
+              "id": "color-reliance",
+              "title": "Color Reliance",
+              "folder_name": "LA-1-4-3",
+              "box_folder_id": "355474519086",
+              "order": 3,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/color-reliance",
+                "page_id": "color-reliance",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/color-reliance/color-reliance.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/color-reliance/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/color-reliance/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-4/LA-1-4-3/color_reliance_local.html"
+              },
+              "box": {
+                "file_id": "2075945840945",
+                "file_name": "color_reliance.docx",
+                "file_url": "https://usu.app.box.com/file/2075945840945",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075945840945&sharedAccessCode=",
+                "folder_id": "356057577406",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:44.819Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-5-optimizing-writing",
+          "title": "Section 5 Optimizing Writing",
+          "folder_name": "Section-1-5",
+          "box_folder_id": "355472847649",
+          "order": 5,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-5-optimizing-writing",
+            "page_id": "section-5-optimizing-writing",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-5-optimizing-writing/section-5-optimizing-writing.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-5-optimizing-writing/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-5-optimizing-writing/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/section_5_optimizing_writing_local.html"
+          },
+          "box": {
+            "file_id": "2075947262210",
+            "file_name": "section_5_optimizing_writing.docx",
+            "file_url": "https://usu.app.box.com/file/2075947262210",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075947262210&sharedAccessCode=",
+            "folder_id": "356056379808",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:45.287Z"
+          },
+          "las": [
+            {
+              "id": "plain-language-spelling-and-grammar",
+              "title": "Plain Language Spelling And Grammar",
+              "folder_name": "LA-1-5-1",
+              "box_folder_id": "355472034381",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/plain-language-spelling-and-grammar",
+                "page_id": "plain-language-spelling-and-grammar",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/plain-language-spelling-and-grammar/plain-language-spelling-and-grammar.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/plain-language-spelling-and-grammar/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/plain-language-spelling-and-grammar/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/LA-1-5-1/plain_language_spelling_and_grammar_local.html"
+              },
+              "box": {
+                "file_id": "2075946214962",
+                "file_name": "plain_language_spelling_and_grammar.docx",
+                "file_url": "https://usu.app.box.com/file/2075946214962",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075946214962&sharedAccessCode=",
+                "folder_id": "356057625282",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:45.531Z"
+              }
+            },
+            {
+              "id": "readability",
+              "title": "Readability",
+              "folder_name": "LA-1-5-2",
+              "box_folder_id": "355474122256",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/readability",
+                "page_id": "readability",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/readability/readability.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/readability/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/readability/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/LA-1-5-2/readability_local.html"
+              },
+              "box": {
+                "file_id": "2075948248181",
+                "file_name": "readability.docx",
+                "file_url": "https://usu.app.box.com/file/2075948248181",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075948248181&sharedAccessCode=",
+                "folder_id": "356060908352",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:45.866Z"
+              }
+            },
+            {
+              "id": "legible-documents",
+              "title": "Legible Documents",
+              "folder_name": "LA-1-5-3",
+              "box_folder_id": "355471981360",
+              "order": 3,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/legible-documents",
+                "page_id": "legible-documents",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/legible-documents/legible-documents.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/legible-documents/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/legible-documents/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-1/Section-1-5/LA-1-5-3/legible_documents_local.html"
+              },
+              "box": {
+                "file_id": "2075950531001",
+                "file_name": "legible_documents.docx",
+                "file_url": "https://usu.app.box.com/file/2075950531001",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075950531001&sharedAccessCode=",
+                "folder_id": "356060263138",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:46.206Z"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-2-document-structure",
+      "title": "Module 2 Document Structure",
+      "folder_name": "Module-2",
+      "box_folder_id": "355474168042",
+      "order": 2,
+      "status": "draft",
+      "canvas": {
+        "url": "https://usucourses.instructure.com/courses/2879/pages/module-2-document-structure",
+        "page_id": "module-2-document-structure",
+        "published": false,
+        "published_at": null
+      },
+      "github": {
+        "repository": "main",
+        "source_docx": {
+          "path": "pages/module-2-document-structure/module-2-document-structure.docx",
+          "branch": "main"
+        },
+        "canvas_copy": {
+          "path": "pages/module-2-document-structure/canvas-copy.html",
+          "branch": "main"
+        },
+        "with_assets": {
+          "path": "pages/module-2-document-structure/index.html",
+          "branch": "main"
+        },
+        "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/module_2_document_structure_local.html"
+      },
+      "box": {
+        "file_id": "2075934695466",
+        "file_name": "module_2_document_structure.docx",
+        "file_url": "https://usu.app.box.com/file/2075934695466",
+        "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075934695466&sharedAccessCode=",
+        "folder_id": "356056358218",
+        "modified_at": null,
+        "version": 1
+      },
+      "sync": {
+        "last_synced": null,
+        "sync_status": "pending",
+        "sync_errors": []
+      },
+      "metadata": {
+        "type": "module",
+        "created": "2025-12-15T22:15:46.844Z"
+      },
+      "sections": [
+        {
+          "id": "section-1-headings-in-word",
+          "title": "Section 1 Headings In Word",
+          "folder_name": "Section-2-1",
+          "box_folder_id": "355471712475",
+          "order": 1,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-1-headings-in-word",
+            "page_id": "section-1-headings-in-word",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-1-headings-in-word/section-1-headings-in-word.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-1-headings-in-word/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-1-headings-in-word/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/section_1_headings_in_word_local.html"
+          },
+          "box": {
+            "file_id": "2075935902159",
+            "file_name": "section_1_headings_in_word.docx",
+            "file_url": "https://usu.app.box.com/file/2075935902159",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075935902159&sharedAccessCode=",
+            "folder_id": "356056345745",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:47.070Z"
+          },
+          "las": [
+            {
+              "id": "the-importance-of-headings",
+              "title": "The Importance Of Headings",
+              "folder_name": "LA-2-1-1",
+              "box_folder_id": "355474587717",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/the-importance-of-headings",
+                "page_id": "the-importance-of-headings",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/the-importance-of-headings/the-importance-of-headings.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/the-importance-of-headings/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/the-importance-of-headings/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/LA-2-1-1/the_importance_of_headings_local.html"
+              },
+              "box": {
+                "file_id": "2075941307141",
+                "file_name": "the_importance_of_headings.docx",
+                "file_url": "https://usu.app.box.com/file/2075941307141",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075941307141&sharedAccessCode=",
+                "folder_id": "356055457653",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:47.350Z"
+              }
+            },
+            {
+              "id": "creating-headings",
+              "title": "Creating Headings",
+              "folder_name": "LA-2-1-2",
+              "box_folder_id": "355471835928",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/creating-headings",
+                "page_id": "creating-headings",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/creating-headings/creating-headings.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/creating-headings/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/creating-headings/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/LA-2-1-2/creating_headings_local.html"
+              },
+              "box": {
+                "file_id": "2075931573030",
+                "file_name": "creating_headings.docx",
+                "file_url": "https://usu.app.box.com/file/2075931573030",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931573030&sharedAccessCode=",
+                "folder_id": "356057596780",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:47.712Z"
+              }
+            },
+            {
+              "id": "modifying-headings",
+              "title": "Modifying Headings",
+              "folder_name": "LA-2-1-3",
+              "box_folder_id": "355472389852",
+              "order": 3,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/modifying-headings",
+                "page_id": "modifying-headings",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/modifying-headings/modifying-headings.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/modifying-headings/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/modifying-headings/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-1/LA-2-1-3/modifying_headings_local.html"
+              },
+              "box": {
+                "file_id": "2075931714087",
+                "file_name": "modifying_headings.docx",
+                "file_url": "https://usu.app.box.com/file/2075931714087",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931714087&sharedAccessCode=",
+                "folder_id": "356060649274",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:48.073Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-2-optimizing-powerpoint-presentations",
+          "title": "Section 2 Optimizing Powerpoint Presentations",
+          "folder_name": "Section-2-2",
+          "box_folder_id": "355471941183",
+          "order": 2,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-2-optimizing-powerpoint-presentations",
+            "page_id": "section-2-optimizing-powerpoint-presentations",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-2-optimizing-powerpoint-presentations/section-2-optimizing-powerpoint-presentations.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-2-optimizing-powerpoint-presentations/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-2-optimizing-powerpoint-presentations/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/section_2_optimizing_powerpoint_presentations_local.html"
+          },
+          "box": {
+            "file_id": "2075932095782",
+            "file_name": "section_2_optimizing_powerpoint_presentations.docx",
+            "file_url": "https://usu.app.box.com/file/2075932095782",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075932095782&sharedAccessCode=",
+            "folder_id": "356061710191",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:48.509Z"
+          },
+          "las": [
+            {
+              "id": "themes-and-layouts",
+              "title": "Themes And Layouts",
+              "folder_name": "LA-2-2-1",
+              "box_folder_id": "355473829477",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/themes-and-layouts",
+                "page_id": "themes-and-layouts",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/themes-and-layouts/themes-and-layouts.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/themes-and-layouts/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/themes-and-layouts/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/LA-2-2-1/themes_and_layouts_local.html"
+              },
+              "box": {
+                "file_id": "2075940202929",
+                "file_name": "themes_and_layouts.docx",
+                "file_url": "https://usu.app.box.com/file/2075940202929",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075940202929&sharedAccessCode=",
+                "folder_id": "356060222067",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:48.778Z"
+              }
+            },
+            {
+              "id": "slide-master",
+              "title": "Slide Master",
+              "folder_name": "LA-2-2-2",
+              "box_folder_id": "355473623902",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/slide-master",
+                "page_id": "slide-master",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/slide-master/slide-master.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/slide-master/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/slide-master/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/LA-2-2-2/slide_master_local.html"
+              },
+              "box": {
+                "file_id": "2075931779354",
+                "file_name": "slide_master.docx",
+                "file_url": "https://usu.app.box.com/file/2075931779354",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931779354&sharedAccessCode=",
+                "folder_id": "356059382125",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:49.141Z"
+              }
+            },
+            {
+              "id": "reading-order-principles-of-accessibility",
+              "title": "Reading Order Principles Of Accessibility",
+              "folder_name": "LA-2-2-3",
+              "box_folder_id": "355473778964",
+              "order": 3,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/reading-order-principles-of-accessibility",
+                "page_id": "reading-order-principles-of-accessibility",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/reading-order-principles-of-accessibility/reading-order-principles-of-accessibility.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/reading-order-principles-of-accessibility/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/reading-order-principles-of-accessibility/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-2/LA-2-2-3/reading_order_principles_of_accessibility_local.html"
+              },
+              "box": {
+                "file_id": "2075935367066",
+                "file_name": "reading_order_principles_of_accessibility.docx",
+                "file_url": "https://usu.app.box.com/file/2075935367066",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075935367066&sharedAccessCode=",
+                "folder_id": "356055604211",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:49.517Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-3-lists-and-columns",
+          "title": "Section 3 Lists And Columns",
+          "folder_name": "Section-2-3",
+          "box_folder_id": "355470551274",
+          "order": 3,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-3-lists-and-columns",
+            "page_id": "section-3-lists-and-columns",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-3-lists-and-columns/section-3-lists-and-columns.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-3-lists-and-columns/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-3-lists-and-columns/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-3/section_3_lists_and_columns_local.html"
+          },
+          "box": {
+            "file_id": "2075928254315",
+            "file_name": "section_3_lists_and_columns.docx",
+            "file_url": "https://usu.app.box.com/file/2075928254315",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075928254315&sharedAccessCode=",
+            "folder_id": "356055621313",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:49.966Z"
+          },
+          "las": [
+            {
+              "id": "lists",
+              "title": "Lists",
+              "folder_name": "LA-2-3-1",
+              "box_folder_id": "355470887835",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/lists",
+                "page_id": "lists",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/lists/lists.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/lists/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/lists/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-3/LA-2-3-1/lists_local.html"
+              },
+              "box": {
+                "file_id": "2075925045207",
+                "file_name": "lists.docx",
+                "file_url": "https://usu.app.box.com/file/2075925045207",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075925045207&sharedAccessCode=",
+                "folder_id": "356059801715",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:50.203Z"
+              }
+            },
+            {
+              "id": "columns",
+              "title": "Columns",
+              "folder_name": "LA-2-3-2",
+              "box_folder_id": "355471852227",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/columns",
+                "page_id": "columns",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/columns/columns.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/columns/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/columns/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-3/LA-2-3-2/columns_local.html"
+              },
+              "box": {
+                "file_id": "2075933768625",
+                "file_name": "columns.docx",
+                "file_url": "https://usu.app.box.com/file/2075933768625",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075933768625&sharedAccessCode=",
+                "folder_id": "356061748306",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:50.559Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-4-tables",
+          "title": "Section 4 Tables",
+          "folder_name": "Section-2-4",
+          "box_folder_id": "355474206810",
+          "order": 4,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-4-tables",
+            "page_id": "section-4-tables",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-4-tables/section-4-tables.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-4-tables/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-4-tables/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-4/section_4_tables_local.html"
+          },
+          "box": {
+            "file_id": "2075926689257",
+            "file_name": "section_4_tables.docx",
+            "file_url": "https://usu.app.box.com/file/2075926689257",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075926689257&sharedAccessCode=",
+            "folder_id": "356058448317",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:50.979Z"
+          },
+          "las": [
+            {
+              "id": "tables",
+              "title": "Tables",
+              "folder_name": "LA-2-4-1",
+              "box_folder_id": "355470885178",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/tables",
+                "page_id": "tables",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/tables/tables.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/tables/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/tables/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-2/Section-2-4/LA-2-4-1/tables_local.html"
+              },
+              "box": {
+                "file_id": "2075939164242",
+                "file_name": "tables.docx",
+                "file_url": "https://usu.app.box.com/file/2075939164242",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075939164242&sharedAccessCode=",
+                "folder_id": "356055808396",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:51.234Z"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-3-evaluating-accessibility-and-creating-pdfs",
+      "title": "Module 3 Evaluating Accessibility And Creating Pdfs",
+      "folder_name": "Module-3",
+      "box_folder_id": "355474585317",
+      "order": 3,
+      "status": "draft",
+      "canvas": {
+        "url": "https://usucourses.instructure.com/courses/2879/pages/module-3-evaluating-accessibility-and-creating-pdfs",
+        "page_id": "module-3-evaluating-accessibility-and-creating-pdfs",
+        "published": false,
+        "published_at": null
+      },
+      "github": {
+        "repository": "main",
+        "source_docx": {
+          "path": "pages/module-3-evaluating-accessibility-and-creating-pdfs/module-3-evaluating-accessibility-and-creating-pdfs.docx",
+          "branch": "main"
+        },
+        "canvas_copy": {
+          "path": "pages/module-3-evaluating-accessibility-and-creating-pdfs/canvas-copy.html",
+          "branch": "main"
+        },
+        "with_assets": {
+          "path": "pages/module-3-evaluating-accessibility-and-creating-pdfs/index.html",
+          "branch": "main"
+        },
+        "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/module_3_evaluating_accessibility_and_creating_pdfs_local.html"
+      },
+      "box": {
+        "file_id": "2075933388000",
+        "file_name": "module_3_evaluating_accessibility_and_creating_pdfs.docx",
+        "file_url": "https://usu.app.box.com/file/2075933388000",
+        "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075933388000&sharedAccessCode=",
+        "folder_id": "356058457917",
+        "modified_at": null,
+        "version": 1
+      },
+      "sync": {
+        "last_synced": null,
+        "sync_status": "pending",
+        "sync_errors": []
+      },
+      "metadata": {
+        "type": "module",
+        "created": "2025-12-15T22:15:51.932Z"
+      },
+      "sections": [
+        {
+          "id": "section-1-evaluating-accessibility",
+          "title": "Section 1 Evaluating Accessibility",
+          "folder_name": "Section-3-1",
+          "box_folder_id": "355473711957",
+          "order": 1,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-1-evaluating-accessibility",
+            "page_id": "section-1-evaluating-accessibility",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-1-evaluating-accessibility/section-1-evaluating-accessibility.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-1-evaluating-accessibility/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-1-evaluating-accessibility/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-1/section_1_evaluating_accessibility_local.html"
+          },
+          "box": {
+            "file_id": "2075941340741",
+            "file_name": "section_1_evaluating_accessibility.docx",
+            "file_url": "https://usu.app.box.com/file/2075941340741",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075941340741&sharedAccessCode=",
+            "folder_id": "356057466722",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:52.189Z"
+          },
+          "las": [
+            {
+              "id": "evaluating-accessibility",
+              "title": "Evaluating Accessibility",
+              "folder_name": "LA-3-1-1",
+              "box_folder_id": "355473633562",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/evaluating-accessibility",
+                "page_id": "evaluating-accessibility",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/evaluating-accessibility/evaluating-accessibility.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/evaluating-accessibility/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/evaluating-accessibility/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-1/LA-3-1-1/evaluating_accessibility_local.html"
+              },
+              "box": {
+                "file_id": "2075937448679",
+                "file_name": "evaluating_accessibility.docx",
+                "file_url": "https://usu.app.box.com/file/2075937448679",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075937448679&sharedAccessCode=",
+                "folder_id": "356055066881",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:52.525Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-2-practicing-evaluation-and-repair",
+          "title": "Section 2 Practicing Evaluation And Repair",
+          "folder_name": "Section-3-2",
+          "box_folder_id": "355471051063",
+          "order": 2,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-2-practicing-evaluation-and-repair",
+            "page_id": "section-2-practicing-evaluation-and-repair",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-2-practicing-evaluation-and-repair/section-2-practicing-evaluation-and-repair.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-2-practicing-evaluation-and-repair/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-2-practicing-evaluation-and-repair/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-2/section_2_practicing_evaluation_and_repair_local.html"
+          },
+          "box": {
+            "file_id": "2075929571149",
+            "file_name": "section_2_practicing_evaluation_and_repair.docx",
+            "file_url": "https://usu.app.box.com/file/2075929571149",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075929571149&sharedAccessCode=",
+            "folder_id": "356060332155",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:52.969Z"
+          },
+          "las": [
+            {
+              "id": "practicing-evaluation-repair",
+              "title": "Practicing Evaluation Repair",
+              "folder_name": "LA-3-2-1",
+              "box_folder_id": "355472276406",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/practicing-evaluation-repair",
+                "page_id": "practicing-evaluation-repair",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/practicing-evaluation-repair/practicing-evaluation-repair.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/practicing-evaluation-repair/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/practicing-evaluation-repair/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-2/LA-3-2-1/practicing_evaluation_repair_local.html"
+              },
+              "box": {
+                "file_id": "2075939404446",
+                "file_name": "practicing_evaluation_repair.docx",
+                "file_url": "https://usu.app.box.com/file/2075939404446",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075939404446&sharedAccessCode=",
+                "folder_id": "356056490176",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:53.252Z"
+              }
+            },
+            {
+              "id": "filename-document-title",
+              "title": "Filename Document Title",
+              "folder_name": "LA-3-2-2",
+              "box_folder_id": "355473858115",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/filename-document-title",
+                "page_id": "filename-document-title",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/filename-document-title/filename-document-title.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/filename-document-title/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/filename-document-title/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-2/LA-3-2-2/filename_document_title_local.html"
+              },
+              "box": {
+                "file_id": "2075936689867",
+                "file_name": "filename_document_title.docx",
+                "file_url": "https://usu.app.box.com/file/2075936689867",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075936689867&sharedAccessCode=",
+                "folder_id": "356059655824",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:53.593Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-3-creating-pdfs",
+          "title": "Section 3 Creating Pdfs",
+          "folder_name": "Section-3-3",
+          "box_folder_id": "355473878253",
+          "order": 3,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-3-creating-pdfs",
+            "page_id": "section-3-creating-pdfs",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-3-creating-pdfs/section-3-creating-pdfs.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-3-creating-pdfs/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-3-creating-pdfs/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-3/section_3_creating_pdfs_local.html"
+          },
+          "box": {
+            "file_id": "2075930734970",
+            "file_name": "section_3_creating_pdfs.docx",
+            "file_url": "https://usu.app.box.com/file/2075930734970",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075930734970&sharedAccessCode=",
+            "folder_id": "356059359944",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:54.041Z"
+          },
+          "las": [
+            {
+              "id": "creating-pdfs-part-1",
+              "title": "Creating Pdfs Part 1",
+              "folder_name": "LA-3-3-1",
+              "box_folder_id": "355470205593",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/creating-pdfs-part-1",
+                "page_id": "creating-pdfs-part-1",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/creating-pdfs-part-1/creating-pdfs-part-1.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/creating-pdfs-part-1/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/creating-pdfs-part-1/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-3/LA-3-3-1/creating_pdfs_part_1_local.html"
+              },
+              "box": {
+                "file_id": "2075940205987",
+                "file_name": "creating_pdfs_part_1.docx",
+                "file_url": "https://usu.app.box.com/file/2075940205987",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075940205987&sharedAccessCode=",
+                "folder_id": "356058342092",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:54.297Z"
+              }
+            },
+            {
+              "id": "creating-pdfs-part-2",
+              "title": "Creating Pdfs Part 2",
+              "folder_name": "LA-3-3-2",
+              "box_folder_id": "355470707035",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/creating-pdfs-part-2",
+                "page_id": "creating-pdfs-part-2",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/creating-pdfs-part-2/creating-pdfs-part-2.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/creating-pdfs-part-2/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/creating-pdfs-part-2/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-3/Section-3-3/LA-3-3-2/creating_pdfs_part_2_local.html"
+              },
+              "box": {
+                "file_id": "2075941496568",
+                "file_name": "creating_pdfs_part_2.docx",
+                "file_url": "https://usu.app.box.com/file/2075941496568",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075941496568&sharedAccessCode=",
+                "folder_id": "356058253408",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:54.659Z"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-4-optimizing-pdfs-in-acrobat",
+      "title": "Module 4 Optimizing Pdfs In Acrobat",
+      "folder_name": "Module-4",
+      "box_folder_id": "355473798714",
+      "order": 4,
+      "status": "draft",
+      "canvas": {
+        "url": "https://usucourses.instructure.com/courses/2879/pages/module-4-optimizing-pdfs-in-acrobat",
+        "page_id": "module-4-optimizing-pdfs-in-acrobat",
+        "published": false,
+        "published_at": null
+      },
+      "github": {
+        "repository": "main",
+        "source_docx": {
+          "path": "pages/module-4-optimizing-pdfs-in-acrobat/module-4-optimizing-pdfs-in-acrobat.docx",
+          "branch": "main"
+        },
+        "canvas_copy": {
+          "path": "pages/module-4-optimizing-pdfs-in-acrobat/canvas-copy.html",
+          "branch": "main"
+        },
+        "with_assets": {
+          "path": "pages/module-4-optimizing-pdfs-in-acrobat/index.html",
+          "branch": "main"
+        },
+        "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/module_4_optimizing_pdfs_in_acrobat_local.html"
+      },
+      "box": {
+        "file_id": "2075936015117",
+        "file_name": "module_4_optimizing_pdfs_in_acrobat.docx",
+        "file_url": "https://usu.app.box.com/file/2075936015117",
+        "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075936015117&sharedAccessCode=",
+        "folder_id": "356060433380",
+        "modified_at": null,
+        "version": 1
+      },
+      "sync": {
+        "last_synced": null,
+        "sync_status": "pending",
+        "sync_errors": []
+      },
+      "metadata": {
+        "type": "module",
+        "created": "2025-12-15T22:15:55.304Z"
+      },
+      "sections": [
+        {
+          "id": "section-1-introduction-to-optimizing-pdfs",
+          "title": "Section 1 Introduction To Optimizing Pdfs",
+          "folder_name": "Section-4-1",
+          "box_folder_id": "355474125514",
+          "order": 1,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-1-introduction-to-optimizing-pdfs",
+            "page_id": "section-1-introduction-to-optimizing-pdfs",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-1-introduction-to-optimizing-pdfs/section-1-introduction-to-optimizing-pdfs.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-1-introduction-to-optimizing-pdfs/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-1-introduction-to-optimizing-pdfs/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-1/section_1_introduction_to_optimizing_pdfs_local.html"
+          },
+          "box": {
+            "file_id": "2075924663320",
+            "file_name": "section_1_introduction_to_optimizing_pdfs.docx",
+            "file_url": "https://usu.app.box.com/file/2075924663320",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075924663320&sharedAccessCode=",
+            "folder_id": "356056249556",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:55.549Z"
+          },
+          "las": [
+            {
+              "id": "introduction-to-optimizing-pdfs-part-1",
+              "title": "Introduction To Optimizing Pdfs Part 1",
+              "folder_name": "LA-4-1-1",
+              "box_folder_id": "355474621534",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/introduction-to-optimizing-pdfs-part-1",
+                "page_id": "introduction-to-optimizing-pdfs-part-1",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/introduction-to-optimizing-pdfs-part-1/introduction-to-optimizing-pdfs-part-1.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/introduction-to-optimizing-pdfs-part-1/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/introduction-to-optimizing-pdfs-part-1/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-1/LA-4-1-1/introduction_to_optimizing_pdfs_part_1_local.html"
+              },
+              "box": {
+                "file_id": "2075928064457",
+                "file_name": "introduction_to_optimizing_pdfs_part_1.docx",
+                "file_url": "https://usu.app.box.com/file/2075928064457",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075928064457&sharedAccessCode=",
+                "folder_id": "356055234363",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:55.782Z"
+              }
+            },
+            {
+              "id": "introduction-to-optimizing-pdfs-part-2",
+              "title": "Introduction To Optimizing Pdfs Part 2",
+              "folder_name": "LA-4-1-2",
+              "box_folder_id": "355472264971",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/introduction-to-optimizing-pdfs-part-2",
+                "page_id": "introduction-to-optimizing-pdfs-part-2",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/introduction-to-optimizing-pdfs-part-2/introduction-to-optimizing-pdfs-part-2.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/introduction-to-optimizing-pdfs-part-2/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/introduction-to-optimizing-pdfs-part-2/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-1/LA-4-1-2/introduction_to_optimizing_pdfs_part_2_local.html"
+              },
+              "box": {
+                "file_id": "2075940765081",
+                "file_name": "introduction_to_optimizing_pdfs_part_2.docx",
+                "file_url": "https://usu.app.box.com/file/2075940765081",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075940765081&sharedAccessCode=",
+                "folder_id": "356059772983",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:56.141Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-2-checking-accessibility",
+          "title": "Section 2 Checking Accessibility",
+          "folder_name": "Section-4-2",
+          "box_folder_id": "355473868653",
+          "order": 2,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-2-checking-accessibility",
+            "page_id": "section-2-checking-accessibility",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-2-checking-accessibility/section-2-checking-accessibility.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-2-checking-accessibility/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-2-checking-accessibility/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-2/section_2_checking_accessibility_local.html"
+          },
+          "box": {
+            "file_id": "2075931690073",
+            "file_name": "section_2_checking_accessibility.docx",
+            "file_url": "https://usu.app.box.com/file/2075931690073",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931690073&sharedAccessCode=",
+            "folder_id": "356058157340",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:56.575Z"
+          },
+          "las": [
+            {
+              "id": "checking-accessibility",
+              "title": "Checking Accessibility",
+              "folder_name": "LA-4-2-1",
+              "box_folder_id": "355472987199",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/checking-accessibility",
+                "page_id": "checking-accessibility",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/checking-accessibility/checking-accessibility.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/checking-accessibility/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/checking-accessibility/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-2/LA-4-2-1/checking_accessibility_local.html"
+              },
+              "box": {
+                "file_id": "2075933582288",
+                "file_name": "checking_accessibility.docx",
+                "file_url": "https://usu.app.box.com/file/2075933582288",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075933582288&sharedAccessCode=",
+                "folder_id": "356059551943",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:56.829Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-3-reading-order-tool",
+          "title": "Section 3 Reading Order Tool",
+          "folder_name": "Section-4-3",
+          "box_folder_id": "355472679803",
+          "order": 3,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-3-reading-order-tool",
+            "page_id": "section-3-reading-order-tool",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-3-reading-order-tool/section-3-reading-order-tool.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-3-reading-order-tool/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-3-reading-order-tool/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-3/section_3_reading_order_tool_local.html"
+          },
+          "box": {
+            "file_id": "2075933282294",
+            "file_name": "section_3_reading_order_tool.docx",
+            "file_url": "https://usu.app.box.com/file/2075933282294",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075933282294&sharedAccessCode=",
+            "folder_id": "356059634342",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:57.268Z"
+          },
+          "las": [
+            {
+              "id": "reading-order-tool",
+              "title": "Reading Order Tool",
+              "folder_name": "LA-4-3-1",
+              "box_folder_id": "355471725542",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/reading-order-tool",
+                "page_id": "reading-order-tool",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/reading-order-tool/reading-order-tool.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/reading-order-tool/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/reading-order-tool/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-3/LA-4-3-1/reading_order_tool_local.html"
+              },
+              "box": {
+                "file_id": "2075937755601",
+                "file_name": "reading_order_tool.docx",
+                "file_url": "https://usu.app.box.com/file/2075937755601",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075937755601&sharedAccessCode=",
+                "folder_id": "356060277141",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:57.519Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-4-content-order-and-tags-order",
+          "title": "Section 4 Content Order And Tags Order",
+          "folder_name": "Section-4-4",
+          "box_folder_id": "355473846068",
+          "order": 4,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-4-content-order-and-tags-order",
+            "page_id": "section-4-content-order-and-tags-order",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-4-content-order-and-tags-order/section-4-content-order-and-tags-order.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-4-content-order-and-tags-order/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-4-content-order-and-tags-order/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-4/section_4_content_order_and_tags_order_local.html"
+          },
+          "box": {
+            "file_id": "2075938451241",
+            "file_name": "section_4_content_order_and_tags_order.docx",
+            "file_url": "https://usu.app.box.com/file/2075938451241",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075938451241&sharedAccessCode=",
+            "folder_id": "356056221581",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:57.988Z"
+          },
+          "las": [
+            {
+              "id": "content-order-and-tags-order",
+              "title": "Content Order And Tags Order",
+              "folder_name": "LA-4-4-1",
+              "box_folder_id": "355471962881",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/content-order-and-tags-order",
+                "page_id": "content-order-and-tags-order",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/content-order-and-tags-order/content-order-and-tags-order.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/content-order-and-tags-order/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/content-order-and-tags-order/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-4/Section-4-4/LA-4-4-1/content_order_and_tags_order_local.html"
+              },
+              "box": {
+                "file_id": "2075932772562",
+                "file_name": "content_order_and_tags_order.docx",
+                "file_url": "https://usu.app.box.com/file/2075932772562",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075932772562&sharedAccessCode=",
+                "folder_id": "356055488799",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:58.219Z"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-5-accessible-excel",
+      "title": "Module 5 Accessible Excel",
+      "folder_name": "Module-5",
+      "box_folder_id": "355473710096",
+      "order": 5,
+      "status": "draft",
+      "canvas": {
+        "url": "https://usucourses.instructure.com/courses/2879/pages/module-5-accessible-excel",
+        "page_id": "module-5-accessible-excel",
+        "published": false,
+        "published_at": null
+      },
+      "github": {
+        "repository": "main",
+        "source_docx": {
+          "path": "pages/module-5-accessible-excel/module-5-accessible-excel.docx",
+          "branch": "main"
+        },
+        "canvas_copy": {
+          "path": "pages/module-5-accessible-excel/canvas-copy.html",
+          "branch": "main"
+        },
+        "with_assets": {
+          "path": "pages/module-5-accessible-excel/index.html",
+          "branch": "main"
+        },
+        "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/module_5_accessible_excel_local.html"
+      },
+      "box": {
+        "file_id": "2075939360690",
+        "file_name": "module_5_accessible_excel.docx",
+        "file_url": "https://usu.app.box.com/file/2075939360690",
+        "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075939360690&sharedAccessCode=",
+        "folder_id": "356056619655",
+        "modified_at": null,
+        "version": 1
+      },
+      "sync": {
+        "last_synced": null,
+        "sync_status": "pending",
+        "sync_errors": []
+      },
+      "metadata": {
+        "type": "module",
+        "created": "2025-12-15T22:15:58.877Z"
+      },
+      "sections": [
+        {
+          "id": "section-1-navigating-in-excel",
+          "title": "Section 1 Navigating In Excel",
+          "folder_name": "Section-5-1",
+          "box_folder_id": "355473886872",
+          "order": 1,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-1-navigating-in-excel",
+            "page_id": "section-1-navigating-in-excel",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-1-navigating-in-excel/section-1-navigating-in-excel.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-1-navigating-in-excel/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-1-navigating-in-excel/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-1/section_1_navigating_in_excel_local.html"
+          },
+          "box": {
+            "file_id": "2075934388550",
+            "file_name": "section_1_navigating_in_excel.docx",
+            "file_url": "https://usu.app.box.com/file/2075934388550",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075934388550&sharedAccessCode=",
+            "folder_id": "356060339988",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:59.116Z"
+          },
+          "las": [
+            {
+              "id": "navigating-in-excel",
+              "title": "Navigating In Excel",
+              "folder_name": "LA-5-1-1",
+              "box_folder_id": "355471336539",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/navigating-in-excel",
+                "page_id": "navigating-in-excel",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/navigating-in-excel/navigating-in-excel.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/navigating-in-excel/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/navigating-in-excel/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-1/LA-5-1-1/navigating_in_excel_local.html"
+              },
+              "box": {
+                "file_id": "2075932792614",
+                "file_name": "navigating_in_excel.docx",
+                "file_url": "https://usu.app.box.com/file/2075932792614",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075932792614&sharedAccessCode=",
+                "folder_id": "356057308749",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:15:59.364Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-2-sheets-and-tables",
+          "title": "Section 2 Sheets And Tables",
+          "folder_name": "Section-5-2",
+          "box_folder_id": "355473819876",
+          "order": 2,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-2-sheets-and-tables",
+            "page_id": "section-2-sheets-and-tables",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-2-sheets-and-tables/section-2-sheets-and-tables.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-2-sheets-and-tables/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-2-sheets-and-tables/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-2/section_2_sheets_and_tables_local.html"
+          },
+          "box": {
+            "file_id": "2075939010693",
+            "file_name": "section_2_sheets_and_tables.docx",
+            "file_url": "https://usu.app.box.com/file/2075939010693",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075939010693&sharedAccessCode=",
+            "folder_id": "356059986828",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:15:59.785Z"
+          },
+          "las": [
+            {
+              "id": "sheets-tables",
+              "title": "Sheets Tables",
+              "folder_name": "LA-5-2-1",
+              "box_folder_id": "355474410954",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/sheets-tables",
+                "page_id": "sheets-tables",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/sheets-tables/sheets-tables.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/sheets-tables/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/sheets-tables/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-2/LA-5-2-1/sheets_tables_local.html"
+              },
+              "box": {
+                "file_id": "2075930838063",
+                "file_name": "sheets_tables.docx",
+                "file_url": "https://usu.app.box.com/file/2075930838063",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075930838063&sharedAccessCode=",
+                "folder_id": "356056035768",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:00.053Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-3-images-and-links",
+          "title": "Section 3 Images And Links",
+          "folder_name": "Section-5-3",
+          "box_folder_id": "355472293301",
+          "order": 3,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-3-images-and-links",
+            "page_id": "section-3-images-and-links",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-3-images-and-links/section-3-images-and-links.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-3-images-and-links/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-3-images-and-links/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-3/section_3_images_and_links_local.html"
+          },
+          "box": {
+            "file_id": "2075939871608",
+            "file_name": "section_3_images_and_links.docx",
+            "file_url": "https://usu.app.box.com/file/2075939871608",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075939871608&sharedAccessCode=",
+            "folder_id": "356061525531",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:16:00.488Z"
+          },
+          "las": [
+            {
+              "id": "images-links",
+              "title": "Images Links",
+              "folder_name": "LA-5-3-1",
+              "box_folder_id": "355471739428",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/images-links",
+                "page_id": "images-links",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/images-links/images-links.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/images-links/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/images-links/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-3/LA-5-3-1/images_links_local.html"
+              },
+              "box": {
+                "file_id": "2075931975816",
+                "file_name": "images_links.docx",
+                "file_url": "https://usu.app.box.com/file/2075931975816",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075931975816&sharedAccessCode=",
+                "folder_id": "356055882170",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:00.747Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-4-charts",
+          "title": "Section 4 Charts",
+          "folder_name": "Section-5-4",
+          "box_folder_id": "355472221770",
+          "order": 4,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-4-charts",
+            "page_id": "section-4-charts",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-4-charts/section-4-charts.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-4-charts/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-4-charts/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/section_4_charts_local.html"
+          },
+          "box": {
+            "file_id": "2075923353230",
+            "file_name": "section_4_charts.docx",
+            "file_url": "https://usu.app.box.com/file/2075923353230",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075923353230&sharedAccessCode=",
+            "folder_id": "356058993561",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:16:01.197Z"
+          },
+          "las": [
+            {
+              "id": "creating-accessible-charts-part-1",
+              "title": "Creating Accessible Charts Part 1",
+              "folder_name": "LA-5-4-1",
+              "box_folder_id": "355473741363",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/creating-accessible-charts-part-1",
+                "page_id": "creating-accessible-charts-part-1",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/creating-accessible-charts-part-1/creating-accessible-charts-part-1.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/creating-accessible-charts-part-1/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/creating-accessible-charts-part-1/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/LA-5-4-1/creating_accessible_charts_part_1_local.html"
+              },
+              "box": {
+                "file_id": "2075928157915",
+                "file_name": "creating_accessible_charts_part_1.docx",
+                "file_url": "https://usu.app.box.com/file/2075928157915",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075928157915&sharedAccessCode=",
+                "folder_id": "356053702816",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:01.462Z"
+              }
+            },
+            {
+              "id": "creating-accessible-charts-part-2",
+              "title": "Creating Accessible Charts Part 2",
+              "folder_name": "LA-5-4-2",
+              "box_folder_id": "355470654710",
+              "order": 2,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/creating-accessible-charts-part-2",
+                "page_id": "creating-accessible-charts-part-2",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/creating-accessible-charts-part-2/creating-accessible-charts-part-2.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/creating-accessible-charts-part-2/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/creating-accessible-charts-part-2/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/LA-5-4-2/creating_accessible_charts_part_2_local.html"
+              },
+              "box": {
+                "file_id": "2075933185935",
+                "file_name": "creating_accessible_charts_part_2.docx",
+                "file_url": "https://usu.app.box.com/file/2075933185935",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075933185935&sharedAccessCode=",
+                "folder_id": "356062098002",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:01.860Z"
+              }
+            },
+            {
+              "id": "creating-accessible-charts-part-3",
+              "title": "Creating Accessible Charts Part 3",
+              "folder_name": "LA-5-4-3",
+              "box_folder_id": "355470486549",
+              "order": 3,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/creating-accessible-charts-part-3",
+                "page_id": "creating-accessible-charts-part-3",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/creating-accessible-charts-part-3/creating-accessible-charts-part-3.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/creating-accessible-charts-part-3/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/creating-accessible-charts-part-3/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-4/LA-5-4-3/creating_accessible_charts_part_3_local.html"
+              },
+              "box": {
+                "file_id": "2075939720627",
+                "file_name": "creating_accessible_charts_part_3.docx",
+                "file_url": "https://usu.app.box.com/file/2075939720627",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075939720627&sharedAccessCode=",
+                "folder_id": "356061532323",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:02.298Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-5-optimizing-workbooks",
+          "title": "Section 5 Optimizing Workbooks",
+          "folder_name": "Section-5-5",
+          "box_folder_id": "355472224170",
+          "order": 5,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-5-optimizing-workbooks",
+            "page_id": "section-5-optimizing-workbooks",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-5-optimizing-workbooks/section-5-optimizing-workbooks.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-5-optimizing-workbooks/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-5-optimizing-workbooks/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-5/section_5_optimizing_workbooks_local.html"
+          },
+          "box": {
+            "file_id": "2075930773479",
+            "file_name": "section_5_optimizing_workbooks.docx",
+            "file_url": "https://usu.app.box.com/file/2075930773479",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075930773479&sharedAccessCode=",
+            "folder_id": "356057763895",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:16:02.769Z"
+          },
+          "las": [
+            {
+              "id": "optimizing-workbooks",
+              "title": "Optimizing Workbooks",
+              "folder_name": "LA-5-5-1",
+              "box_folder_id": "355474180126",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/optimizing-workbooks",
+                "page_id": "optimizing-workbooks",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/optimizing-workbooks/optimizing-workbooks.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/optimizing-workbooks/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/optimizing-workbooks/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-5/LA-5-5-1/optimizing_workbooks_local.html"
+              },
+              "box": {
+                "file_id": "2075938171047",
+                "file_name": "optimizing_workbooks.docx",
+                "file_url": "https://usu.app.box.com/file/2075938171047",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075938171047&sharedAccessCode=",
+                "folder_id": "356055483999",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:03.237Z"
+              }
+            }
+          ]
+        },
+        {
+          "id": "section-6-evaluating-accessibility-in-excel",
+          "title": "Section 6 Evaluating Accessibility In Excel",
+          "folder_name": "Section-5-6",
+          "box_folder_id": "355470054428",
+          "order": 6,
+          "status": "draft",
+          "canvas": {
+            "url": "https://usucourses.instructure.com/courses/2879/pages/section-6-evaluating-accessibility-in-excel",
+            "page_id": "section-6-evaluating-accessibility-in-excel",
+            "published": false,
+            "published_at": null
+          },
+          "github": {
+            "repository": "main",
+            "source_docx": {
+              "path": "pages/section-6-evaluating-accessibility-in-excel/section-6-evaluating-accessibility-in-excel.docx",
+              "branch": "main"
+            },
+            "canvas_copy": {
+              "path": "pages/section-6-evaluating-accessibility-in-excel/canvas-copy.html",
+              "branch": "main"
+            },
+            "with_assets": {
+              "path": "pages/section-6-evaluating-accessibility-in-excel/index.html",
+              "branch": "main"
+            },
+            "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-6/section_6_evaluating_accessibility_in_excel_local.html"
+          },
+          "box": {
+            "file_id": "2075932751237",
+            "file_name": "section_6_evaluating_accessibility_in_excel.docx",
+            "file_url": "https://usu.app.box.com/file/2075932751237",
+            "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075932751237&sharedAccessCode=",
+            "folder_id": "356056112652",
+            "modified_at": null,
+            "version": 1
+          },
+          "sync": {
+            "last_synced": null,
+            "sync_status": "pending",
+            "sync_errors": []
+          },
+          "metadata": {
+            "type": "section",
+            "created": "2025-12-15T22:16:03.679Z"
+          },
+          "las": [
+            {
+              "id": "evaluating-accessibility-in-excel",
+              "title": "Evaluating Accessibility In Excel",
+              "folder_name": "LA-5-6-1",
+              "box_folder_id": "355470299748",
+              "order": 1,
+              "status": "draft",
+              "canvas": {
+                "url": "https://usucourses.instructure.com/courses/2879/pages/evaluating-accessibility-in-excel",
+                "page_id": "evaluating-accessibility-in-excel",
+                "published": false,
+                "published_at": null
+              },
+              "github": {
+                "repository": "main",
+                "source_docx": {
+                  "path": "pages/evaluating-accessibility-in-excel/evaluating-accessibility-in-excel.docx",
+                  "branch": "main"
+                },
+                "canvas_copy": {
+                  "path": "pages/evaluating-accessibility-in-excel/canvas-copy.html",
+                  "branch": "main"
+                },
+                "with_assets": {
+                  "path": "pages/evaluating-accessibility-in-excel/index.html",
+                  "branch": "main"
+                },
+                "local_html_path": "../data/current/WINTER-25-26-UPDATES/Module-5/Section-5-6/LA-5-6-1/evaluating_accessibility_in_excel_local.html"
+              },
+              "box": {
+                "file_id": "2075941000079",
+                "file_name": "evaluating_accessibility_in_excel.docx",
+                "file_url": "https://usu.app.box.com/file/2075941000079",
+                "word_online_url": "https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=2075941000079&sharedAccessCode=",
+                "folder_id": "356060540404",
+                "modified_at": null,
+                "version": 1
+              },
+              "sync": {
+                "last_synced": null,
+                "sync_status": "pending",
+                "sync_errors": []
+              },
+              "metadata": {
+                "type": "la",
+                "created": "2025-12-15T22:16:03.923Z"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
