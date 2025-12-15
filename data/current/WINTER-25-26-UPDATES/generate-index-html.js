@@ -13,8 +13,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const COURSE_MAP_FILE = join(__dirname, 'course-map.json');
-const HTML_TEMPLATE_FILE = join(__dirname, '../../../github-pages/index.html');
-const OUTPUT_FILE = join(__dirname, '../../../github-pages/index.html');
+const HTML_TEMPLATE_FILE = join(__dirname, '../../../docs/index.html');
+const OUTPUT_FILE_ROOT = join(__dirname, '../../../index.html');
+const OUTPUT_FILE_DOCS = join(__dirname, '../../../docs/index.html');
 
 /**
  * Escape HTML entities
@@ -42,6 +43,7 @@ function generatePageLinks(page) {
   const editDocxUrl = page.box.word_online_url ||
     `https://usu.app.box.com/integrations/officeonline/openOfficeOnline?fileId=${page.box.file_id}&sharedAccessCode=`;
   // Fix path for GitHub Pages: remove ../ prefix to make it root-relative
+  // (We'll add ../ prefix later for docs version)
   const viewCanvasUrl = page.github?.local_html_path
     ? page.github.local_html_path.replace(/^\.\.\//, '')
     : '';
@@ -154,12 +156,17 @@ async function main() {
   // Combine
   const newHTML = header + content + footer;
 
-  // Write output
-  console.log('💾 Writing index.html...');
-  writeFileSync(OUTPUT_FILE, newHTML, 'utf8');
+  // Write output to both locations
+  console.log('💾 Writing index.html files...');
+  writeFileSync(OUTPUT_FILE_ROOT, newHTML, 'utf8');
+
+  // For docs folder, paths need ../ prefix since docs is served as root
+  const docsHTML = newHTML.replace(/href="data\//g, 'href="../data/');
+  writeFileSync(OUTPUT_FILE_DOCS, docsHTML, 'utf8');
 
   console.log('✅ HTML generation complete!');
-  console.log(`📄 Updated: ${OUTPUT_FILE}`);
+  console.log(`📄 Updated: ${OUTPUT_FILE_ROOT}`);
+  console.log(`📄 Updated: ${OUTPUT_FILE_DOCS}`);
 }
 
 main().catch(error => {
