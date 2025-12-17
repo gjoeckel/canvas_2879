@@ -129,8 +129,10 @@ function updateLinkColumns(taskId, fields, columnsContainer) {
     const docxUpdate = boxColumn.querySelector('[data-asana-field="docx update"]');
     if (docxUpdate) {
       const fieldData = fields['docx update'] || { value: '  -', color: null };
-      // Only update textContent if value is NOT the placeholder (preserve HTML placeholder)
-      if (fieldData.value !== '  -') {
+      // Update content: restore placeholder HTML if value is placeholder, otherwise set textContent
+      if (fieldData.value === '  -') {
+        docxUpdate.innerHTML = '&nbsp;&nbsp;&nbsp;-';
+      } else {
         docxUpdate.textContent = fieldData.value;
       }
       // Only apply badge styling if we have a color (i.e., not the "-" placeholder)
@@ -151,8 +153,10 @@ function updateLinkColumns(taskId, fields, columnsContainer) {
     const docxReview = boxColumn.querySelector('[data-asana-field="docx review"]');
     if (docxReview) {
       const fieldData = fields['docx review'] || { value: '  -', color: null };
-      // Only update textContent if value is NOT the placeholder (preserve HTML placeholder)
-      if (fieldData.value !== '  -') {
+      // Update content: restore placeholder HTML if value is placeholder, otherwise set textContent
+      if (fieldData.value === '  -') {
+        docxReview.innerHTML = '&nbsp;&nbsp;&nbsp;-';
+      } else {
         docxReview.textContent = fieldData.value;
       }
       // Only apply badge styling if we have a color (i.e., not the "-" placeholder)
@@ -181,8 +185,10 @@ function updateLinkColumns(taskId, fields, columnsContainer) {
         // Field not found in response - keep default placeholder, skip this field
         // Continue to next field instead of returning
       } else {
-        // Only update textContent if value is NOT the placeholder (preserve HTML placeholder)
-        if (fieldData.value !== '  -') {
+        // Update content: restore placeholder HTML if value is placeholder, otherwise set textContent
+        if (fieldData.value === '  -') {
+          canvasUpdate.innerHTML = '&nbsp;&nbsp;&nbsp;-';
+        } else {
           canvasUpdate.textContent = fieldData.value;
         }
         // Only apply badge styling if we have a color (i.e., not the "-" placeholder)
@@ -208,8 +214,10 @@ function updateLinkColumns(taskId, fields, columnsContainer) {
         // Field not found in response - keep default placeholder, skip this field
         // Continue to next field instead of returning
       } else {
-        // Only update textContent if value is NOT the placeholder (preserve HTML placeholder)
-        if (fieldData.value !== '  -') {
+        // Update content: restore placeholder HTML if value is placeholder, otherwise set textContent
+        if (fieldData.value === '  -') {
+          canvasReview.innerHTML = '&nbsp;&nbsp;&nbsp;-';
+        } else {
           canvasReview.textContent = fieldData.value;
         }
         // Only apply badge styling if we have a color (i.e., not the "-" placeholder)
