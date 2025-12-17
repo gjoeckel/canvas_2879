@@ -21,7 +21,12 @@ async function loadTaskMapping() {
   try {
     // Use path relative to the HTML file location
     // Works both locally (http://localhost:8000/) and on GitHub Pages (https://gjoeckel.github.io/canvas_2879/)
-    const basePath = window.location.pathname.replace(/\/[^/]*$/, '') || '';
+    // Remove filename and trailing slashes to get base directory
+    let basePath = window.location.pathname.replace(/\/[^/]*$/, '').replace(/\/$/, '') || '';
+    // Ensure leading slash for absolute path
+    if (basePath && !basePath.startsWith('/')) {
+      basePath = '/' + basePath;
+    }
     const dataPath = `${basePath}/data/asana-task-mapping.json`;
     const response = await fetch(dataPath);
     if (!response.ok) {
