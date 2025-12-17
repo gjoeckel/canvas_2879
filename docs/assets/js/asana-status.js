@@ -19,7 +19,11 @@ async function loadTaskMapping() {
   }
 
   try {
-    const response = await fetch('/data/asana-task-mapping.json');
+    // Use path relative to the HTML file location
+    // Works both locally (http://localhost:8000/) and on GitHub Pages (https://gjoeckel.github.io/canvas_2879/)
+    const basePath = window.location.pathname.replace(/\/[^/]*$/, '') || '';
+    const dataPath = `${basePath}/data/asana-task-mapping.json`;
+    const response = await fetch(dataPath);
     if (!response.ok) {
       throw new Error(`Failed to load task mapping: ${response.status}`);
     }
@@ -457,6 +461,8 @@ async function batchLoadTaskStatuses() {
       }
     }
   }
+
+  // All statuses have been updated - message will be cleared by initializeAsanaStatus()
 }
 
 /**
@@ -465,11 +471,26 @@ async function batchLoadTaskStatuses() {
  * then updates all DOM elements at once
  */
 export async function initializeAsanaStatus() {
+  // Show loading message when page first loads
+  const messageDiv = document.getElementById('asana-refresh-message');
+  if (messageDiv) {
+    messageDiv.textContent = 'Task data being retrieved from Asana.';
+  }
+
   try {
     // Use batch loading for better performance
     await batchLoadTaskStatuses();
+
+    // Clear message after all statuses are updated
+    if (messageDiv) {
+      messageDiv.textContent = '';
+    }
   } catch (error) {
     console.error('Error initializing Asana status:', error);
+    // Clear message even on error
+    if (messageDiv) {
+      messageDiv.textContent = '';
+    }
   }
 }
 
